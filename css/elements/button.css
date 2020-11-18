@@ -1,0 +1,11 @@
+/**
+ * Button
+ * 
+ * Example:
+ * <button class="button">Click me</button>
+ */
+.button {
+  background-color: white;
+  color: red;
+  font-size: 2em;
+}
