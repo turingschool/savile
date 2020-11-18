@@ -5,6 +5,8 @@
 
 @import "elements/button.css";
 
+@import "components/nav.css";
+
 body { 
   background-color: var(--turing-primary);
   font-family: var(--font-family-default);

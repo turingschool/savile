@@ -1,0 +1,13 @@
+---
+title: Components
+layout: default
+---
+
+<table>
+{% for component in site.components %}
+    <tr>
+      <td>{{ component }}</td>
+      <td><code>{{ component.title }}</code></td>
+    </tr>
+{% endfor %}
+</table>

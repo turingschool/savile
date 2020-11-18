@@ -1,0 +1,13 @@
+---
+title: Elements
+layout: default
+---
+
+<table>
+{% for element in site.elements %}
+    <tr>
+      <td>{{ element }}</td>
+      <td><code>{{ element.title }}</code></td>
+    </tr>
+{% endfor %}
+</table>
