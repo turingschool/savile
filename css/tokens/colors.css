@@ -1,0 +1,16 @@
+:root {
+
+  /*
+   * Primary Color
+   *
+   * Usage
+   *
+   * ```css
+   * .my-element {
+   *   color: var(--turing-primary);
+   * }
+   * ```
+   *
+   */
+  --turing-primary: blue;
+}
