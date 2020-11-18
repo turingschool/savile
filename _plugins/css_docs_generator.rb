@@ -42,7 +42,7 @@ module Jekyll
           prev_comment = clean_comment node[:value]
         end
 
-        if node[:node] == :style_rule && prev_comment
+        if (node[:node] == :style_rule || node[:node] == :property) && prev_comment
           doc = CSSDoc.new(path, collection: collection, site: site)
           doc.data['title'] = node.dig(:selector, :value)
           doc.data['source_file'] = path
