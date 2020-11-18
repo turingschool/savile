@@ -1,0 +1,53 @@
+:root {
+  --nav-height: 4rem;
+}
+
+/**
+ * Navigation component w/ primary and secondary variants.
+ *
+ * <nav class="nav nav-primary">
+ *   <ul>
+ *     <li>Nav element 1</li>
+ *     <li>Nav element 2</li>
+ *   </ul>
+ * </nav>
+ */
+.nav {
+  font-family: 'Helvetica Neue Bold';
+  font-weight: var(--font-weight-bold);
+  height: var(--nav-height);
+  position: sticky;
+  width: 100%;
+  z-index: 99;
+  margin-bottom: 0.5rem;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nav ul li {
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav ul li a {
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.nav.nav-primary {
+  background: var(--color-white);
+  top: 0;
+}
+
+.nav.nav-secondary {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  position: sticky;
+  top: var(--nav-height);
+}
