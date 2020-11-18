@@ -1,16 +1,45 @@
 :root {
+  /*
+   * Primary
+   */
+  --color-primary: #5F5F5F;
+  /*
+   * Primary Light
+   */
+  --color-primary-light: #C0C0C0;
+  /*
+   * Primary Dark
+   */
+  --color-primary-dark: #2b2b2b;
 
   /*
-   * Primary Color
-   *
-   * Usage
-   *
-   * ```css
-   * .my-element {
-   *   color: var(--turing-primary);
-   * }
-   * ```
-   *
+   * Secondary
    */
-  --turing-primary: blue;
+  --color-secondary: #036575;
+  /*
+   * Secondary Fade
+   */
+  --color-secondary-fade: #0492a5;
+  /*
+   * Secondary Light
+   */
+  --color-secondary-light: #05c2d1;
+  /*
+   * Secondary Highlight
+   */
+  --color-secondary-highlight :#12f1fc;
+
+  /*
+   * White
+   */
+  --color-white: #ffffff;
+
+  /*
+   * Backend Red
+   */
+  --color-backend: #ef3852;
+  /*
+   * Frontend Orange
+   */
+  --color-frontend: #f9ae06;
 }
