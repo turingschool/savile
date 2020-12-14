@@ -33,19 +33,21 @@ github_username:  jekyll
 # theme: minima
 # plugins:
 #   - jekyll-feed
+collections_dir: css_docs
 
 collections:
-  tokens:
-    css_doc:
-      source: css/tokens
-  elements:
-    output: true
-    css_doc:
-      source: css/elements
-  components:
-    output: true
-    css_doc:
-      source: css/components
+  - example
+  # tokens:
+  #   css_doc:
+  #     source: css/tokens
+  # elements:
+  #   output: true
+  #   css_doc:
+  #     source: css/elements
+  # components:
+  #   output: true
+  #   css_doc:
+  #     source: css/components
 
 
 # Exclude from processing.
