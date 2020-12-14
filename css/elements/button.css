@@ -1,8 +1,10 @@
 /**
- * Button
+ * @title: Button
  * 
- * Example:
+ * @description: Example:
  * <button class="button">Click me</button>
+
+ write into script to break apart each @ piece to convert those pieces into 
  */
 .button {
   border: none;
