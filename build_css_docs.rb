@@ -20,13 +20,18 @@ def extract_docs_from_css(path, tree)
     if (node[:node] == :style_rule || node[:node] == :property) && prev_comment
       doc = {}
 
-      doc['title'] = node.dig(:selector, :value) if node[:node] == :style_rule
-      doc['title'] = node[:name] if node[:node] == :property
-
       doc['source_file'] = path
       doc['content'] = prev_comment
+
       doc_attrs = parse_attributes(doc['content'])
       doc['attrs'] = doc_attrs
+
+      doc['title'] = doc.dig('attrs', 'title')
+
+      unless doc['title']
+        doc['title'] = node.dig(:selector, :value) if node[:node] == :style_rule
+        doc['title'] = node[:name] if node[:node] == :property
+      end
 
       write_to_collection(doc, path)
 
@@ -54,7 +59,7 @@ end
 def write_to_collection(doc, filepath)
   # pull out the tokens from /savile/css/tokens/colors.css
   file_folder = File.basename(File.dirname(filepath))
-  docs_folder = File.join(DESTINATION_DIR, file_folder)
+  docs_folder = File.join(DESTINATION_DIR, '_' + file_folder)
   Dir.mkdir docs_folder unless Dir.exist? docs_folder
   filename = doc['title'] + '.md'
 
