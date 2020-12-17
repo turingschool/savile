@@ -25,8 +25,9 @@ def extract_docs_from_css(path, tree)
       doc['content'] = prev_comment
 
       doc_attrs = parse_attributes(doc['content'])
-      doc['attrs'] = doc_attrs[0]
-      doc['example'] = doc_attrs[1]
+
+      doc['example'] = doc_attrs.delete('example') if doc_attrs['example']
+      doc['attrs'] = doc_attrs
 
       doc['title'] = doc.dig('attrs', 'title')
 
@@ -48,20 +49,10 @@ def parse_attributes(docstring)
   attrs = {}
   example = nil
 
-  lines = docstring.lines
-  lines.each do |line|
-    if line.lstrip[0] == '@'
-      attr_name, *attr_value = line.split ' '
-
-      if attr_name == '@example'
-        example = attr_value.join ' '
-      else
-        attrs[attr_name[1..-1]] = attr_value.join ' '
-      end
-    end
-  end
-
-  [attrs, example]
+  names_and_values = docstring.strip.split(/\s*@(\w+)\s+/)
+  names_and_values.shift if names_and_values.first.empty?
+  
+  Hash[names_and_values.each_slice(2).to_a]
 end
 
 def write_to_collection(doc, filepath)
