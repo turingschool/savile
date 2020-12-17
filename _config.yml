@@ -36,18 +36,9 @@ github_username:  jekyll
 collections_dir: css_docs
 
 collections:
-  - example
-  # tokens:
-  #   css_doc:
-  #     source: css/tokens
-  # elements:
-  #   output: true
-  #   css_doc:
-  #     source: css/elements
-  # components:
-  #   output: true
-  #   css_doc:
-  #     source: css/components
+  - tokens
+  - elements
+  - components
 
 
 # Exclude from processing.
