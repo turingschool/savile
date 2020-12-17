@@ -1,5 +1,6 @@
 require "crass"
 require "pp"
+require "yaml"
 
 SOURCE_DIR = File.join(__dir__, 'css')
 SOURCE_FILES = Dir.glob(File.join("**", "*.css"), base: SOURCE_DIR)
@@ -24,7 +25,8 @@ def extract_docs_from_css(path, tree)
       doc['content'] = prev_comment
 
       doc_attrs = parse_attributes(doc['content'])
-      doc['attrs'] = doc_attrs
+      doc['attrs'] = doc_attrs[0]
+      doc['example'] = doc_attrs[1]
 
       doc['title'] = doc.dig('attrs', 'title')
 
@@ -44,16 +46,22 @@ def parse_attributes(docstring)
   # TODO: support multiline attributes (like @description, @example)
   #       (see button.css)
   attrs = {}
+  example = nil
 
   lines = docstring.lines
   lines.each do |line|
     if line.lstrip[0] == '@'
       attr_name, *attr_value = line.split ' '
-      attrs[attr_name[1..-1]] = attr_value.join ' '
+
+      if attr_name == '@example'
+        example = attr_value.join ' '
+      else
+        attrs[attr_name[1..-1]] = attr_value.join ' '
+      end
     end
   end
 
-  attrs
+  [attrs, example]
 end
 
 def write_to_collection(doc, filepath)
@@ -63,8 +71,15 @@ def write_to_collection(doc, filepath)
   Dir.mkdir docs_folder unless Dir.exist? docs_folder
   filename = doc['title'] + '.md'
 
-  # TODO: add doc['attrs'] as head matter (YAML) to the .md file
-  File.write(File.join(docs_folder, filename), doc['content'])
+
+  front_matter = doc['attrs'].to_yaml
+  front_matter += "---\n"
+
+  doc_content = front_matter
+
+  doc_content += doc['example'] if doc['example']
+  
+  File.write(File.join(docs_folder, filename), doc_content)
 end
 
 def clean_comment(comment_text)
