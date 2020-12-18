@@ -3,4 +3,13 @@ title: Typography
 layout: default
 ---
 
-TODO: create typography page
+<table>
+    {% for token in site.tokens %}
+        {% unless token.value contains "#" %}
+        <tr>
+            <td>{{ token.title }}</td>
+            <td style="font-family: {{token.value}}">{{ token.value }}</td>
+        </tr>
+        {% endunless %}
+    {% endfor %}
+</table>
