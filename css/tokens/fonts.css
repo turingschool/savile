@@ -6,17 +6,20 @@
   --font-weight-ultra-light: 200;
 
   /*
-   * Default Font Family
+   * @title Default Font Family
+   * @value Helvetica Neue Normal
    */
   --font-family-default: 'Helvetica Neue Normal', sans-serif;
 
   /*
-   * Alternate Font Family
+   * @title Alternate Font Family
+   * @value Roboto Slab
    */
   --font-family-alternate: 'Roboto Slab', sans-serif;
 
   /*
-   * Monospace Font Family
+   * @title Monospace Font Family
+   * @value Roboto Mono
    */
   --font-family-mono: 'Roboto Mono', monospace;
 }
