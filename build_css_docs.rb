@@ -2,6 +2,7 @@ require "crass"
 require "pp"
 require "yaml"
 
+# TODO: Support SCSS
 SOURCE_DIR = File.join(__dir__, 'css')
 SOURCE_FILES = Dir.glob(File.join("**", "*.css"), base: SOURCE_DIR)
 DESTINATION_DIR = File.join(__dir__, 'css_docs')
@@ -44,8 +45,6 @@ def extract_docs_from_css(path, tree)
 end
 
 def parse_attributes(docstring)
-  # TODO: support multiline attributes (like @description, @example)
-  #       (see button.css)
   attrs = {}
   example = nil
 
@@ -56,12 +55,10 @@ def parse_attributes(docstring)
 end
 
 def write_to_collection(doc, filepath)
-  # pull out the tokens from /savile/css/tokens/colors.css
   file_folder = File.basename(File.dirname(filepath))
   docs_folder = File.join(DESTINATION_DIR, '_' + file_folder)
   Dir.mkdir docs_folder unless Dir.exist? docs_folder
   filename = doc['title'] + '.md'
-
 
   front_matter = doc['attrs'].to_yaml
   front_matter += "---\n"

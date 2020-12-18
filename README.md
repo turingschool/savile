@@ -41,13 +41,14 @@ Please follow Turing's shared [How to Contribute](https://www.notion.so/turingsc
 
 The workflow to add a token, element or component to Savile is as follows:
 
-- Touch a new `.scss` file in within the appropriate sub-directory of the css directory at the root of the project. The file name should match the name of the token/element/component you are building. Find the dictionary below as well as project naming conventions (coming soon).
-- Write the SCSS for your token/element/component
-- Above the SCSS code, create a multi-line CSS comment. Provide any relevant information in the comment, using the available attributes (listed below). See the following example for the specific syntax the docs generator expects:
+_(TODO: Change to scss when we have that supported)_
+- Touch a new `.css` file in within the appropriate sub-directory of the css directory at the root of the project. The file name should match the name of the token/element/component you are building. Find the dictionary below as well as project naming conventions (coming soon).
+- Write the CSS for your token/element/component
+- Above the CSS code, create a multi-line CSS comment. Provide any relevant information in the comment, using the available attributes (listed below). See the following example for the specific syntax the docs generator expects:
     - `title` - this will be presented on the docs site and will be the name of the CSS file that is generated in the `css_docs` directory.
     - `status` - is this a draft, complete, not-maintained, etc?
     - `description` - short description that the user of Savile will be provided with on the docs site
-    - `example` - the HTML you write here will be rendered as the actual element; this provides an example of how this SCSS will style the element.
+    - `example` - the HTML you write here will be rendered as the actual element; this provides an example of how this CSS will style the element.
 
     ```css
     /*
