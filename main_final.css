@@ -1,0 +1,220 @@
+:root {
+  --nav-height: 4rem;
+}
+
+/**
+ * @title Primary Nav
+ * @status early draft
+ * @description Navigation component w/ primary and secondary variants.
+ * @example
+ * <nav class="nav nav-primary">
+ *   <ul>
+ *     <li>Nav element 1</li>
+ *     <li>Nav element 2</li>
+ *   </ul>
+ * </nav>
+ */
+.nav {
+  font-family: 'Helvetica Neue Bold';
+  font-weight: var(--font-weight-bold);
+  height: var(--nav-height);
+  position: sticky;
+  width: 100%;
+  z-index: 99;
+  margin-bottom: 0.5rem;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nav ul li {
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav ul li a {
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.nav.nav-primary {
+  background: var(--color-white);
+  top: 0;
+}
+
+.nav.nav-secondary {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  position: sticky;
+  top: var(--nav-height);
+}
+/**
+ * @title Button
+ * @status draft
+ * @description Our basic button
+ *  Some more description
+ *
+ * @example_source
+ *  <button class="button">
+ *   Click me
+ * </button>
+ * @example
+ * <button class="button">
+ *   Click me
+ * </button>
+ */
+.button {
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: .5px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding: 18px 40px 12px;
+  display: inline-block;
+}
+:root {
+  /*
+   * @title Primary
+   * @value #5f5f5f
+   */
+  --color-primary: #5F5F5F;
+  /*
+   * @title Primary Light
+   * @value #C0C0C0
+   */
+  --color-primary-light: #C0C0C0;
+  /*
+   * @title Primary Dark
+   * @value #2b2b2b
+   */
+  --color-primary-dark: #2b2b2b;
+  /*
+   * @title Secondary
+   * @value #036575
+   */
+  --color-secondary: #036575;
+  /*
+   * @title Secondary Fade
+   * @value #0492a5
+   */
+  --color-secondary-fade: #0492a5;
+  /*
+   * @title Secondary Light
+   * @value #05c2d1
+   */
+  --color-secondary-light: #05c2d1;
+  /*
+   * @title Secondary Highlight
+   * @value #12f1fc
+   */
+  --color-secondary-highlight :#12f1fc;
+
+  /*
+   * @title Secondary Highlight
+   * @value #ffffff
+   */
+  --color-white: #ffffff;
+
+  /*
+   * @title Backend Red
+   * @value #ef3852
+   */
+  --color-backend: #ef3852;
+  /*
+   * @title Frontend Orange
+   * @value #f9ae06
+   */
+  --color-frontend: #f9ae06;
+}
+:root {
+  --font-weight-heavy: 900;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-weight-light: 300;
+  --font-weight-ultra-light: 200;
+
+  /*
+   * @title Default Font Family
+   * @value Helvetica Neue Normal
+   */
+  --font-family-default: 'Helvetica Neue Normal', sans-serif;
+
+  /*
+   * @title Alternate Font Family
+   * @value Roboto Slab
+   */
+  --font-family-alternate: 'Roboto Slab', sans-serif;
+
+  /*
+   * @title Monospace Font Family
+   * @value Roboto Mono
+   */
+  --font-family-mono: 'Roboto Mono', monospace;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Heavy';
+  font-weight: var(--font-weight-heavy);
+  src: url('/assets/fonts/HelveticaNeueLTStd-Hv.otf');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  font-weight: var(--font-weight-bold);
+  src: url('/assets/fonts/HelveticaNeueLTStd-Bd.otf');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Normal';
+  font-weight: var(--font-weight-normal);
+  src: url('/assets/fonts/HelveticaNeueLTStd-Lt.otf');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  font-weight: var(--font-weight-light);
+  src: url('/assets/fonts/HelveticaNeueLTStd-Th.otf');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Ultra Light';
+  font-weight: var(--font-weight-ultra-light);
+  src: url('/assets/fonts/HelveticaNeueLtStd-UltLt.otf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab Normal';
+  font-weight: var(--font-weight-normal);
+  src: url('/assets/fonts/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab Light';
+  font-weight: var(--font-weight-light);
+  src: url('/assets/fonts/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono Light';
+  font-weight: var(--font-weight-light);
+  src: url('/assets/fonts/RobotoMono-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono Normal';
+  font-weight: var(--font-weight-normal);
+  src: url('/assets/fonts/RobotoMono-Normal.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono Bold';
+  font-weight: var(--font-weight-bold);
+  src: url('/assets/fonts/RobotoMono-Medium.ttf');
+}
+
