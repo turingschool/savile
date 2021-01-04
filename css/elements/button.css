@@ -1,8 +1,13 @@
 /**
- * Button
- * 
- * Example:
- * <button class="button">Click me</button>
+ * @title Button
+ * @status draft
+ * @description Our basic button
+ *  Some more description
+ *
+ * @example
+ * <button class="button">
+ *   Click me
+ * </button>
  */
 .button {
   border: none;

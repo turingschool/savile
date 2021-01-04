@@ -34,19 +34,12 @@ github_username:  jekyll
 # plugins:
 #   - jekyll-feed
 
-collections:
-  tokens:
-    css_doc:
-      source: css/tokens
-  elements:
-    output: true
-    css_doc:
-      source: css/elements
-  components:
-    output: true
-    css_doc:
-      source: css/components
+collections_dir: css_docs
 
+collections:
+  - tokens
+  - elements
+  - components
 
 # Exclude from processing.
 # The following items will not be processed, by default.

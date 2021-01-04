@@ -3,8 +3,10 @@
 }
 
 /**
- * Navigation component w/ primary and secondary variants.
- *
+ * @title Primary Nav
+ * @status early draft
+ * @description Navigation component w/ primary and secondary variants.
+ * @example
  * <nav class="nav nav-primary">
  *   <ul>
  *     <li>Nav element 1</li>
