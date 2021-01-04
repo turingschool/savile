@@ -33,13 +33,13 @@ github_username:  jekyll
 # theme: minima
 # plugins:
 #   - jekyll-feed
+
 collections_dir: css_docs
 
 collections:
   - tokens
   - elements
   - components
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
