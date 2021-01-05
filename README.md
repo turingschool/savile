@@ -29,8 +29,6 @@ While we have Guiding Principles for our overarching work on the Turing Engineer
 To set the project up locally on your machine:
 
 - clone the repo down with `git clone git@github.com:turingschool/savile.git`
-- fetch the `gh-pages` branch with `git fetch origin gh-pages`
-- checkout to `gh-pages` with `git checkout gh-pages`
 - run `bundle exec jekyll serve`
 
 ## Contributing
