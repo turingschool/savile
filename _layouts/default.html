@@ -6,23 +6,36 @@
     <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
   </head>
   <body>
-    <header>
-      <p>Savile | Turing Design System</p>
+
+    <header class='header-container'>
+      <section class='logo-title-wrapper'>
+        <img class='logo' src='https://turing-savile-assets.s3.amazonaws.com/turing-school-mark-256.png'/>
+        <p class='title'>Savile Design System</p>
+      </section>
+      <section class='search-wrapper'>
+        <!-- Include search input -->
+      </section>
     </header>
-    <nav class="nav nav-primary">
-      <ul>
-        <li><a href='colors'>Colors</a></li>
-        <li><a href='typography'>Typography</a></li>
-        <li><a href='spacing'>Spacing</a></li>
-        <li><a href='shadows'>Shadows</a></li>
-        <li><a href='borders'>Borders</a></li>
-        <li><a href='elements'>Elements</a></li>
-        <li><a href='components'>Components</a></li>
-      </ul>
-    </nav>
-    <h1>{{ page.title }}</h1>
-    <section>
-      {{ content }}
+
+    <section class='nav-content-container'>
+      <nav class='main-nav'>
+        <ul>
+          <li><a href='colors'>Colors</a></li>
+          <li><a href='typography'>Typography</a></li>
+          <li><a href='spacing'>Spacing</a></li>
+          <li><a href='shadows'>Shadows</a></li>
+          <li><a href='borders'>Borders</a></li>
+          <li><a href='elements'>Elements</a></li>
+          <li><a href='components'>Components</a></li>
+        </ul>
+      </nav>
+      <main class='main-container'>
+        <h1>{{ page.title }}</h1>
+        <section>
+          {{ content }}
+        </section>
+      </main>
     </section>
+
   </body>
 </html>
