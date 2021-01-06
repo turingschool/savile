@@ -1,4 +1,4 @@
 ---
-title: Frontend Orange
+title: Yellow 500
 value: "#f9ae06"
 ---
