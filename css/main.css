@@ -1,5 +1,8 @@
 @import "tokens/colors.css";
 @import "tokens/fonts.css";
+@import "tokens/spacing.css";
+@import "tokens/borders.css";
+@import "tokens/shadows.css";
 
 @import "elements/button.css";
 
@@ -13,7 +16,79 @@
 }
 
 body {
-  background-color: var(--s-color-gray-50);
+  background-color: var(--s-color-white);
   font-family: Helvetica Neue Normal;
   color: var(--s-color-gray-800);
+}
+
+.header-container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  color: var(--s-color-gray-800);
+  background-color: var(--s-color-gray-100);
+}
+
+.logo-title-wrapper {
+  display: flex;
+  align-items: center;
+  padding: var(--s-space-4) var(--s-space-16);
+}
+
+.logo {
+  width: var(--s-space-64);
+  height: var(--s-space-64);
+  margin-right: var(--s-space-16);
+}
+
+.title {
+  font-size: var(--s-space-24);
+}
+
+.nav-content-container {
+  display: flex;
+  padding-top: 10vh;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: var(--s-space-32) 0;
+  width: 20%;
+  min-width: 300px;
+  font-family: "Helvetica Neue Bold";
+  background-color: var(--s-color-gray-300);
+  min-height: 90vh;
+  overflow: scroll;
+}
+
+.main-nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+.main-nav ul li {
+  width: 100%;
+}
+
+.main-nav ul li a {
+  display: block;
+  padding: var(--s-space-16) var(--s-space-32);
+  text-decoration: none;
+  color: inherit;
+  border: var(--s-space-2) solid transparent;
+  border-radius: var(--s-border-radius-2);
+}
+
+.main-nav ul li a:focus {
+  border: var(--s-space-2) solid var(--s-color-cyan-400);
+}
+
+.main-container {
+  width: 100%;
+  height: 90vh;
+  padding: var(--s-space-56);
+  overflow: scroll;
 }
