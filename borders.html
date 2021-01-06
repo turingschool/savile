@@ -1,17 +1,17 @@
 ---
-title: Spacing
+title: Borders
 layout: default
 ---
 
 <table>
   {% for token in site.tokens %}
-  {% if token.title contains "--s-space" %}
+  {% if token.title contains "--s-border" %}
   <tr>
     <td>
       <div style="width: 4rem; height: 4rem; background-color: red;"></div>
     </td>
     <td><code>{{ token.value }}</code></td>
-    <!-- <td>{{ token }}</td> -->
+    <td>{{ token.description }}</td>
     <td>{{ token.title }}</td>
   </tr>
   {% endif %}
