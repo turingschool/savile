@@ -13,6 +13,7 @@
 }
 
 body {
-  background-color: var(--turing-primary);
-  font-family: var(--font-family-default);
+  background-color: var(--s-color-gray-50);
+  font-family: Helvetica Neue Normal;
+  color: var(--s-color-gray-800);
 }
