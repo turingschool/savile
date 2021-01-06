@@ -1,0 +1,71 @@
+:root {
+  /*
+   * @title Space 0 (0px)
+   */
+  --s-space-0: 0rem;
+  /*
+   * @title Space 2 (2px)
+   * @value 0.125rem
+   */
+  --s-space-2: 0.125rem;
+  /*
+   * @title Space 4 (4px)
+   * @value 0.25rem
+   */
+  --s-space-4: 0.25rem;
+  /*
+   * @title Space 8 (8px)
+   * @value 0.5rem
+   */
+  --s-space-8: 0.5rem;
+  /*
+   * @title Space 12 (12px)
+   * @value 0.75rem
+   */
+  --s-space-12: 0.75rem;
+  /*
+   * @title Space 16 (16px)
+   * @value 1rem
+   */
+  --s-space-16: 1rem;
+  /*
+   * @title Space 20 (20px)
+   * @value 1.25rem
+   */
+  --s-space-20: 1.25rem;
+  /*
+   * @title Space 24 (24px)
+   * @value 1.5rem
+   */
+  --s-space-24: 1.5rem;
+  /*
+   * @title Space 28 (28px)
+   * @value 1.75rem
+   */
+  --s-space-28: 1.75rem;
+  /*
+   * @title Space 32 (32px)
+   * @value 2rem
+   */
+  --s-space-32: 2rem;
+  /*
+   * @title Space 40 (40px)
+   * @value 2.5rem
+   */
+  --s-space-40: 2.5rem;
+  /*
+   * @title Space 48 (48px)
+   * @value 3rem
+   */
+  --s-space-24: 3rem;
+  /*
+   * @title Space 56 (56px)
+   * @value 3.5rem
+   */
+  --s-space-56: 3.5rem;
+  /*
+   * @title Space 64 (64px)
+   * @value 4rem
+   */
+  --s-space-64: 4rem;
+}
