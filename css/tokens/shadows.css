@@ -1,0 +1,17 @@
+:root {
+  /*
+   * @title Small
+   * @value 0 1px 3px hsla(0, 0%, 0.2)
+   */
+  --s-shadow-s: 0 1px 3px hsla(0, 0%, 0.2);
+  /*
+   * @title Medium
+   * @value 0 4px 6px hsla(0, 0%, 0.2)
+   */
+  --s-shadow-m: 0 4px 6px hsla(0, 0%, 0.2);
+  /*
+   * @title Large
+   * @value 0 15px 35px hsla(0, 0%, 0.2)
+   */
+  --s-shadow-l: 0 15px 35px hsla(0, 0%, 0.2);
+}
