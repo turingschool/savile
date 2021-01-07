@@ -5,7 +5,7 @@ require "FileUtils"
 
 SOURCE_DIR = File.join(__dir__, 'css')
 SOURCE_FILES = Dir.glob(File.join("**", "*.scss"), base: SOURCE_DIR)
-DESTINATION_DIR = File.join(__dir__, 'css_docs')
+DESTINATION_DIR = File.join(__dir__, 'docs')
 
 def extract_docs_from_css(path, tree)
   prev_comment = nil
