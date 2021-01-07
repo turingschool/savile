@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | relative_url }}">
   </head>
   <body>
     {% include header.html %}
-    <section class='nav-content-container'>
+    <section class="nav-content-container">
       {% include nav.html %}
-      <section class='main-footer-container'>
-        <main>
+      <section class="main-footer-container">
+        <main class="main-container">
           <h1>{{ page.title }}</h1>
           <section>
             {{ content }}
           </section>
         </main>
-        <footer>Hello</footer>
+        {% include footer.html %}
       </section>
     </section>
   </body>
