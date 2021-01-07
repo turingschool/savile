@@ -1,8 +1,8 @@
 require "crass"
 require "pp"
 require "yaml"
+require "FileUtils"
 
-# TODO: Support SCSS
 SOURCE_DIR = File.join(__dir__, 'css')
 SOURCE_FILES = Dir.glob(File.join("**", "*.scss"), base: SOURCE_DIR)
 DESTINATION_DIR = File.join(__dir__, 'css_docs')
@@ -74,6 +74,13 @@ end
 def clean_comment(comment_text)
   comment_text.lines.map { |l| l.sub(/^\s*\*\s?/, '') }.join
 end
+
+def reset_docs_dir
+  FileUtils.rm_rf(DESTINATION_DIR)
+  Dir.mkdir(DESTINATION_DIR)
+end
+
+reset_docs_dir
 
 SOURCE_FILES.each do |file|
   filepath = File.join(SOURCE_DIR, file)
