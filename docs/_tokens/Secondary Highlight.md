@@ -1,4 +1,4 @@
 ---
 title: Secondary Highlight
-value: "#ffffff"
+value: "#12f1fc"
 ---
