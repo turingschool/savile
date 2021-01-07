@@ -34,7 +34,7 @@ github_username:  jekyll
 # plugins:
 #   - jekyll-feed
 
-collections_dir: css_docs
+collections_dir: docs
 
 collections:
   - tokens
