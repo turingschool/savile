@@ -4,7 +4,7 @@ require "yaml"
 
 # TODO: Support SCSS
 SOURCE_DIR = File.join(__dir__, 'css')
-SOURCE_FILES = Dir.glob(File.join("**", "*.css"), base: SOURCE_DIR)
+SOURCE_FILES = Dir.glob(File.join("**", "*.scss"), base: SOURCE_DIR)
 DESTINATION_DIR = File.join(__dir__, 'css_docs')
 
 def extract_docs_from_css(path, tree)
@@ -15,7 +15,8 @@ def extract_docs_from_css(path, tree)
       extract_docs_from_css(path, node[:children])
     end
 
-    if node[:node] == :comment
+    # only parse comment starting with /** (NOT /*)
+    if node[:node] == :comment && node[:value][0] == '*'
       prev_comment = clean_comment node[:value]
     end
 
