@@ -72,12 +72,18 @@ body {
 .search-wrapper button {
   border-radius: 0 0.125rem 0.125rem 0;
   background-color: var(--s-color-gray-300);
+  cursor: pointer;
 }
 
 .search-wrapper input:focus,
 .search-wrapper button:focus {
   outline: none !important;
   border: 1px solid var(--s-color-cyan-400);
+}
+
+.search-icon {
+  width: 1rem;
+  height: 1rem;
 }
 
 /* ----------------------------------------- */
@@ -99,7 +105,7 @@ body {
   background-color: var(--s-color-gray-100);
   height: 90vh;
   overflow: scroll;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .main-nav ul {
@@ -121,6 +127,10 @@ body {
 
 .main-nav ul li a:hover {
   background-color: var(--s-color-cyan-400);
+}
+
+.active {
+  background-color: var(--s-color-cyan-500);
 }
 
 /* ----------------------------------------- */
