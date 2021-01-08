@@ -1,0 +1,16 @@
+- text: Home
+  url: /
+- text: Colors
+  url: /colors/
+- text: Typography
+  url: /typography/
+- text: Spacing
+  url: /spacing/
+- text: Shadows
+  url: /shadows/
+- text: Borders
+  url: /borders/
+- text: Elements
+  url: /elements/
+- text: Components
+  url: /components/
