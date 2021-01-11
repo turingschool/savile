@@ -1,5 +1,5 @@
 ---
-title: Default Font Family
+title: "--font-family-default"
 value: |-
   Helvetica Neue Normal
   Default Font Family
