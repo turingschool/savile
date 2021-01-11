@@ -1,11 +1,11 @@
 require "crass"
 require "pp"
 require "yaml"
+require "FileUtils"
 
-# TODO: Support SCSS
 SOURCE_DIR = File.join(__dir__, 'css')
-SOURCE_FILES = Dir.glob(File.join("**", "*.css"), base: SOURCE_DIR)
-DESTINATION_DIR = File.join(__dir__, 'css_docs')
+SOURCE_FILES = Dir.glob(File.join("**", "*.scss"), base: SOURCE_DIR)
+DESTINATION_DIR = File.join(__dir__, 'docs')
 
 def extract_docs_from_css(path, tree)
   prev_comment = nil
@@ -15,7 +15,8 @@ def extract_docs_from_css(path, tree)
       extract_docs_from_css(path, node[:children])
     end
 
-    if node[:node] == :comment
+    # only parse comment starting with /** (NOT /*)
+    if node[:node] == :comment && node[:value][0] == '*'
       prev_comment = clean_comment node[:value]
     end
 
@@ -73,6 +74,13 @@ end
 def clean_comment(comment_text)
   comment_text.lines.map { |l| l.sub(/^\s*\*\s?/, '') }.join
 end
+
+def reset_docs_dir
+  FileUtils.rm_rf(DESTINATION_DIR)
+  Dir.mkdir(DESTINATION_DIR)
+end
+
+reset_docs_dir
 
 SOURCE_FILES.each do |file|
   filepath = File.join(SOURCE_DIR, file)

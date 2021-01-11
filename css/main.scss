@@ -1,12 +1,16 @@
-@import "tokens/colors.css";
-@import "tokens/fonts.css";
-@import "tokens/spacing.css";
-@import "tokens/borders.css";
-@import "tokens/shadows.css";
+---
+#This is the main output file.
+---
 
-@import "elements/button.css";
+@import "tokens/colors";
+@import "tokens/fonts";
+@import "tokens/spacing";
+@import "tokens/borders";
+@import "tokens/shadows";
 
-@import "components/nav.css";
+@import "elements/button";
+
+@import "components/nav";
 
 * {
   margin: 0;

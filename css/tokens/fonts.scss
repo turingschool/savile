@@ -5,17 +5,23 @@
   --font-weight-light: 300;
   --font-weight-ultra-light: 200;
 
-  /*
+  /**
+   * @title --font-family-default
+   * @value Helvetica Neue Normal
    * Default Font Family
    */
   --font-family-default: 'Helvetica Neue Normal', sans-serif;
 
-  /*
+  /**
+   * @title --font-family-alternate
+   * @value Roboto Slab
    * Alternate Font Family
    */
   --font-family-alternate: 'Roboto Slab', sans-serif;
 
-  /*
+  /**
+   * @title --font-family-mono
+   * @value Roboto Mono
    * Monospace Font Family
    */
   --font-family-mono: 'Roboto Mono', monospace;
@@ -80,4 +86,3 @@
   font-weight: var(--font-weight-bold);
   src: url('/assets/fonts/RobotoMono-Medium.ttf');
 }
-

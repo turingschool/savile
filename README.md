@@ -39,17 +39,16 @@ Please follow Turing's shared [How to Contribute](https://www.notion.so/turingsc
 
 The workflow to add a token, element or component to Savile is as follows:
 
-_(TODO: Change to scss when we have that supported)_
-- Touch a new `.css` file in within the appropriate sub-directory of the css directory at the root of the project. The file name should match the name of the token/element/component you are building. Find the dictionary below as well as project naming conventions (coming soon).
+- Touch a new `.scss` file in within the appropriate sub-directory of the css directory at the root of the project. The file name should match the name of the token/element/component you are building. Find the dictionary below as well as project naming conventions (coming soon).
 - Write the CSS for your token/element/component
-- Above the CSS code, create a multi-line CSS comment. Provide any relevant information in the comment, using the available attributes (listed below). See the following example for the specific syntax the docs generator expects:
-    - `title` - this will be presented on the docs site and will be the name of the CSS file that is generated in the `css_docs` directory.
+- Above the CSS code, create a multi-line CSS comment. **The comment must start with two asterisks following the forward slash: `/**`**. Provide any relevant information in the comment, using the available attributes (listed below). See the following example for the specific syntax the docs generator expects:
+    - `title` - this will be presented on the docs site and will be the name of the CSS file that is generated in the `docs` directory.
     - `status` - is this a draft, complete, not-maintained, etc?
     - `description` - short description that the user of Savile will be provided with on the docs site
     - `example` - the HTML you write here will be rendered as the actual element; this provides an example of how this CSS will style the element.
 
     ```css
-    /*
+    /**
      * @title Button
      * @status draft
      * @description Our basic button
@@ -61,6 +60,6 @@ _(TODO: Change to scss when we have that supported)_
      */
     ```
 
-- In your terminal, run `ruby build_css_docs.rb` to run the generator, which will take the single SCSS file you created and wrote, and both feed the CSS into the design system (`_site/css`), and take the documentation and make it markdown-friendly (`css_docs`).
+- In your terminal, run `ruby build_css_docs.rb` to run the generator, which will take the single SCSS file you created and wrote, and both feed the CSS into the design system (`_site/css`), and take the documentation and make it markdown-friendly (`docs`).
 - While running the project locally, visit the appropriate URI in the browser. You should see this newly created token/element/component displayed with it's respective information.
 
