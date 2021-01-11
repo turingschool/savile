@@ -4,16 +4,19 @@ layout: default
 permalink: /spacing/
 ---
 
-<table>
+<table class="token-table">
   {% for token in site.tokens %}
-  {% if token.title contains "--s-space" %}
-  <tr>
-    <td>
-      <div style="width: 4rem; height: 4rem; background-color: red;"></div>
-    </td>
-    <td><code>{{ token.value }}</code></td>
-    <td>{{ token.title }}</td>
-  </tr>
-  {% endif %}
+    {% if token.title contains "--s-space" %}
+      <tr class="token-table-row">
+        <td class="token-title-description-cell">
+          <code>{{ token.title }}</code>
+          <p class="token-description">{{ token.description }}</p>
+        </td>
+        <td class="token-value-cell">{{ token.value }}</td>
+        <td class="token-example-cell">
+          <!-- display spacing token example -->
+        </td>
+      </tr>
+    {% endif %}
   {% endfor %}
 </table>
