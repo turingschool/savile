@@ -5,85 +5,99 @@
   --font-weight-light: 300;
   --font-weight-ultra-light: 200;
 
+<<<<<<< HEAD:css/tokens/fonts.scss
   /**
    * @title Default Font Family
+=======
+  /*
+   * @title --font-family-default
+>>>>>>> Cleanup:css/tokens/fonts.css
    * @value Helvetica Neue Normal
    * Default Font Family
    */
-  --font-family-default: 'Helvetica Neue Normal', sans-serif;
+  --font-family-default: "Helvetica Neue Normal", sans-serif;
 
+<<<<<<< HEAD:css/tokens/fonts.scss
   /**
    * @title Alternate Font Family
+=======
+  /*
+   * @title --font-family-alternate
+>>>>>>> Cleanup:css/tokens/fonts.css
    * @value Roboto Slab
    * Alternate Font Family
    */
-  --font-family-alternate: 'Roboto Slab', sans-serif;
+  --font-family-alternate: "Roboto Slab", sans-serif;
 
+<<<<<<< HEAD:css/tokens/fonts.scss
   /**
    * @title Monospace Font Family
+=======
+  /*
+   * @title --font-family-mono
+>>>>>>> Cleanup:css/tokens/fonts.css
    * @value Roboto Mono
    * Monospace Font Family
    */
-  --font-family-mono: 'Roboto Mono', monospace;
+  --font-family-mono: "Roboto Mono", monospace;
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Heavy';
+  font-family: "Helvetica Neue Heavy";
   font-weight: var(--font-weight-heavy);
-  src: url('/assets/fonts/HelveticaNeueLTStd-Hv.otf');
+  src: url("/assets/fonts/HelveticaNeueLTStd-Hv.otf");
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Bold';
+  font-family: "Helvetica Neue Bold";
   font-weight: var(--font-weight-bold);
-  src: url('/assets/fonts/HelveticaNeueLTStd-Bd.otf');
+  src: url("/assets/fonts/HelveticaNeueLTStd-Bd.otf");
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Normal';
+  font-family: "Helvetica Neue Normal";
   font-weight: var(--font-weight-normal);
-  src: url('/assets/fonts/HelveticaNeueLTStd-Lt.otf');
+  src: url("/assets/fonts/HelveticaNeueLTStd-Lt.otf");
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Light';
+  font-family: "Helvetica Neue Light";
   font-weight: var(--font-weight-light);
-  src: url('/assets/fonts/HelveticaNeueLTStd-Th.otf');
+  src: url("/assets/fonts/HelveticaNeueLTStd-Th.otf");
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Ultra Light';
+  font-family: "Helvetica Neue Ultra Light";
   font-weight: var(--font-weight-ultra-light);
-  src: url('/assets/fonts/HelveticaNeueLtStd-UltLt.otf');
+  src: url("/assets/fonts/HelveticaNeueLtStd-UltLt.otf");
 }
 
 @font-face {
-  font-family: 'Roboto Slab Normal';
+  font-family: "Roboto Slab Normal";
   font-weight: var(--font-weight-normal);
-  src: url('/assets/fonts/RobotoSlab-Regular.ttf');
+  src: url("/assets/fonts/RobotoSlab-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Roboto Slab Light';
+  font-family: "Roboto Slab Light";
   font-weight: var(--font-weight-light);
-  src: url('/assets/fonts/RobotoSlab-Light.ttf');
+  src: url("/assets/fonts/RobotoSlab-Light.ttf");
 }
 
 @font-face {
-  font-family: 'Roboto Mono Light';
+  font-family: "Roboto Mono Light";
   font-weight: var(--font-weight-light);
-  src: url('/assets/fonts/RobotoMono-Light.ttf');
+  src: url("/assets/fonts/RobotoMono-Light.ttf");
 }
 
 @font-face {
-  font-family: 'Roboto Mono Normal';
+  font-family: "Roboto Mono Normal";
   font-weight: var(--font-weight-normal);
-  src: url('/assets/fonts/RobotoMono-Normal.ttf');
+  src: url("/assets/fonts/RobotoMono-Normal.ttf");
 }
 
 @font-face {
-  font-family: 'Roboto Mono Bold';
+  font-family: "Roboto Mono Bold";
   font-weight: var(--font-weight-bold);
-  src: url('/assets/fonts/RobotoMono-Medium.ttf');
+  src: url("/assets/fonts/RobotoMono-Medium.ttf");
 }
-

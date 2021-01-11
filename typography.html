@@ -4,13 +4,19 @@ layout: default
 permalink: /typography/
 ---
 
-<table>
-    {% for token in site.tokens %}
-        {% unless token.value contains "#" %}
-        <tr>
-            <td>{{ token.title }}</td>
-            <td style="font-family: {{token.value}}">{{ token.value }}</td>
-        </tr>
-        {% endunless %}
+<table class="token-table">
+  {% for token in site.tokens %}
+      {% if token.title contains "--font" %}
+          <tr class="token-table-row">
+              <td class="token-title-description-cell">
+                    <code>{{ token.title }}</code>
+                    <p class="token-description">{{ token.description }}</p>
+                </td>
+                <td class="token-value-cell">{{ token.value }}</td>
+                <td class="token-example-cell">
+                    <!-- display typography token example -->
+                </td>
+            </tr>
+        {% endif %}
     {% endfor %}
 </table>
