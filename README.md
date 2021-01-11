@@ -12,6 +12,7 @@ More information about internal engineering @ Turing is available on [Turing's E
 - [Local Set Up](#local-set-up)
 - [Contributing](#contributing)
 - [How To: Add a Token, Element or Component](#how-to-add-a-token-element-or-component)
+- [Terminology](#terminology)
 
 ## Savile Guiding Principles
 
@@ -41,7 +42,7 @@ Please follow Turing's shared [How to Contribute](https://www.notion.so/turingsc
 
 The workflow to add a token, element or component to Savile is as follows:
 
-- Touch a new `.scss` file in within the appropriate sub-directory of the css directory at the root of the project. The file name should match the name of the token/element/component you are building. Find the dictionary below as well as project naming conventions (coming soon).
+- Touch a new `.scss` file in within the appropriate sub-directory of the css directory at the root of the project. The file name should match the name of the token/element/component you are building. Find the [terminology below](#terminology) as well as project naming conventions (coming soon).
 - Write the CSS for your token/element/component
 - Above the CSS code, create a multi-line CSS comment. **The comment must start with two asterisks following the forward slash: `/**`**. Provide any relevant information in the comment, using the available attributes (listed below). See the following example for the specific syntax the docs generator expects:
     - `title` - this will be presented on the docs site and will be the name of the CSS file that is generated in the `docs` directory.
@@ -65,3 +66,30 @@ The workflow to add a token, element or component to Savile is as follows:
 - In your terminal, run `ruby build_css_docs.rb` to run the generator, which will take the single SCSS file you created and wrote, and both feed the CSS into the design system (`_site/css`), and take the documentation and make it markdown-friendly (`docs`).
 - While running the project locally, visit the appropriate URI in the browser. You should see this newly created token/element/component displayed with it's respective information.
 
+## Terminology
+
+Design systems have varying sets of terminology, and many of the terms used within them are used in other parts of development. To make sure all contributors to Savile are clear on those terms here, please read the guide that follows:
+
+### Tokens
+
+Tokens are SCSS variables that store a single value for a SCSS declaration. Elements, components and patterns should use the tokens whenever they are available. Tokens are available for colors, typography, spacing, borders and shadows. Every Savile variable starts with `s-` to avoid naming conflicts in applications that use Savile.
+
+>Examples Token: A variable called `--s-color-red-500` stores the value `#ef3852` and can be used anywhere within Savile and the applications that use Savile.
+
+### Elements
+
+Elements should have a 1:1 correlation with HTML elements. Usually those HTML elements are not continers; but directly hold content. Elements will in many cases have variants.
+
+>Example Elements: `button`, `input`, `link`, `p`
+
+### Components
+
+Components should use 2 or more elements together. They are meant to be re-usable, but always used in the exact same way, as they do allow for variance.
+
+>Example Component: A card (maybe a `div` or `section`) that encompasses a heading and paragraph text elements, and input and button elements. Some potential variances for a card may be an optional heading, optional photo and a top border with color options.
+
+### Patterns
+
+Patterns are like components in that they use multiple elements, but patterns should have much less variance.
+
+>Example Pattern: A nav bar with the Turing icon and set of links. The number of links can be based on the needs of a given site, but not much other variance should exist.
