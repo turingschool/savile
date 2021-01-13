@@ -72,24 +72,30 @@ Design systems have varying sets of terminology, and many of the terms used with
 
 ### Tokens
 
-Tokens are SCSS variables that store a single value for a SCSS declaration. Elements, components and patterns should use the tokens whenever they are available. Tokens are available for colors, typography, spacing, borders and shadows. Every Savile variable starts with `s-` to avoid naming conflicts in applications that use Savile.
+Tokens are CSS variables that store a single value for a CSS declaration. Elements, components and patterns should use the tokens whenever they are available. Tokens are available for colors, typography, spacing, borders and shadows. Every Savile variable starts with `s-` to avoid naming conflicts in applications that use Savile.
 
 >Examples Token: A variable called `--s-color-red-500` stores the value `#ef3852` and can be used anywhere within Savile and the applications that use Savile.
 
+### Utilities
+
+Utilities are classes which can be used to change specific styles for an element. They provide a friendlier interface for users of Savile to access the values of tokens by applying classes in HTML rather than referencing variables in CSS. Utilities allow users of Savile to customize the styles of their HTML elements in those cases when there isn't an exact Savile element or component for the job.
+
+> Example: `.s-border-thin`, `.s-text-blue`, `.s-mt-2`
+
 ### Elements
 
-Elements should have a 1:1 correlation with HTML elements. Usually those HTML elements are not continers; but directly hold content. Elements will in many cases have variants.
+Elements should have a 1:1 correlation with HTML elements. Usually those HTML elements are not containers; but directly hold content. Elements will in many cases have variants.
 
 >Example Elements: `button`, `input`, `link`, `p`
 
 ### Components
 
-Components should use 2 or more elements together. They are meant to be re-usable, but always used in the exact same way, as they do allow for variance.
+Components should use 2 or more elements together. They are meant to be re-usable, but not always used in the exact same way, as they do allow for variance.
 
 >Example Component: A card (maybe a `div` or `section`) that encompasses a heading and paragraph text elements, and input and button elements. Some potential variances for a card may be an optional heading, optional photo and a top border with color options.
 
 ### Patterns
 
-Patterns are like components in that they use multiple elements, but patterns should have much less variance.
+Patterns can contain many elements and/or elements, usually for top level sections.
 
->Example Pattern: A nav bar with the Turing icon and set of links. The number of links can be based on the needs of a given site, but not much other variance should exist.
+>Example Patterns: navigation, sidebar, image grid
