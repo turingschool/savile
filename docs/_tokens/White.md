@@ -1,4 +1,0 @@
----
-title: White
-value: "#ffffff"
----
