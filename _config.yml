@@ -37,9 +37,12 @@ github_username:  jekyll
 collections_dir: docs
 
 collections:
-  - tokens
-  - elements
-  - components
+  tokens:
+    sort_by: order
+  elements:
+    sort_by: order
+  components:
+    sort_by: order
 
 sass:
   sass_dir: css
