@@ -11,7 +11,7 @@ def extract_docs_from_css(path, tree)
   prev_comment = nil
   order = 0
 
-  tree.each_with_index do |node, index|
+  tree.each do |node|
     if node[:children]
       extract_docs_from_css(path, node[:children])
     end
@@ -55,7 +55,7 @@ def parse_attributes(docstring)
 
   names_and_values = docstring.strip.split(/\s*@(\w+)\s+/)
   names_and_values.shift if names_and_values.first.empty?
-  
+
   Hash[names_and_values.each_slice(2).to_a]
 end
 
@@ -71,7 +71,7 @@ def write_to_collection(doc, filepath)
   doc_content = front_matter
 
   doc_content += doc['example'] if doc['example']
-  
+
   File.write(File.join(docs_folder, filename), doc_content)
 end
 
