@@ -9,8 +9,9 @@ DESTINATION_DIR = File.join(__dir__, 'docs')
 
 def extract_docs_from_css(path, tree)
   prev_comment = nil
+  order = 0
 
-  tree.each do |node|
+  tree.each_with_index do |node, index|
     if node[:children]
       extract_docs_from_css(path, node[:children])
     end
@@ -30,6 +31,9 @@ def extract_docs_from_css(path, tree)
 
       doc['example'] = doc_attrs.delete('example') if doc_attrs['example']
       doc['attrs'] = doc_attrs
+
+      # keeps declarations in order of where they are defined in docs file
+      doc['attrs']['order'] = order += 1
 
       doc['title'] = doc.dig('attrs', 'title')
 

@@ -2,6 +2,7 @@
 title: Primary Nav
 status: early draft
 description: Navigation component w/ primary and secondary variants.
+order: 1
 ---
 <nav class="nav nav-primary">
   <ul>
