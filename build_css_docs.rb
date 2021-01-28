@@ -2,6 +2,7 @@ require "crass"
 require "pp"
 require "yaml"
 require "FileUtils"
+require "sassc"
 
 SOURCE_DIR = File.join(__dir__, 'css')
 SOURCE_FILES = Dir.glob(File.join("**", "*.scss"), base: SOURCE_DIR)
@@ -87,8 +88,11 @@ end
 reset_docs_dir
 
 SOURCE_FILES.each do |file|
+  next if file == 'main.scss' #ignore main import css file
+
   filepath = File.join(SOURCE_DIR, file)
-  css = File.read(filepath)
+  scss = File.read(filepath)
+  css = SassC::Engine.new(scss).render
   tree = ::Crass.parse(css, :preserve_comments => true)
 
   extract_docs_from_css(filepath, tree)
