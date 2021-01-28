@@ -4,17 +4,20 @@ layout: default
 permalink: /borders/
 ---
 
-<table class="token-table">
+<table class="token-table token-table-borders">
   {% for token in site.tokens %}
-    {% if token.title contains "--s-border" %}
+    {% if token.title contains "s-border" %}
     <tr class="token-table-row">
       <td class="token-title-description-cell">
-        <code>{{ token.title }}</code>
-        <p class="token-description">{{ token.description }}</p>
+        .{{ token.title }}
       </td>
-      <td class="token-value-cell">{{ token.value }}</td>
+      <td>
+        <code class="language-html" data-lang="html">
+          {{token | remove: '<p>' | remove: '</p>' | escape}}
+        </code>
+      </td>
       <td class="token-example-cell">
-        <!-- display border token example -->
+        {{ token }}
       </td>
     </tr>
     {% endif %}
