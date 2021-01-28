@@ -1,62 +1,52 @@
-:root {
+$sides: border, border-top, border-right, border-bottom, border-left;
+
+@each $side in $sides {
   /**
-   * @title --s-border-radius-0
-   * @value 0rem
-   * @description reset
-   */
-  --s-border-radius-0: 0rem;
+  * @title s-#{$side}
+  *
+  * @example
+  * <span class="s-#{$side}"></span>
+  */
+  .s-#{$side} {
+    #{$side}: var(--s-space-2) solid var(--s-color-cyan-500);
+  }
+}
+
+$widths:
+  "0" "0",
+  "1" "2",
+  "2" "4",
+  "3" "8",
+  "4" "12";
+
+@each $width, $value in $widths {
   /**
-   * @title --s-border-radius-2
-   * @value 0.125rem
-   * @description for cards
-   */
-  --s-border-radius-2: 0.125rem;
+  * @title s-border-width-#{$width}
+  *
+  * @example
+  * <span class="s-border s-border-width-#{$width}"></span>
+  */
+  .s-border-width-#{$width} {
+    border-width: var(--s-space-#{$value});
+  }
+}
+
+
+$radii:
+  "0" "var(--s-space-0)",
+  "1" "var(--s-space-4)",
+  "2" "var(--s-space-16)",
+  "circle" "50%",
+  "pill" "50rem";
+
+@each $radius, $value in $radii {
   /**
-   * @title --s-border-radius-4
-   * @value 0.25rem
-   * @description ''
-   */
-  --s-border-radius-4: 0.25rem;
-  /**
-   * @title --s-border-radius-16
-   * @value 1rem
-   * @description for buttons
-   */
-  --s-border-radius-16: 1rem;
-  /**
-   * @title --s-border-radius-circle
-   * @value 50%
-   * @description round
-   */
-  --s-border-radius-circle: 50%;
-  /**
-   * @title --s-border-width-0
-   * @value none
-   * @description description
-   */
-  --s-border-width-0: none;
-  /**
-   * @title --s-border-width-1
-   * @value 0.0625rem
-   * @description description
-   */
-  --s-border-width-1: 0.0625rem;
-  /**
-   * @title --s-border-width-2
-   * @value 0.125rem
-   * @description description
-   */
-  --s-border-width-2: 0.125rem;
-  /**
-   * @title --s-border-width-4
-   * @value 0.25rem
-   * @description description
-   */
-  --s-border-width-4: 0.25rem;
-  /**
-   * @title --s-border-width-8
-   * @value 0.5rem
-   * @description description
-   */
-  --s-border-width-8: 0.5rem;
+  * @title s-border-radius-#{$radius}
+  *
+  * @example
+  * <span class="s-border-radius-#{$radius}"></span>
+  */
+  .s-border-radius-#{$radius} {
+    border-radius: #{$value};
+  }
 }
