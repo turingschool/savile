@@ -88,7 +88,7 @@ end
 reset_docs_dir
 
 SOURCE_FILES.each do |file|
-  next if file == 'main.scss' #ignore main import css file
+  next if file == 'main.scss' || file == 'doc_site_styling.scss' #ignore main import css file
 
   filepath = File.join(SOURCE_DIR, file)
   scss = File.read(filepath)
