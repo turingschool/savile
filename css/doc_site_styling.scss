@@ -1,3 +1,10 @@
+---
+#File used for site styling only and should not be included in the exported design system
+---
+
+/* Add any scss classes you wish to extend */
+@import "tokens/borders";
+
 * {
     margin: 0;
     padding: 0;
@@ -159,6 +166,7 @@
   }
 
   code {
+    @extend .s-border-radius-2;
     background-color: var(--s-color-gray-200);
     padding: var(--s-space-4);
     border-radius: var(--s-border-radius-2);
