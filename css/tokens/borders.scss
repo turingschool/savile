@@ -3,6 +3,8 @@ $sides: border, border-top, border-right, border-bottom, border-left;
 @each $side in $sides {
   /**
   * @title s-#{$side}
+  * @token_type border
+  * @border_group sides
   *
   * @example
   * <span class="s-#{$side}"></span>
@@ -22,6 +24,8 @@ $widths:
 @each $width, $value in $widths {
   /**
   * @title s-border-width-#{$width}
+  * @token_type border
+  * @border_group width
   *
   * @example
   * <span class="s-border s-border-width-#{$width}"></span>
@@ -42,6 +46,8 @@ $radii:
 @each $radius, $value in $radii {
   /**
   * @title s-border-radius-#{$radius}
+  * @token_type border
+  * @border_group radius
   *
   * @example
   * <span class="s-border-radius-#{$radius}"></span>

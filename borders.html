@@ -4,22 +4,29 @@ layout: default
 permalink: /borders/
 ---
 
-<table class="token-table token-table-borders">
-  {% for token in site.tokens %}
-    {% if token.title contains "s-border" %}
-    <tr class="token-table-row">
-      <td class="token-title-description-cell">
-        .{{ token.title }}
-      </td>
-      <td>
-        <code class="language-html" data-lang="html">
-          {{token | remove: '<p>' | remove: '</p>' | escape}}
-        </code>
-      </td>
-      <td class="token-example-cell">
-        {{ token }}
-      </td>
-    </tr>
-    {% endif %}
-  {% endfor %}
-</table>
+{% assign border_tokens = site.tokens | where: "token_type", "border" %}
+{% assign border_groups = "sides, width, radius" | split: ", " %}
+
+{% for border_group in border_groups %}
+  <h2>{{ border_group | capitalize}}</h2>
+  {% assign tokens = border_tokens | where: "border_group", border_group %}
+  <table class="token-table token-table-borders">
+    {% for token in tokens %}
+      {% if token.title contains "s-border" %}
+      <tr class="token-table-row">
+        <td class="token-title-description-cell">
+          .{{ token.title }}
+        </td>
+        <td>
+          <code class="language-html" data-lang="html">
+            {{token | remove: '<p>' | remove: '</p>' | escape}}
+          </code>
+        </td>
+        <td class="token-example-cell">
+          {{ token }}
+        </td>
+      </tr>
+      {% endif %}
+    {% endfor %}
+  </table>
+{% endfor %}
