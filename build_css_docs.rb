@@ -4,7 +4,7 @@ require "yaml"
 require "FileUtils"
 require "sassc"
 
-SOURCE_DIR = File.join(__dir__, 'css')
+SOURCE_DIR = File.join(__dir__, 'css/design_system')
 SOURCE_FILES = Dir.glob(File.join("**", "*.scss"), base: SOURCE_DIR)
 DESTINATION_DIR = File.join(__dir__, 'docs')
 
@@ -88,8 +88,6 @@ end
 reset_docs_dir
 
 SOURCE_FILES.each do |file|
-  next if file == 'main.scss' || file == 'doc_site_styling.scss' #ignore main import css file
-
   filepath = File.join(SOURCE_DIR, file)
   scss = File.read(filepath)
   css = SassC::Engine.new(scss).render
