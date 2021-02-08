@@ -5,30 +5,53 @@
 /* Add any scss classes you wish to extend */
 @import "design_system/tokens/borders";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+body {
+  background-color: var(--s-color-white);
+  font-family: Helvetica Neue Normal;
+  color: var(--s-color-gray-700);
+  overflow: hidden;
+}
 
-  body {
-    background-color: var(--s-color-white);
-    font-family: Helvetica Neue Normal;
-    color: var(--s-color-gray-700);
-  }
+/* ----------------------------------------- */
+/* ----- Grid Layout ----- */
+/* ----------------------------------------- */
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar footer";
+}
+
+.header-container {
+  grid-area: header;
+}
+
+.main-nav {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: content;
+}
+
+.footer-container {
+  grid-area: footer;
+}
 
   /* ----------------------------------------- */
   /* ----- Header ----- */
   /* ----------------------------------------- */
   .header-container {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
-    height: 10vh;
-    color: var(--s-color-gray-800);
-    background-color: var(--s-color-gray-50);
+    background-color: var(--s-color-white);
     box-shadow: 0 0 3px var(--s-color-gray-300);
+    color: var(--s-color-gray-800);
+    display: flex;
+    justify-content: space-between;
   }
 
   .logo-title-wrapper {
@@ -85,27 +108,20 @@
   /* ----------------------------------------- */
   /* ----- Navigation ----- */
   /* ----------------------------------------- */
-  .nav-content-container {
-    display: flex;
-    padding-top: 10vh;
-  }
-
   .main-nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: var(--s-space-32) 0;
-    width: 20%;
     min-width: 300px;
     font-family: "Helvetica Neue Bold";
     background-color: var(--s-color-gray-100);
-    height: 90vh;
-    overflow-y: auto;
     text-transform: uppercase;
+    overflow-y: scroll;
   }
 
   .main-nav ul {
     list-style: none;
+    padding: 0;
     width: 100%;
   }
 
@@ -132,15 +148,10 @@
   /* ----------------------------------------- */
   /* ----- Main Page ----- */
   /* ----------------------------------------- */
-  .main-footer-container {
-    width: 100%;
-    height: 90vh;
-    overflow-y: auto;
-  }
-
-  .main-container {
+  .main {
+    overflow-y: scroll;
     padding: var(--s-space-64);
-    min-height: 50vh;
+    padding-top: 0;
   }
 
   .main-page-title {
@@ -166,10 +177,9 @@
   }
 
   code {
-    @extend .s-border-radius-2;
+    @extend .s-border-radius-1;
     background-color: var(--s-color-gray-200);
     padding: var(--s-space-4);
-    border-radius: var(--s-border-radius-2);
   }
 
   .token-title-description-cell {
@@ -201,34 +211,28 @@
   /* ----------------------------------------- */
   /* ----- Footer ----- */
   /* ----------------------------------------- */
-  .footer-contact-wrapper {
-    min-height: 30vh;
-    display: flex;
-    background-color: var(--s-color-gray-200);
-  }
-
   .footer-copyright-wrapper {
-    min-height: 10vh;
     display: flex;
     background-color: var(--s-color-gray-800);
   }
 
   .footer-copyright-wrapper p {
     margin: auto;
+    padding: 1rem 0;
     color: var(--s-color-gray-600);
   }
 
-  /* ----------------------------------------- */
-  /* ----- Borders ----- */
-  /* ----------------------------------------- */
-  .token-table-borders [class*="s-border"] {
-    display: block;
-    width: 5rem;
-    height: 5rem;
-    background-color: var(--s-color-gray-300);
-    margin: var(--s-space-16) auto;
-  }
+/* ----------------------------------------- */
+/* ----- Borders ----- */
+/* ----------------------------------------- */
+.token-table-borders [class*="s-border"] {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--s-color-gray-300);
+  margin: var(--s-space-16) auto;
+}
 
-  .token-table-borders .s-border-radius-pill {
-    width: 10rem;
-  }
+.token-table-borders .s-border-radius-pill {
+  width: 10rem;
+}
