@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="{{ '/css/doc_site_styling.css' }}">
   </head>
   <body>
-    {% include header.html %}
-    <section class="nav-content-container">
+    <div class="container">
+      {% include header.html %}
       {% include nav.html %}
-      <section class="main-footer-container">
-        <main class="main-container">
-          <h2 class="main-page-title">{{ page.title }}</h2>
-          <section class="main-content-container">
-            {{ content }}
-          </section>
-        </main>
-        {% include footer.html %}
-      </section>
-    </section>
+      <div class="main">
+        <h2 class="main-page-title">{{ page.title }}</h2>
+        <section class="main-content-container">
+          {{ content }}
+        </section>
+      </div>
+      {% include footer.html %}
+    </div>
   </body>
 </html>
