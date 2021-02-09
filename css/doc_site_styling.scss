@@ -141,8 +141,9 @@ body {
   background-color: var(--s-color-cyan-400);
 }
 
-.active {
-  background-color: var(--s-color-cyan-500);
+.main-nav ul li a.active {
+  background-color: var(--s-color-cyan-700);
+  color: var(--s-color-white);
 }
 
 /* ----------------------------------------- */
