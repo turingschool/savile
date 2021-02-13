@@ -1,0 +1,16 @@
+/**
+ * @title Defaults
+ * @status draft
+ * @description Default XYZ
+ *  The paragraph nested inside the body tag will be given the default gray
+ *
+ * @example
+ * <body class="s-default">
+ *   <p>lorem ipsum</p> 
+ * </body>
+ */
+.s-default {
+  p {
+    color: var(--s-color-gray-600);
+  }
+}
