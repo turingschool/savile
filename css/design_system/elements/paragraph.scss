@@ -1,0 +1,13 @@
+/**
+ * @title Default Paragraph
+ * @status draft
+ * @description Our default paragraph color
+ *
+ * @example
+ * <p class="s-paragraph">
+ *   Lorem Ipsum
+ * </p>
+ */
+.s-paragraph {
+  color: var(--s-color-gray-600);
+}
