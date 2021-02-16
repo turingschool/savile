@@ -2,8 +2,8 @@
 title: Defaults
 status: draft
 description: |-
-  Default XYZ
-   The paragraph nested inside the body tag will be given the default gray
+  Apply default styles to all child & descendant elements
+   - Nested paragraphs will be given the default gray
 order: 1
 ---
 <body class="s-default">

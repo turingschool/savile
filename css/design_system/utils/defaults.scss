@@ -1,16 +1,19 @@
 /**
  * @title Defaults
  * @status draft
- * @description Default XYZ
- *  The paragraph nested inside the body tag will be given the default gray
+ * @description Apply default styles to all child & descendant elements
+ *  - Nested paragraphs will be given the default gray
  *
  * @example
  * <body class="s-default">
  *   <p>lorem ipsum</p> 
  * </body>
  */
+//  @import "../elements/paragraph";
+
 .s-default {
   p {
+    // @extend .s-paragraph;
     color: var(--s-color-gray-600);
   }
 }
