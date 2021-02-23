@@ -1,0 +1,26 @@
+/**
+ * @title Primary Button
+ * @status draft
+ * @description Our primary button
+ *  Some more description
+ *
+ * @example
+ * <button class="s-button">
+ *   Primary Button
+ * </button>
+ */
+.s-button {
+  padding: 1.125rem 2.5rem 0.75rem 2.5rem;
+  font-size: .875rem;
+  font-family: "Helvetica Neue Bold";
+  display: inline-block;
+  color: var(--s-color-cyan-700);
+  background-color: var(--s-color-cyan-400);
+  font-weight: 700;
+  letter-spacing: .5px;
+  border: none;
+  border-radius: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
