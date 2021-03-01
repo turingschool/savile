@@ -1,0 +1,31 @@
+/**
+ * @title Secondary Button
+ * @status draft
+* @value s-button-secondary
+ * @description Our secondary call-to-action button for specific actions - apply, register for Try Coding, subscribe to newsletter, etc.
+ *
+ * @example
+ * <button class="s-button s-button-secondary">Secondary Button</button>
+ */
+.s-button-secondary {
+  // once we can import other classes, remove:
+
+  //until then - 
+  padding: 1.125rem 2.5rem 0.75rem 2.5rem;
+  font-size: .875rem;
+  font-family: "Helvetica Neue Bold";
+  display: inline-block;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: .5px;
+  border: none;
+  border-radius: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  // - 
+
+  color: var(--s-color-gray-700);
+  background-color: var(--s-color-gray-100);
+  border: 2px solid var(--s-color-gray-700);
+}
