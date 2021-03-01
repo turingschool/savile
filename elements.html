@@ -1,15 +1,77 @@
 ---
-title: Elements
+title: Buttons & Links
 layout: default
 permalink: /elements/
 ---
 
-<table>
-{% for element in site.elements %}
-    <tr>
-      <td>{{ element }}</td>
-      <td><code>{{ element.title }}</code></td>
-      <td>{{ element.description }}</td>
+<p>Many of our sites have links that appear to be buttons. This is acceptable from a design standpoint, but it is important that the HTML correctly communicates the intent of the element to the browser. Start by understanding the important difference between a button and a link:</p>
+<ul>
+  <li><strong>Buttons</strong> should lead to actions such as "download", "sign up" or "log out"</li>
+  <li><strong>Links</strong> should allow a user to navigate to a new page or a different taget on the same page</li>
+</ul>
+<p>Why this matters: For users of screen-readers and power users, a space key and entrey triggers a button, where pressing the enter key is the only way to triggers a link.</p>
+<br>
+
+<h3>Button Examples</h3>
+<p>In the following examples, the elements <em>do</em> lead to action, so need to be interpreted by the browser as buttons. There are several of ways to achieve this depending on the use case and needs; three examples are noted below. In order to focus on the elements and attributes, Savile styling classes have not been added to these examples.</p>
+
+<p>Use a button element:
+</p>
+<xmp>
+  <button>Log In</button>
+</xmp>
+<p>Use an input element with a type attribute:
+</p>
+<xmp>
+  <input type="button" value="Submit">
+</xmp>
+<p>Use any non-button element with a <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role" target="blank">role
+  attribute</a> (acknowleging that inline and block elements may behave differently):
+</p>
+<xmp>
+  <div role="button">Subscribe</div>
+</xmp>
+<xmp>
+  <span role="button">Download Report</span>
+</xmp>
+<br>
+
+<h3>Link Examples</h3>
+<p>In the following examples, the button-look-alike is actually an anchor tag. This is the correct tag to use because the purpose of the element is to allow the user to navigate to a new page.</p>
+<xmp>
+  <a href="https://apply.turing.io" class="[add class(es) to make this appear as a button]">
+    <span>Apply Now</span>
+  </a>
+</xmp>
+<xmp>
+  <a href="/programs" class="[add class(es) to make this appear as a button]">More Info</a>
+</xmp>
+<br>
+
+<h3>Savile Buttons & Links</h3>
+<p>Although many elements that appear as buttons, but are not technically buttons, will live in our software suite, Savile still refers to the element as "button" and uses such in the class names.</p>
+<table class="spaced-table">
+  <thead>
+    <tr class="table-head-row">
+      <td>Class Name</td>
+      <td>HTML</td>
+      <td>Example</td>
     </tr>
-{% endfor %}
+  </thead>
+  <tbody>
+    {% for element in site.elements %}
+    <tr class="token-table-row">
+      <td class="element-code-cell">
+        <code>{{ element.value }}</code>
+      </td>
+      <td>
+        <code class="language-html" data-lang="html">
+          {{element | remove: '<p>' | remove: '</p>' | escape}}
+        </code>
+      </td>
+      </td>
+      <td class="element-sample-cell">{{ element }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>
