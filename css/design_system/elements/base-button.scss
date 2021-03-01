@@ -1,0 +1,30 @@
+/**
+ * @title Base Button
+ * @status draft
+ * @value s-button
+ * @description Our base button styles. Any other button class can be used in addition to this, to get the desired variant.
+ *
+ * @example
+ * <button class="s-button">Base Button</button>
+ */
+.s-button {
+  // TODO - replace sizes with @extends or use size/space vars
+  padding: 1.125rem 2.5rem 0.75rem 2.5rem;
+  font-size: .875rem;
+  // TODO - replace fonts once in AWS
+  font-family: "Helvetica Neue Bold";
+  font-weight: 700;
+  display: inline-block;
+  line-height: 17px;
+  letter-spacing: .5px;
+  // TODO - replace with @extends s-border-radius-pill
+  border: none;
+  border-radius: 36px;
+  
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: var(--s-color-gray-100);
+  background-color: var(--s-color-gray-700);
+}
