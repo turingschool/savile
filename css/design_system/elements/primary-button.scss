@@ -1,28 +1,30 @@
 /**
  * @title Primary Button
  * @status draft
- * @description Our primary button
- *  Some more description
+* @value s-button-primary
+ * @description Our primary call-to-action button for specific actions - apply, register for Try Coding, subscribe to newsletter, etc.
  *
  * @example
- * <button class="s-button">
- *   Primary Button
- * </button>
+ * <button class="s-button s-button-primary">Primary Button</button>
  */
-.s-button {
+.s-button-primary {
+  // once we can import other classes
+
+  //until then - 
   padding: 1.125rem 2.5rem 0.75rem 2.5rem;
   font-size: .875rem;
   font-family: "Helvetica Neue Bold";
   display: inline-block;
-  color: var(--s-color-cyan-700);
-  background-color: var(--s-color-cyan-400);
   font-weight: 700;
   line-height: 17px;
   letter-spacing: .5px;
   border: none;
   border-radius: 36px;
-  text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
+  // - 
+
+  color: var(--s-color-cyan-700);
+  background-color: var(--s-color-cyan-400);
 }
