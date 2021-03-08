@@ -1,88 +1,100 @@
 :root {
-  --font-weight-heavy: 900;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
-  --font-weight-light: 300;
-  --font-weight-ultra-light: 200;
+  --s-font-weight-heavy: 900;
+  --s-font-weight-bold: 700;
+  --s-font-weight-normal: 400;
+  --s-font-weight-light: 300;
+  --s-font-weight-ultra-light: 200;
 
   /**
-   * @title --font-family-default
-   * @value Helvetica Neue Normal
+   * @title --s-font-family-default
+   * @value Helvetica Neue
    * Default Font Family
    */
-  --font-family-default: "Helvetica Neue Normal", sans-serif;
+  --s-font-family-default: "Helvetica Neue", Helvetica, sans-serif;
 
   /**
-   * @title --font-family-alternate
+   * @title --s-font-family-alternate
    * @value Roboto Slab
    * Alternate Font Family
    */
-  --font-family-alternate: "Roboto Slab", sans-serif;
+  --s-font-family-alternate: "Roboto Slab", sans-serif;
 
   /**
-   * @title --font-family-mono
+   * @title --s-font-family-mono
    * @value Roboto Mono
    * Monospace Font Family
    */
-  --font-family-mono: "Roboto Mono", monospace;
+  --s-font-family-mono: "Roboto Mono", monospace;
 }
 
-@font-face {
-  font-family: "Helvetica Neue Heavy";
-  font-weight: var(--font-weight-heavy);
-  src: url("/assets/fonts/HelveticaNeueLTStd-Hv.otf");
-}
+/* NOTE: we use the literal font-weight values in all @font-face declarations b/c using var() breaks the dynamic font loading */
 
 @font-face {
-  font-family: "Helvetica Neue Bold";
-  font-weight: var(--font-weight-bold);
-  src: url("/assets/fonts/HelveticaNeueLTStd-Bd.otf");
-}
-
-@font-face {
-  font-family: "Helvetica Neue Normal";
-  font-weight: var(--font-weight-normal);
-  src: url("/assets/fonts/HelveticaNeueLTStd-Lt.otf");
-}
-
-@font-face {
-  font-family: "Helvetica Neue Light";
-  font-weight: var(--font-weight-light);
-  src: url("/assets/fonts/HelveticaNeueLTStd-Th.otf");
-}
-
-@font-face {
-  font-family: "Helvetica Neue Ultra Light";
-  font-weight: var(--font-weight-ultra-light);
+  font-family: "Helvetica Neue";
   src: url("/assets/fonts/HelveticaNeueLtStd-UltLt.otf");
+  font-style: normal;
+  font-weight: 200;
 }
 
 @font-face {
-  font-family: "Roboto Slab Normal";
-  font-weight: var(--font-weight-normal);
-  src: url("/assets/fonts/RobotoSlab-Regular.ttf");
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeueLTStd-Th.otf");
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Roboto Slab Light";
-  font-weight: var(--font-weight-light);
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeueLTStd-Lt.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeueLTStd-Bd.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeueLTStd-Hv.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
   src: url("/assets/fonts/RobotoSlab-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Roboto Mono Light";
-  font-weight: var(--font-weight-light);
+  font-family: "Roboto Slab";
+  src: url("/assets/fonts/RobotoSlab-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
   src: url("/assets/fonts/RobotoMono-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Roboto Mono Normal";
-  font-weight: var(--font-weight-normal);
+  font-family: "Roboto Mono";
   src: url("/assets/fonts/RobotoMono-Normal.ttf");
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Roboto Mono Bold";
-  font-weight: var(--font-weight-bold);
+  font-family: "Roboto Mono";
   src: url("/assets/fonts/RobotoMono-Medium.ttf");
+  font-style: normal;
+  font-weight: 700;
 }
