@@ -11,9 +11,7 @@
   // TODO - replace sizes with @extends or use size/space vars
   padding: 1.125rem 2.5rem 0.75rem 2.5rem;
   font-size: .875rem;
-  // TODO - replace fonts once in AWS
-  font-family: "Helvetica Neue Bold";
-  font-weight: 700;
+  font-weight: var(--s-font-weight-bold);
   display: inline-block;
   line-height: 17px;
   letter-spacing: .5px;
