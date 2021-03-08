@@ -3,12 +3,4 @@
 ---
 @import "normalize";
 
-@import "design_system/tokens/colors";
-@import "design_system/tokens/fonts";
-@import "design_system/tokens/spacing";
-@import "design_system/tokens/borders";
-@import "design_system/tokens/shadows";
-
-@import "design_system/elements/button";
-
-@import "design_system/components/nav";
+@import "design_system/index";
