@@ -40,6 +40,12 @@ collections_dir: docs
 collections:
   tokens:
     sort_by: order
+  colors:
+    sort_by: title
+  typography:
+    sort_by: order
+  utils:
+    sort_by: order
   elements:
     sort_by: order
   components:

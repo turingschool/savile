@@ -1,0 +1,28 @@
+---
+title: Tokens
+layout: default
+permalink: /tokens/
+---
+
+{% assign grouped_tokens = site.tokens | group_by: "token_type" %}
+
+{% for token_group in grouped_tokens %}
+  <h2>{{ token_group.name | capitalize }}</h2>
+
+  <table class="token-table">
+    {% for token in token_group.items %}
+
+      <tr class="token-table-row">
+        <td class="token-title-description-cell">
+          <code>{{ token.title }}</code>
+          <p class="token-description">{{ token.description }}</p>
+        </td>
+        <td class="token-value-cell">{{ token.value }}</td>
+        <td class="token-example-cell">
+          <!-- display spacing token example -->
+        </td>
+      </tr>
+
+    {% endfor %}
+  </table>
+{% endfor %}
