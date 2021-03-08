@@ -13,9 +13,8 @@
   //until then - 
   padding: 1.125rem 2.5rem 0.75rem 2.5rem;
   font-size: .875rem;
-  font-family: "Helvetica Neue Bold";
   display: inline-block;
-  font-weight: 700;
+  font-weight: var(--s-font-weight-bold);
   line-height: 17px;
   letter-spacing: .5px;
   border: none;
