@@ -4,17 +4,17 @@ require "yaml"
 require "FileUtils"
 require "sassc"
 
-SOURCE_DIR = File.join(__dir__, 'css/design_system')
-SOURCE_FILES = Dir.glob(File.join("**", "*.scss"), base: SOURCE_DIR)
+LOAD_DIR = File.join(__dir__, 'css/design_system')
+LOAD_FILE = File.join(LOAD_DIR, 'index.scss')
 DESTINATION_DIR = File.join(__dir__, 'docs')
 
-def extract_docs_from_css(path, tree)
+def extract_docs_from_css(tree)
   prev_comment = nil
   order = 0
 
   tree.each do |node|
     if node[:children]
-      extract_docs_from_css(path, node[:children])
+      extract_docs_from_css(node[:children])
     end
 
     # only parse comment starting with /** (NOT /*)
@@ -25,7 +25,6 @@ def extract_docs_from_css(path, tree)
     if (node[:node] == :style_rule || node[:node] == :property) && prev_comment
       doc = {}
 
-      doc['source_file'] = path
       doc['content'] = prev_comment
 
       doc_attrs = parse_attributes(doc['content'])
@@ -37,13 +36,14 @@ def extract_docs_from_css(path, tree)
       doc['attrs']['order'] = order += 1
 
       doc['title'] = doc.dig('attrs', 'title')
+      doc['category'] = (doc.dig('attrs', 'category') || 'misc').downcase
 
       unless doc['title']
         doc['title'] = node.dig(:selector, :value) if node[:node] == :style_rule
         doc['title'] = node[:name] if node[:node] == :property
       end
 
-      write_to_collection(doc, path)
+      write_to_collection(doc)
 
       prev_comment = nil
     end
@@ -60,9 +60,8 @@ def parse_attributes(docstring)
   Hash[names_and_values.each_slice(2).to_a]
 end
 
-def write_to_collection(doc, filepath)
-  file_folder = File.basename(File.dirname(filepath))
-  docs_folder = File.join(DESTINATION_DIR, '_' + file_folder)
+def write_to_collection(doc)
+  docs_folder = File.join(DESTINATION_DIR, '_' + doc['category'])
   Dir.mkdir docs_folder unless Dir.exist? docs_folder
   filename = doc['title'] + '.md'
 
@@ -87,11 +86,8 @@ end
 
 reset_docs_dir
 
-SOURCE_FILES.each do |file|
-  filepath = File.join(SOURCE_DIR, file)
-  scss = File.read(filepath)
-  css = SassC::Engine.new(scss).render
-  tree = ::Crass.parse(css, :preserve_comments => true)
+scss = File.read(LOAD_FILE)
+css = SassC::Engine.new(scss, load_paths: [LOAD_DIR]).render
+tree = ::Crass.parse(css, :preserve_comments => true)
 
-  extract_docs_from_css(filepath, tree)
-end
+extract_docs_from_css(tree)
