@@ -1,5 +1,6 @@
 ---
 title: s-border-radius-pill
+category: tokens
 token_type: border
 border_group: radius
 order: 15
