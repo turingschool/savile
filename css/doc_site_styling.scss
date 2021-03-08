@@ -3,7 +3,7 @@
 ---
 
 /* Add any scss classes you wish to extend */
-@import "design_system/tokens/borders";
+@import "design_system/utils/borders";
 
 body {
   background-color: var(--s-color-white);

@@ -5,18 +5,16 @@ permalink: /colors/
 ---
 
 <table class="token-table">
-{% for token in site.tokens %}
-  {% if token.title contains "--s-color" %}
+  {% for color in site.colors %}
     <tr class="token-table-row">
       <td class="token-title-description-cell">
-        <code>{{ token.title }}</code>
-        <p class="token-description">{{ token.description }}</p>
+        <code>{{ color.title }}</code>
+        <p class="token-description">{{ color.description }}</p>
       </td>
-      <td class="token-value-cell">{{ token.value }}</td>
+      <td class="token-value-cell">{{ color.value }}</td>
       <td class="token-example-cell">
-        <div style="background-color: {{token.value}};"></div>
+        <div style="background-color: {{color.value}};"></div>
       </td>
     </tr>
-  {% endif %}
-{% endfor %}
+  {% endfor %}
 </table>

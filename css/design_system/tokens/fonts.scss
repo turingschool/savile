@@ -1,13 +1,50 @@
+$font-weights: (
+  "ultra-light": 200,
+  "light": 300,
+  "normal": 400,
+  "bold": 700,
+  "heavy": 900
+);
+
+$font-sizes: (
+  "xxs": 0.625rem,
+  "xs": 0.75rem,
+  "sm": 0.875rem,
+  "md": 1rem,
+  "lg": 1.5rem,
+  "xl": 2rem,
+  "xxl": 3rem,
+)
+
 :root {
-  --s-font-weight-heavy: 900;
-  --s-font-weight-bold: 700;
-  --s-font-weight-normal: 400;
-  --s-font-weight-light: 300;
-  --s-font-weight-ultra-light: 200;
+  @each $name, $size in $font-sizes {
+    /**
+     * @title --s-font-size-#{$name}
+     * @category tokens
+     * @token_type font-size
+     * @value #{$size}
+     * @description
+     *   #{$name} Font size
+     */
+    --s-font-size-#{$name}: #{$size};
+  }
+
+  @each $name, $weight in $font-weights {
+    /**
+     * @title --s-font-weight-#{$name}
+     * @category tokens
+     * @token_type font-weight
+     * @value #{$weight}
+     * @description
+     *   #{$name} Font weight
+     */
+    --s-font-weight-#{$name}: #{$weight};
+  }
 
   /**
    * @title --s-font-family-default
    * @category tokens
+   * @token_type font-family
    * @value Helvetica Neue
    * Default Font Family
    */
@@ -16,6 +53,7 @@
   /**
    * @title --s-font-family-alternate
    * @category tokens
+   * @token_type font-family
    * @value Roboto Slab
    * Alternate Font Family
    */
@@ -24,6 +62,7 @@
   /**
    * @title --s-font-family-mono
    * @category tokens
+   * @token_type font-family
    * @value Roboto Mono
    * Monospace Font Family
    */

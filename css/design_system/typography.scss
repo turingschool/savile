@@ -1,0 +1,108 @@
+/**
+ * @title Heading 1
+ * @category typography
+ * @value .s-h1
+ * @order 1
+ */
+.s-h1	{
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-xxl);
+  font-weight: var(--s-font-weight-bold);
+}
+
+/**
+ * @title Heading 2
+ * @category typography
+ * @value .s-h2
+ * @order 2
+ */
+.s-h2	{
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-xl);
+  font-weight: var(--s-font-weight-bold);
+}
+
+/**
+ * @title Heading 3
+ * @category typography
+ * @value .s-h3
+ * @order 3
+ */
+.s-h3	{
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-lg);
+  font-weight: var(--s-font-weight-heavy);
+}
+
+/**
+ * @title Heading 4
+ * @category typography
+ * @value .s-h4
+ * @order 4
+ */
+.s-h4	{
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-md);
+  font-weight: var(--s-font-weight-heavy);
+}
+
+
+/**
+ * @title Heading 5
+ * @category typography
+ * @value .s-h5
+ * @order 5
+ */
+.s-h5	{
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-md);
+  font-weight: var(--s-font-weight-bold);
+}
+
+/**
+ * @title Heading 6
+ * @category typography
+ * @value .s-h6
+ * @order 6
+ */
+.s-h6	{
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-sm);
+  font-weight: var(--s-font-weight-heavy);
+}
+
+/**
+ * @title Body Text
+ * @category typography
+ * @value .s-text-body
+ * @order 7
+ */
+.s-text-body {
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-md);
+  font-weight: var(--s-font-weight-normal);
+}
+
+/**
+ * @title Small Body Text
+ * @category typography
+ * @value .s-text-body-sm
+ * @order 8
+ */
+.s-text-body-sm {
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-sm);
+  font-weight: var(--s-font-weight-normal);
+}
+
+/**
+ * @title Extra Small Body Text
+ * @category typography
+ * @value .s-text-body-xs
+ * @order 9
+ */
+.s-text-body-xs {
+  font-family: var(--s-font-family-default);
+  font-size: var(--s-font-size-xs);
+  font-weight: var(--s-font-weight-normal);
+}
