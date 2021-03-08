@@ -29,40 +29,7 @@
 
 /* NOTE: we use the literal font-weight values in all @font-face declarations b/c using var() breaks the dynamic font loading */
 
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/assets/fonts/HelveticaNeueLtStd-UltLt.otf");
-  font-style: normal;
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/assets/fonts/HelveticaNeueLTStd-Th.otf");
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/assets/fonts/HelveticaNeueLTStd-Lt.otf");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/assets/fonts/HelveticaNeueLTStd-Bd.otf");
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/assets/fonts/HelveticaNeueLTStd-Hv.otf");
-  font-style: normal;
-  font-weight: 900;
-}
+@import "font_helvetica_neue.scss";
 
 @font-face {
   font-family: "Roboto Slab";
