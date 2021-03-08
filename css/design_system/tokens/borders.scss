@@ -3,6 +3,7 @@ $sides: border, border-top, border-right, border-bottom, border-left;
 @each $side in $sides {
   /**
   * @title s-#{$side}
+  * @category tokens
   * @token_type border
   * @border_group sides
   *
@@ -24,6 +25,7 @@ $widths:
 @each $width, $value in $widths {
   /**
   * @title s-border-width-#{$width}
+  * @category tokens
   * @token_type border
   * @border_group width
   *
@@ -46,6 +48,7 @@ $radii:
 @each $radius, $value in $radii {
   /**
   * @title s-border-radius-#{$radius}
+  * @category tokens
   * @token_type border
   * @border_group radius
   *
