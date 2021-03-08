@@ -1,5 +1,5 @@
 ---
-title: "--font-family-alternate"
+title: "--s-font-family-alternate"
 value: |-
   Roboto Slab
   Alternate Font Family

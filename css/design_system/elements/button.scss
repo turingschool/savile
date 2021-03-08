@@ -1,0 +1,22 @@
+/**
+ * @title Button
+ * @status draft
+ * @description Our basic button
+ *  Some more description
+ *
+ * @example
+ * <button class="button">
+ *   Click me
+ * </button>
+ */
+.button {
+  font-weight: var(--s-font-weight-heavy);
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: .5px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding: 18px 40px 12px;
+  display: inline-block;
+}

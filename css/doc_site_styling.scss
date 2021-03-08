@@ -7,7 +7,8 @@
 
 body {
   background-color: var(--s-color-white);
-  font-family: Helvetica Neue Normal;
+  font-family:  var(--s-font-family-default);
+  font-weight: var(--s-font-weight-normal);
   color: var(--s-color-gray-700);
   overflow: hidden;
 }
@@ -114,7 +115,8 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   min-width: 300px;
-  font-family: "Helvetica Neue Bold";
+  font-family: var(--s-font-family-default);
+  font-weight: var(--s-font-weight-bold);
   background-color: var(--s-color-gray-100);
   text-transform: uppercase;
   overflow-y: scroll;
