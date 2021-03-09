@@ -1,0 +1,82 @@
+/**
+ * @title Base Button
+ * @category elements
+ * @element_type button
+ * @status draft
+ * @value s-button
+ * @description Our base button styles. Any other button class can be used in addition to this, to get the desired variant.
+ *
+ * @example
+ * <button class="s-button">Base Button</button>
+ */
+
+.s-button {
+  @extend .s-border-radius-pill;
+  border: none;
+
+  // TODO - replace sizes with @extends or use size/space vars
+  padding: 1.125rem 2.5rem 0.75rem 2.5rem;
+  font-size: .875rem;
+  font-weight: var(--s-font-weight-bold);
+  display: inline-block;
+  line-height: 17px;
+  letter-spacing: .5px; 
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: var(--s-color-gray-100);
+  background-color: var(--s-color-gray-700);
+}
+
+/**
+ * @title Primary Button
+ * @category elements
+ * @element_type button
+ * @status draft
+* @value s-button-primary
+ * @description Our primary call-to-action button for specific actions - apply, register for Try Coding, subscribe to newsletter, etc.
+ *
+ * @example
+ * <button class="s-button s-button-primary">Primary Button</button>
+ */
+ 
+.s-button-primary {
+  color: var(--s-color-cyan-700);
+  background-color: var(--s-color-cyan-400);
+}
+
+/**
+ * @title Primary Inverse Button
+ * @category elements
+ * @element_type button
+ * @status draft
+ * @value s-button-primary-inverse
+ * @description Our primary call-to-action button, with inverse colors. These are usually used for buttons that lead user to more info.
+ *
+ * @example
+ * <button class="s-button s-button-primary-inverse">Primary Inverse</button>
+ **/
+ 
+.s-button-primary-inverse {
+  color: var(--s-color-cyan-400);
+  background-color: var(--s-color-cyan-700);
+}
+
+/**
+ * @title Secondary Button
+ * @category elements
+ * @element_type button
+ * @status draft
+ * @value s-button-secondary
+ * @description Our secondary call-to-action button for specific actions - apply, register for Try Coding, subscribe to newsletter, etc.
+ *
+ * @example
+ * <button class="s-button s-button-secondary">Secondary Button</button>
+ */
+ 
+.s-button-secondary {
+  color: var(--s-color-gray-700);
+  background-color: var(--s-color-gray-100);
+  border: 2px solid var(--s-color-gray-700);
+}
