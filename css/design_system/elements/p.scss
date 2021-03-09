@@ -1,0 +1,69 @@
+/**
+ * @title Paragraph
+ * @category elements
+ * @element_type text
+ * @status draft
+ * @value s-p
+ * @description A paragraph element with built-in size, color, and font-family. To be used with a white background.
+ *
+ * @example
+ * <p class="s-p">The default paragraph text is 16px and is intended for text on a white background.</p>
+ */
+
+.s-p {
+  color: var(--s-color-gray-600);
+  font-size: var(--s-font-size-md);
+}
+
+/**
+ * @title Paragraph Light
+ * @category elements
+ * @element_type text
+ * @status draft
+ * @value s-p-light
+ * @light_text true
+ * @description A paragraph element with built-in size, color, and font-family. To be used with a white background.
+ *
+ * @example
+ * <p class="s-p-light">The default paragraph text is 16px and is intended for text on a dark background.</p>
+ */
+
+.s-p-light {
+  color: var(--s-color-gray-400);
+  font-size: var(--s-font-size-md);
+}
+
+/**
+ * @title Small Paragraph
+ * @category elements
+ * @element_type text
+ * @status draft
+ * @value s-p-sm
+ * @description A paragraph element with built-in size, color, and font-family. To be used with a white background.
+ *
+ * @example
+ * <p class="s-p-sm">The small paragraph text is 14px and is intended for text on a white background.</p>
+ */
+
+.s-p-sm {
+  color: var(--s-color-gray-600);
+  font-size: var(--s-font-size-sm);
+}
+
+/**
+ * @title Small Paragraph Light
+ * @category elements
+ * @element_type text
+ * @status draft
+ * @value s-p-sm-light
+ * @light_text true
+ * @description A paragraph element with built-in size, color, and font-family. To be used with a white background.
+ *
+ * @example
+ * <p class="s-p-sm-light">The small paragraph text is 14px and is intended for text on a dark background.</p>
+ */
+
+.s-p-sm-light {
+  color: var(--s-color-gray-400);
+  font-size: var(--s-font-size-sm);
+}
