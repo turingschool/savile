@@ -1,9 +1,12 @@
 ---
-title: Buttons & Links
+title: Elements
 layout: default
 permalink: /elements/
 ---
 
+
+
+<h3 class="s-h2">Buttons & Links</h3>
 <p>Many of our sites have links that appear to be buttons. This is acceptable from a design standpoint, but it is important that the HTML correctly communicates the intent of the element to the browser. Start by understanding the important difference between a button and a link:</p>
 <ul>
   <li><strong>Buttons</strong> should lead to actions such as "download", "sign up" or "log out"</li>
@@ -12,7 +15,7 @@ permalink: /elements/
 <p>Why this matters: For users of screen-readers and power users, a space key and enter key both trigger a button, where pressing the enter key is the only way to trigger a link.</p>
 <br>
 
-<h3>Button Examples</h3>
+<h4 class="s-h3">Button Examples</h4>
 <p>In the following examples, the elements <em>do</em> lead to action, so need to be interpreted by the browser as buttons. There are several of ways to achieve this depending on the use case and needs; three examples are noted below. In order to focus on the elements and attributes, Savile styling classes have not been added to these examples.</p>
 
 <p>Use a button element:
@@ -36,7 +39,7 @@ permalink: /elements/
 </xmp>
 <br>
 
-<h3>Link Examples</h3>
+<h4 class="s-h3">Link Examples</h4>
 <p>In the following examples, the button-look-alike is actually an anchor tag. This is the correct tag to use because the purpose of the element is to allow the user to navigate to a new page.</p>
 <xmp>
   <a href="https://apply.turing.io" class="[add class(es) to make this appear as a button]">
@@ -48,7 +51,7 @@ permalink: /elements/
 </xmp>
 <br>
 
-<h3>Savile Buttons & Links</h3>
+<h4 class="s-h3">Savile Buttons</h4>
 <p>Although many elements that appear as buttons, but are not technically buttons, will live in our software suite, Savile still refers to the element as "button" and uses such in the class names.</p>
 <table class="spaced-table">
   <thead>
@@ -59,19 +62,26 @@ permalink: /elements/
     </tr>
   </thead>
   <tbody>
-    {% for element in site.elements %}
+  {% assign buttons = site.elements | where: "element_type", "button" %}
+  {% for button in buttons %}
     <tr class="token-table-row">
       <td class="element-code-cell">
-        <code>{{ element.value }}</code>
+        <code>{{ button.value }}</code>
       </td>
       <td>
         <code class="language-html" data-lang="html">
-          {{element | remove: '<p>' | remove: '</p>' | escape}}
+          {{button | remove: '<p>' | remove: '</p>' | escape}}
         </code>
       </td>
       </td>
-      <td class="element-sample-cell">{{ element }}</td>
+      <td class="element-sample-cell">{{ button }}</td>
     </tr>
-    {% endfor %}
+  {% endfor %}
   </tbody>
 </table>
+
+<h4 class="s-h3">Savile Links</h4>
+
+
+<h3 class="s-h2">Next Element Header</h3>
+<p>Info here...</p>
