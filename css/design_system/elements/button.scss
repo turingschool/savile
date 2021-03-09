@@ -12,11 +12,11 @@
 
 .s-button {
   @extend .s-border-radius-pill;
-  border: none;
+  @extend .s-border-width-0;
 
-  // TODO - replace sizes with @extends or use size/space vars
+  // TODO - replace sizes with @extends or use size/space vars when available
   padding: 1.125rem 2.5rem 0.75rem 2.5rem;
-  font-size: .875rem;
+  font-size: var(--s-font-size-sm);
   font-weight: var(--s-font-weight-bold);
   display: inline-block;
   line-height: 17px;
