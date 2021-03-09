@@ -8,18 +8,18 @@
  * @example
  * <button class="s-button">Base Button</button>
  */
+ 
 .s-button {
+  @extend .s-border-radius-pill;
+  border: none;
+
   // TODO - replace sizes with @extends or use size/space vars
   padding: 1.125rem 2.5rem 0.75rem 2.5rem;
   font-size: .875rem;
   font-weight: var(--s-font-weight-bold);
   display: inline-block;
   line-height: 17px;
-  letter-spacing: .5px;
-  // TODO - replace with @extends s-border-radius-pill
-  border: none;
-  border-radius: 36px;
-  
+  letter-spacing: .5px; 
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
