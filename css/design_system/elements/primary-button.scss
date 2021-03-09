@@ -8,23 +8,8 @@
  * @example
  * <button class="s-button s-button-primary">Primary Button</button>
  */
+ 
 .s-button-primary {
-  // once we can import other classes
-
-  //until then - 
-  padding: 1.125rem 2.5rem 0.75rem 2.5rem;
-  font-size: .875rem;
-  display: inline-block;
-  font-weight: var(--s-font-weight-bold);
-  line-height: 17px;
-  letter-spacing: .5px;
-  border: none;
-  border-radius: 36px;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  // - 
-
   color: var(--s-color-cyan-700);
   background-color: var(--s-color-cyan-400);
 }
