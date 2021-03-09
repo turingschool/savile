@@ -82,6 +82,32 @@ permalink: /elements/
 
 <h4 class="s-h3">Savile Links</h4>
 
+<table class="spaced-table">
+  <thead>
+    <tr class="table-head-row">
+      <td>Class Name</td>
+      <td>HTML</td>
+      <td>Example</td>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign links = site.elements | where: "element_type", "link" %}
+    {% for link in links %}
+    <tr class="token-table-row">
+      <td class="element-code-cell">
+        <code>{{ link.value }}</code>
+      </td>
+      <td>
+        <code class="language-html" data-lang="html">
+            {{link | remove: '<p>' | remove: '</p>' | escape}}
+          </code>
+      </td>
+      </td>
+      <td class="element-sample-cell">{{ link }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+  </table>
 
 <h3 class="s-h2">Next Element Header</h3>
 <p>Info here...</p>
