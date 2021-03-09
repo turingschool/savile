@@ -107,7 +107,54 @@ permalink: /elements/
     </tr>
     {% endfor %}
   </tbody>
-  </table>
+</table>
 
-<h3 class="s-h2">Next Element Header</h3>
-<p>Info here...</p>
+<h3 class="s-h2">Paragraph Text</h3>
+<table class="spaced-table">
+  <thead>
+    <tr class="table-head-row">
+      <td>Class Name</td>
+      <td>HTML</td>
+      <td>Example</td>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign texts = site.elements | where: "element_type", "text" %}
+    {% assign light_texts = texts | where: "light_text", "true" %}
+    {% assign dark_texts = texts | where: "light_text", nil %}
+
+    {% for text in dark_texts %}
+    <tr class="token-table-row">
+      <td class="element-code-cell">
+        <code>{{ text.value }}</code>
+      </td>
+      <td>
+        <code class="language-html" data-lang="html">
+          {{text | remove: '<p>' | remove: '</p>' | escape}}
+        </code>
+      </td>
+      </td>
+      <td class="element-sample-cell">
+        {{ text }}
+      </td>
+    </tr>
+    {% endfor %}
+
+    {% for text in light_texts %}
+    <tr class="token-table-row">
+      <td class="element-code-cell">
+        <code>{{ text.value }}</code>
+      </td>
+      <td>
+        <code class="language-html" data-lang="html">
+          {{text | remove: '<p>' | remove: '</p>' | escape}}
+        </code>
+      </td>
+      </td>
+      <td class="element-sample-cell dark-cell">
+        {{ text }}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
