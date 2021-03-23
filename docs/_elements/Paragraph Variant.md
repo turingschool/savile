@@ -1,11 +1,11 @@
 ---
-title: Small Paragraph
+title: Paragraph Variant
 category: elements
 element_type: text
 status: draft
-value: s-p-sm
+value: n/a
 description: A paragraph element with built-in size, color, and font-family. To be
   used with a white background.
-order: 32
+order: 31
 ---
-<p class="s-p-sm">The small paragraph text is 14px and is intended for text on a white background.</p>
+<p class="s-p s-text-body-xs">This example shows how other utils can be used to achieve variants of the base paragraph.</p>
