@@ -39,7 +39,7 @@ collections_dir: docs
 
 collections:
   tokens:
-    sort_by: order
+    sort_by: title
   colors:
     sort_by: title
   typography:
