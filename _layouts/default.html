@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/css/doc_site_styling.css' }}">
+    <!-- changed paths below bc I'm deploying differently from real Savile -->
+    <link rel="stylesheet" href="{{site.url}}/css/main.css">
+    <link rel="stylesheet" href="{{site.url}}/css/doc_site_styling.css">
   </head>
   <body>
     <div class="container">
