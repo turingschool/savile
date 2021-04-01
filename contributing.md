@@ -32,7 +32,7 @@ We don't need to create a MINOR version for every change unless we want it to be
 
 ### Finding versions
 
-All cut releases are listed on the [release](https://github.com/turingschool/savile/releases) page within Github. As well as live under the `css/versions` directory.
+Full repo bundles of all cut releases are listed on the [releases](https://github.com/turingschool/savile/releases) page within Github. Compiled CSS for each version also lives in the `css/versions/` directory.
 
 ### Cutting a New Version
 
