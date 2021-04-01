@@ -25,7 +25,8 @@ What constitutes a MINOR version change -
 
 For this design project, this may include:
 
-New components, elements, css rules
+- Adding new components, elements, tokens, css rules
+- Fixing bugs in exiting CSS
 
 - We don't need to create a MINOR version for every change unless we want it to be publicly available to other applications. We can have multiple PRs included in 1 MINOR version update.
 
