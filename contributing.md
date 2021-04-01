@@ -51,7 +51,7 @@ Once this PR is merged, two things will happen:
 - Savile users can now choose to access this new version at `https://savile.turing.edu/css/versions/[version-file-name].css`.
 
 #### Cutting a new MAJOR version
-Similar to the instuctions above with the extra step of creating a new folder (before step 4) with the major version number under `css/versions` and rather than updating `[MAJOR_VERSION]-latest.css` you will need to create that file.
+Similar to the instructions above with the extra step of creating a new folder (before step 4) with the major version number under `css/versions` and rather than updating `[MAJOR_VERSION]-latest.css` you will need to create that file.
 
 #### Cutting a new MINOR version on an older MAJOR Version (Not Common)
 This may be done when fixing a bug or making an update to an older version of Savile.
