@@ -57,6 +57,8 @@ body {
   align-items: center;
   height: 60px;
   padding: 0 var(--s-space-16);
+  z-index: 2;
+  position: relative;
 }
 
 .logo {
