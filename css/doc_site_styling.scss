@@ -227,7 +227,8 @@ xmp {
   font-size: 1rem;
   border: 1px solid var(--s-color-gray-200);
   background-color: var(--s-color-gray-100);
-  td {
+  td, th {
+    text-align: left;
     padding: 1rem;
   }
 }
@@ -256,6 +257,11 @@ xmp {
       padding-top: 0.5rem;
     }
   }
+}
+
+.image-sample-cell {
+  padding: 0.25rem;
+  width: 108px;
 }
 
 /* ----------------------------------------- */
@@ -288,23 +294,8 @@ xmp {
 }
 
 /* ----------------------------------------- */
-/* ----- Components ----- */
+/* ----- Elements  ----- */
 /* ----------------------------------------- */
-
-.assets-table {
-  font-family: var(--s-font-family-mono);
-  text-align: left;
-
-  th.preview-column {
-    min-width: 108px;
-  }
-
-  td {
-    padding: 0.25rem;
-    vertical-align: top;
-  }
-}
-
 .preview-image {
   max-width: 92px;
   max-height: 92px;

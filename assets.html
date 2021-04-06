@@ -9,9 +9,9 @@ permalink: /assets/
 <p>To manage these assets, you will need an AWS account with permissions for the Savile Assets S3 bucket.</p>
 
 <h3 class="s-h3">Images</h3>
-<table class="assets-table">
+<table class="assets-table spaced-table">
   <thead>
-    <tr>
+    <tr class="table-head-row">
       <th class="preview-column"></th>
       <th>File</th>
       <th>Size</th>
@@ -21,14 +21,14 @@ permalink: /assets/
   <tbody>
     {% assign images = site.data.assets | where: "group", "images" %}
     {% for asset in images %}
-      <tr>
-        <td>
+      <tr class="token-table-row">
+        <td class="image-sample-cell">
           <img src="{{ asset.url }}" class="preview-image" />
         </td>
         <td>{{ asset.file }}</td>
         <td>{{ asset.size }}</td>
         <td>
-          <a href="{{ asset.url }}" target="_blank">{{ asset.url }}</a>
+          <a href="{{ asset.url }}" target="_blank" class="s-link">{{ asset.url }}</a>
         </td>
       </tr>
     {% endfor %}
@@ -36,9 +36,9 @@ permalink: /assets/
 </table>
 
 <h3 class="s-h3">Icons</h3>
-<table class="assets-table">
+<table class="spaced-table">
   <thead>
-    <tr>
+    <tr class="table-head-row">
       <th class="preview-column"></th>
       <th>File</th>
       <th>Size</th>
@@ -48,14 +48,14 @@ permalink: /assets/
   <tbody>
     {% assign icons = site.data.assets | where: "group", "icons" %}
     {% for asset in icons %}
-      <tr>
-        <td>
+      <tr class="token-table-row">
+        <td class="image-sample-cell">
           <img src="{{ asset.url }}" class="preview-icon" />
         </td>
-        <td>{{ asset.file }}</td>
+        <td class="element-code-cell">{{ asset.file }}</td>
         <td>{{ asset.size }}</td>
         <td>
-          <a href="{{ asset.url }}" target="_blank">{{ asset.url }}</a>
+          <a href="{{ asset.url }}" target="_blank" class="s-link">{{ asset.url }}</a>
         </td>
       </tr>
     {% endfor %}
@@ -63,9 +63,9 @@ permalink: /assets/
 </table>
 
 <h3 class="s-h3">Fonts</h3>
-<table class="assets-table">
+<table class="spaced-table">
   <thead>
-    <tr>
+    <tr class="table-head-row">
       <th>File</th>
       <th>Size</th>
       <th>URL</th>
@@ -74,11 +74,11 @@ permalink: /assets/
   <tbody>
     {% assign fonts = site.data.assets | where: "group", "fonts" %}
     {% for asset in fonts %}
-      <tr>
-        <td>{{ asset.file }}</td>
+      <tr class="token-table-row">
+        <td class="element-code-cell">{{ asset.file }}</td>
         <td>{{ asset.size }}</td>
         <td>
-          <a href="{{ asset.url }}" target="_blank">{{ asset.url }}</a>
+          <a href="{{ asset.url }}" target="_blank" class="s-link">{{ asset.url }}</a>
         </td>
       </tr>
     {% endfor %}
