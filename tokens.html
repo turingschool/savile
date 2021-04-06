@@ -7,7 +7,7 @@ permalink: /tokens/
 {% assign grouped_tokens = site.tokens | group_by: "token_type" %}
 
 {% for token_group in grouped_tokens %}
-  <h2>{{ token_group.name | capitalize }}</h2>
+  <a id="{{token_group.name}}"><h2>{{ token_group.name | capitalize }}</h2></a>
 
   <table class="token-table">
     {% for token in token_group.items %}
