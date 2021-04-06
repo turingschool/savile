@@ -1,0 +1,86 @@
+---
+title: Assets
+layout: default
+permalink: /assets/
+---
+
+<p>Asset files used by Savile are hosted at <code>http://assets.turing.io/</code> and available for public use.</p>
+
+<p>To manage these assets, you will need an AWS account with permissions for the Savile Assets S3 bucket.</p>
+
+<h3 class="s-h3">Images</h3>
+<table class="assets-table">
+  <thead>
+    <tr>
+      <th class="preview-column"></th>
+      <th>File</th>
+      <th>Size</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign images = site.data.assets | where: "group", "images" %}
+    {% for asset in images %}
+      <tr>
+        <td>
+          <img src="{{ asset.url }}" class="preview-image" />
+        </td>
+        <td>{{ asset.file }}</td>
+        <td>{{ asset.size }}</td>
+        <td>
+          <a href="{{ asset.url }}" target="_blank">{{ asset.url }}</a>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3 class="s-h3">Icons</h3>
+<table class="assets-table">
+  <thead>
+    <tr>
+      <th class="preview-column"></th>
+      <th>File</th>
+      <th>Size</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign icons = site.data.assets | where: "group", "icons" %}
+    {% for asset in icons %}
+      <tr>
+        <td>
+          <img src="{{ asset.url }}" class="preview-icon" />
+        </td>
+        <td>{{ asset.file }}</td>
+        <td>{{ asset.size }}</td>
+        <td>
+          <a href="{{ asset.url }}" target="_blank">{{ asset.url }}</a>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3 class="s-h3">Fonts</h3>
+<table class="assets-table">
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Size</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign fonts = site.data.assets | where: "group", "fonts" %}
+    {% for asset in fonts %}
+      <tr>
+        <td>{{ asset.file }}</td>
+        <td>{{ asset.size }}</td>
+        <td>
+          <a href="{{ asset.url }}" target="_blank">{{ asset.url }}</a>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

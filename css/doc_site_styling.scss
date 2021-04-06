@@ -286,3 +286,31 @@ xmp {
 .token-table-borders .s-border-radius-pill {
   width: 10rem;
 }
+
+/* ----------------------------------------- */
+/* ----- Components ----- */
+/* ----------------------------------------- */
+
+.assets-table {
+  font-family: var(--s-font-family-mono);
+  text-align: left;
+
+  th.preview-column {
+    min-width: 108px;
+  }
+
+  td {
+    padding: 0.25rem;
+    vertical-align: top;
+  }
+}
+
+.preview-image {
+  max-width: 92px;
+  max-height: 92px;
+}
+
+.preview-icon {
+  max-width: 32px;
+  max-height: 32px;
+}
