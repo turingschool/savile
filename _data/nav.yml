@@ -2,6 +2,17 @@
   url: /
 - text: Tokens
   url: /tokens/
+  children:
+    - title: "font-size"
+      link: "font-size"
+    - title: "shadows"
+      link: "shadows"
+    - title: "spacing"
+      link: "spacing"
+    - title: "font-weight"
+      link: "font-weight"
+    - title: "font-family"
+      link: "font-family"
 - text: Colors
   url: /colors/
 - text: Typography
@@ -10,6 +21,11 @@
   url: /utils/
 - text: Elements
   url: /elements/
+  children:
+    - title: "Buttons & Links"
+      link: "buttons-links"
+    - title: "Paragraphs"
+      link: "paragraphs"
 - text: Components
   url: /components/
 - text: Assets

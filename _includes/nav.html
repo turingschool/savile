@@ -1,9 +1,19 @@
 <nav class="main-nav">
   <ul>
     {% for nav in site.data.nav %}
-    <li>
+    <li class="main-nav-item nav-item">
       <a {% if nav.url==page.url %} class="active" {% endif %} href="{{ nav.url }}">{{ nav.text }}</a>
     </li>
-      {% endfor %}
+      
+      <!-- Sub-nav titles and links are static; update in data/nav.yml -->
+      {% if nav.children %}
+        {% for subNavitem in nav.children %}
+        <li class="sub-nav-item nav-item">
+          <a href="{{nav.url}}#{{subNavitem.link}}">{{ subNavitem.title }}</a>
+        </li>
+        {% endfor %}
+      {% endif %}
+
+    {% endfor %}
   </ul>
 </nav>

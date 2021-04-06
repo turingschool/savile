@@ -121,18 +121,25 @@ body {
   width: 100%;
 }
 
-.main-nav ul li a {
+.main-nav-item a,
+.sub-nav-item a {
   display: block;
-  padding: var(--s-space-16) var(--s-space-32);
+  padding: var(--s-space-16) var(--s-space-32) var(--s-space-12);
   text-decoration: none;
   color: inherit;
 }
 
-.main-nav ul li a:hover {
-  background-color: var(--s-color-cyan-400);
+.sub-nav-item a {
+  padding: var(--s-space-8) var(--s-space-48) var(--s-space-4);
+  font-weight: var(--s-font-weight-normal);
+  text-transform: none;
 }
 
-.main-nav ul li a.active {
+.main-nav ul li a:hover {
+  background-color: var(--s-color-gray-200);
+}
+
+.main-nav ul .main-nav-item a.active {
   background-color: var(--s-color-cyan-700);
   color: var(--s-color-white);
 }
