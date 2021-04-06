@@ -175,17 +175,6 @@ body {
   border: 1px solid var(--s-color-gray-200);
 }
 
-code, xmp {
-  @extend .s-border-radius-1;
-  background-color: var(--s-color-gray-200);
-  padding: var(--s-space-4);
-}
-
-xmp {
-  padding-bottom: 1rem;
-  font-size: 14px;
-}
-
 .token-title-description-cell {
   width: auto;
   padding: var(--s-space-16);
