@@ -4,6 +4,7 @@
 
 /* Add any scss classes you wish to extend */
 @import "design_system/utils/borders";
+@import "syntax.css";
 
 body {
   background-color: var(--s-color-white);
@@ -11,6 +12,10 @@ body {
   font-weight: var(--s-font-weight-normal);
   color: var(--s-color-gray-700);
   overflow: hidden;
+}
+
+figure {
+  margin: 0;
 }
 
 /* ----------------------------------------- */
@@ -103,7 +108,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  min-width: 300px;
+  min-width: 265px;
   font-family: var(--s-font-family-default);
   font-weight: var(--s-font-weight-bold);
   background-color: var(--s-color-gray-100);
@@ -161,44 +166,9 @@ body {
   margin-top: var(--s-space-16);
 }
 
-.token-table {
+.table {
   width: 100%;
   border-collapse: collapse;
-}
-
-.token-table-row:nth-child(even) {
-  background-color: var(--s-color-gray-100);
-  margin: 100px;
-}
-
-.token-table-row {
-  border: 1px solid var(--s-color-gray-200);
-}
-
-.token-title-description-cell {
-  width: auto;
-  padding: var(--s-space-16);
-  overflow-wrap: break-word;
-}
-
-.token-description {
-  margin-top: var(--s-space-8);
-}
-
-.token-value-cell {
-  width: 20%;
-  padding: var(--s-space-16);
-}
-
-.token-example-cell {
-  border: 1px solid var(--s-color-gray-200);
-  width: 20%;
-  height: 4rem;
-}
-
-.token-example-cell div {
-  width: 100%;
-  height: 100%;
 }
 
 .spaced-table {
@@ -208,23 +178,28 @@ body {
   margin-bottom: var(--s-space-48);
 }
 
+.table-row:nth-child(even) {
+  background-color: var(--s-color-gray-100);
+  margin: 100px;
+}
+
+.table-row:nth-child(odd) {
+  pre, code {
+    background-color: var(--s-color-white);
+  }
+}
+
 .table-head-row {
   font-size: 1rem;
   border: 1px solid var(--s-color-gray-200);
   background-color: var(--s-color-gray-100);
-  td, th {
-    text-align: left;
+  td {
     padding: 1rem;
   }
 }
 
-.element-sample-cell {
-  text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 30%;
-  background-size: 20px 20px;
-  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+.table-row {
+  border: 1px solid var(--s-color-gray-200);
 }
 
 .dark-cell {
@@ -232,21 +207,71 @@ body {
   border-bottom: 1px solid var(--s-color-gray-200);
 }
 
-.element-code-cell {
-  padding: 0.5rem 1rem;
+// TOKEN Specific Tables
+.token-title-cell {
+  width: auto;
+  padding: var(--s-space-16);
+  overflow-wrap: break-word;
+  border-right: 1px solid var(--s-color-gray-200);
 
-  .element-classname {
-    display: flex;
-    p {
-      margin: 0;
-      padding-top: 0.5rem;
-    }
+  pre {
+    margin-bottom: 0;
   }
 }
 
-.image-sample-cell {
-  padding: 0.25rem;
-  width: 108px;
+.token-description-cell {
+  margin-top: var(--s-space-8);
+}
+
+.token-value-cell {
+  width: 30%;
+  padding: var(--s-space-16);
+  border-right: 1px solid var(--s-color-gray-200);
+}
+
+.token-example-cell {
+  width: 20%;
+  height: 4rem;
+}
+
+.token-example-cell div {
+  width: 100%;
+  height: 100%;
+}
+
+// UTIL
+.util-class-cell {
+  padding: var(--s-space-16);
+  width: 20%;
+  border-right: 1px solid var(--s-color-gray-200);
+}
+
+// ELEMENT Specific Tables
+.element-class-cell {
+  width: 20%;
+  border-right: 1px solid var(--s-color-gray-200);
+}
+
+.element-code-cell {
+  padding: 0.5rem 1rem;
+  width: 45%;
+  max-width: 500px;
+  border-right: 1px solid var(--s-color-gray-200);
+  
+  pre {
+    margin-bottom: 0;
+    white-space: pre-wrap;
+  }
+}
+
+.element-sample-cell {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 35%;
+  max-width: 325px;
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
 
 /* ----------------------------------------- */
