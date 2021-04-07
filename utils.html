@@ -5,28 +5,26 @@ permalink: /utils/
 ---
 
 <h2>Borders</h2>
-
 {% assign border_utils = site.utils | where: "util_type", "border" %}
 {% assign border_groups = "sides, width, radius" | split: ", " %}
-
 {% for border_group in border_groups %}
-  <h3>{{ border_group | capitalize}}</h3>
-  {% assign utils = border_utils | where: "border_group", border_group %}
-  <table class="table token-table-borders">
-    <thead>
-      <tr class="table-head-row">
-        <td>Class Name</td>
-        <td>HTML</td>
-        <td>Example</td>
-      </tr>
-    </thead>
-    {% for util in utils %}
-    <tr class="table-row">
-      <td class="util-class-cell">.{{ util.title }}</td>
-      <td class="token-value-cell">{% highlight html %}{{ util | remove: '<p>' | remove: '</p>' }}{% endhighlight %}</td>
-      <td class="token-example-cell">{{ util }}</td>
+<h3>{{ border_group | capitalize}}</h3>
+{% assign utils = border_utils | where: "border_group", border_group %}
+<table class="table token-table-borders">
+  <thead>
+    <tr class="table-head-row">
+      <td>Class Name</td>
+      <td>HTML</td>
+      <td>Example</td>
     </tr>
-    {% endfor %}
-  </table>
+  </thead>
+  {% for util in utils %}
+  <tr class="table-row">
+    <td class="util-class-cell">.{{ util.title }}</td>
+    <td class="token-value-cell">{% highlight html %}{{ util | remove: '<p>' | remove: '</p>' }}{% endhighlight %}</td>
+    <td class="token-example-cell">{{ util }}</td>
+  </tr>
+  {% endfor %}
+</table>
 {% endfor %}
 

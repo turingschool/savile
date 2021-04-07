@@ -13,12 +13,12 @@ permalink: /colors/
     </tr>
   </thead>
   {% for color in site.colors %}
-    <tr class="table-row">
-      <td class="token-title-cell">{% highlight html %}{{ color.title }}{% endhighlight %}</td>
-      <td class="token-value-cell">{{ color.value }}</td>
-      <td class="token-example-cell">
-        <div style="background-color: {{color.value}};"></div>
-      </td>
-    </tr>
+  <tr class="table-row">
+    <td class="token-title-cell">{% highlight html %}{{ color.title }}{% endhighlight %}</td>
+    <td class="token-value-cell">{{ color.value }}</td>
+    <td class="token-example-cell">
+      <div style="background-color: {{color.value}};"></div>
+    </td>
+  </tr>
   {% endfor %}
 </table>
