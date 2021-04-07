@@ -4,12 +4,12 @@ layout: default
 permalink: /colors/
 ---
 
-<table class="token-table">
+<table class="table">
   {% for color in site.colors %}
-    <tr class="token-table-row">
-      <td class="token-title-description-cell">
+    <tr class="table-row">
+      <td class="token-title-cell">
         <code>{{ color.title }}</code>
-        <p class="token-description">{{ color.description }}</p>
+        <p class="token-description-cell">{{ color.description }}</p>
       </td>
       <td class="token-value-cell">{{ color.value }}</td>
       <td class="token-example-cell">

@@ -24,39 +24,47 @@ Use a button element:
 <button>Log In</button>
 ```
 
-Use an input element with a type attribute:
-```html
-<input type="button" value="Submit">
-```
+<p>Use a button element:
+</p>
+{% highlight html %}
+  <button>Log In</button>
+{% endhighlight %}
 
-Use any non-button element with a <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role" target="blank">role
+<p>Use an input element with a type attribute:
+</p>
+{% highlight html %}
+  <input type="button" value="Submit">
+{% endhighlight %}
+
+<p>Use any non-button element with a <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role" target="blank">role
   attribute</a> (acknowleging that inline and block elements may behave differently):
-```html
-<div role="button">Subscribe</div>
-```
+</p>
+{% highlight html %}
+  <div role="button">Subscribe</div>
+{% endhighlight %}
 
-```html
-<span role="button">Download Report</span>
-```
+{% highlight html %}
+  <span role="button">Download Report</span>
+{% endhighlight %}
 
 <h3 class="s-h3">Link Examples</h3>
-In the following examples, the button-look-alike is actually an anchor tag. This is the correct tag to use because the purpose of the element is to allow the user to navigate to a new page.
-```html
+<p>In the following examples, the button-look-alike is actually an anchor tag. This is the correct tag to use because the purpose of the element is to allow the user to navigate to a new page.</p>
+{% highlight html %}
   <a href="https://apply.turing.io" class="[add class(es) to make this appear as a button]">
     <span>Apply Now</span>
   </a>
-```
+{% endhighlight %}
 
-```html
+{% highlight html %}
   <a href="/programs" class="[add class(es) to make this appear as a button]">More Info</a>
-```
+{% endhighlight %}
 
 <h3 class="s-h3">Savile Buttons</h3>
 Although many elements that appear as buttons, but are not technically buttons, will live in our software suite, Savile still refers to the element as "button" and uses such in the class names.
 <table class="spaced-table">
   <thead>
     <tr class="table-head-row">
-      <td>Class Name</td>
+      <td >Class Name</td>
       <td>HTML</td>
       <td>Example</td>
     </tr>
@@ -64,6 +72,7 @@ Although many elements that appear as buttons, but are not technically buttons, 
   <tbody>
   {% assign buttons = site.elements | where: "element_type", "button" %}
   {% for button in buttons %}
+<<<<<<< HEAD:elements.md
     <tr class="token-table-row">
       <td class="element-code-cell">
         <code>{{ button.value }}</code>
@@ -73,6 +82,11 @@ Although many elements that appear as buttons, but are not technically buttons, 
           {{button | remove: '<p>' | remove: '</p>' | escape}}
         </code>
       </td>
+=======
+    <tr class="table-row">
+      <td class="element-class-cell">{% highlight html %}{{ button.value }}{% endhighlight %}</td>
+      <td class="element-code-cell">{% highlight html %}{{ button | remove: '<p>' | remove: '</p>' }}{% endhighlight %}</td>
+>>>>>>> 81a5d46 (Use updated classes on tables):elements.html
       <td class="element-sample-cell">{{ button }}</td>
     </tr>
   {% endfor %}
@@ -91,6 +105,7 @@ Although many elements that appear as buttons, but are not technically buttons, 
   <tbody>
     {% assign links = site.elements | where: "element_type", "link" %}
     {% for link in links %}
+<<<<<<< HEAD:elements.md
     <tr class="token-table-row">
       <td class="element-code-cell">
         <code>{{ link.value }}</code>
@@ -100,6 +115,11 @@ Although many elements that appear as buttons, but are not technically buttons, 
           {{link | remove: '<p>' | remove: '</p>' | escape}}
         </code>
       </td>
+=======
+    <tr class="table-row">
+      <td class="element-class-cell">{% highlight html %}{{ link.value }}{% endhighlight %}</td>
+      <td class="element-code-cell">{% highlight html %}{{ link | remove: '<p>' | remove: '</p>' }}{% endhighlight %}</td>
+>>>>>>> 81a5d46 (Use updated classes on tables):elements.html
       <td class="element-sample-cell">{{ link }}</td>
     </tr>
     {% endfor %}
@@ -120,6 +140,7 @@ Although many elements that appear as buttons, but are not technically buttons, 
     {% assign light_texts = texts | where: "light_text", "true" %}
     {% assign dark_texts = texts | where: "light_text", nil %}
     {% for text in dark_texts %}
+<<<<<<< HEAD:elements.md
     <tr class="token-table-row">
       <td class="element-code-cell">
         <code>{{ text.value }}</code>
@@ -132,9 +153,16 @@ Although many elements that appear as buttons, but are not technically buttons, 
       <td class="element-sample-cell">
         {{ text }}
       </td>
+=======
+    <tr class="table-row">
+      <td class="element-class-cell">{% highlight html %}{{ text.value }}{% endhighlight %}</td>
+      <td class="element-code-cell">{% highlight html %}{{ text }}{% endhighlight %}</td>
+      <td class="element-sample-cell">{{ text }}</td>
+>>>>>>> 81a5d46 (Use updated classes on tables):elements.html
     </tr>
     {% endfor %}
     {% for text in light_texts %}
+<<<<<<< HEAD:elements.md
     <tr class="token-table-row">
       <td class="element-code-cell">
         <code>{{ text.value }}</code>
@@ -147,6 +175,12 @@ Although many elements that appear as buttons, but are not technically buttons, 
       <td class="element-sample-cell dark-cell">
         {{ text }}
       </td>
+=======
+    <tr class="table-row">
+      <td class="element-class-cell">{% highlight html %}{{ text.value }}{% endhighlight %}</td>
+      <td class="element-code-cell">{% highlight html %}{{ text }}{% endhighlight %}</td>
+      <td class="element-sample-cell dark-cell">{{ text }}</td>
+>>>>>>> 81a5d46 (Use updated classes on tables):elements.html
     </tr>
     {% endfor %}
   </tbody>

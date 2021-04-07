@@ -15,20 +15,18 @@ subnav:
 {% for token_group in grouped_tokens %}
   <a id="{{token_group.name}}"><h2>{{ token_group.name | capitalize }}</h2></a>
 
-  <table class="token-table">
-    {% for token in token_group.items %}
-
-      <tr class="token-table-row">
-        <td class="token-title-description-cell">
-          <code>{{ token.title }}</code>
-          <p class="token-description">{{ token.description }}</p>
-        </td>
-        <td class="token-value-cell">{{ token.value }}</td>
-        <td class="token-example-cell">
-          <!-- display spacing token example -->
-        </td>
+  <table class="table">
+    <thead>
+      <tr class="table-head-row">
+        <td>Class Name</td>
+        <td>Value</td>
       </tr>
-
+    </thead>
+    {% for token in token_group.items %}
+    <tr class="table-row">
+      <td class="token-title-cell">{% highlight html %}{{ token.title }}{% endhighlight %}</td>
+      <td class="token-value-cell">{{ token.value }}</td>
+    </tr>
     {% endfor %}
   </table>
 {% endfor %}
