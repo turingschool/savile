@@ -8,4 +8,4 @@ description: Our secondary call-to-action button for specific actions - apply, r
   for Try Coding, subscribe to newsletter, etc.
 order: 28
 ---
-<button class="s-button s-button-secondary">Secondary Button</button>
+<button class="s-button s-button-secondary">Secondary</button>
