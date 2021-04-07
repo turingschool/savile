@@ -8,4 +8,4 @@ description: Our primary call-to-action button for specific actions - apply, reg
   for Try Coding, subscribe to newsletter, etc.
 order: 26
 ---
-<button class="s-button s-button-primary">Primary Button</button>
+<button class="s-button s-button-primary">Primary</button>
