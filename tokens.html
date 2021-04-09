@@ -3,17 +3,17 @@ title: Tokens
 layout: default
 permalink: /tokens/
 subnav:
-  font-size: font-size
-  shadows: shadows
-  spacing: spacing
-  font-weight: font-weight
-  font-family: font-family
+  font-size: Font Size
+  shadows: Shadows
+  spacing: Spacing
+  font-weight: Font Weight
+  font-family: Font Family
 ---
 
 {% assign grouped_tokens = site.tokens | group_by: "token_type" %}
 
 {% for token_group in grouped_tokens %}
-  <a id="{{token_group.name}}"><h2>{{ token_group.name | capitalize }}</h2></a>
+  <h2 id="{{token_group.name}}">{{ token_group.name | capitalize }}</h2>
 
   <table class="table">
     <thead>

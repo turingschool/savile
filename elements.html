@@ -7,40 +7,28 @@ subnav:
   paragraphs: Paragraph Text
 ---
 
-<a id="buttons-links"></a>
-<h2 class="s-h2">Buttons & Links</h2></a>
-<p>Many of our sites have links that appear to be buttons. This is acceptable from a design standpoint, but it is
-  important that the HTML correctly communicates the intent of the element to the browser. Start by understanding the
-  important difference between a button and a link:</p>
+<h2 id="buttons-links" class="s-h2">Buttons & Links</h2>
+<p>Many of our sites have links that appear to be buttons. This is acceptable from a design standpoint, but it is important that the HTML correctly communicates the intent of the element to the browser. Start by understanding the important difference between a button and a link:</p>
 <ul>
   <li><strong>Buttons</strong> should lead to actions such as "download", "sign up" or "log out"</li>
   <li><strong>Links</strong> should allow a user to navigate to a new page or a different taget on the same page</li>
 </ul>
-<p>Why this matters: For users of screen-readers and power users, a space key and enter key both trigger a button, where
-  pressing the enter key is the only way to trigger a link.</p>
+<p>Why this matters: For users of screen-readers and power users, a space key and enter key both trigger a button, where pressing the enter key is the only way to trigger a link.</p>
 
 <h3 class="s-h3">Button Examples</h3>
-<p>In the following examples, the elements <em>do</em> lead to action, so need to be interpreted by the browser as
-  buttons. There are several of ways to achieve this depending on the use case and needs; three examples are noted
-  below. In order to focus on the elements and attributes, Savile styling classes have not been added to these examples.
-</p>
+<p>In the following examples, the elements <em>do</em> lead to action, so need to be interpreted by the browser as buttons. There are several of ways to achieve this depending on the use case and needs; three examples are noted below. In order to focus on the elements and attributes, Savile styling classes have not been added to these examples.</p>
 
-<p>Use a button element:
-</p>
+<p>Use a button element:</p>
 {% highlight html %}
 <button>Log In</button>
 {% endhighlight %}
 
-<p>Use an input element with a type attribute:
-</p>
+<p>Use an input element with a type attribute:</p>
 {% highlight html %}
 <input type="button" value="Submit">
 {% endhighlight %}
 
-<p>Use any non-button element with a <a
-    href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role" target="blank">role
-    attribute</a> (acknowleging that inline and block elements may behave differently):
-</p>
+<p>Use any non-button element with a <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role" target="blank">role attribute</a> (acknowleging that inline and block elements may behave differently):</p>
 {% highlight html %}
 <div role="button">Subscribe</div>
 {% endhighlight %}
@@ -50,8 +38,7 @@ subnav:
 {% endhighlight %}
 
 <h3 class="s-h3">Link Examples</h3>
-<p>In the following examples, the button-look-alike is actually an anchor tag. This is the correct tag to use because
-  the purpose of the element is to allow the user to navigate to a new page.</p>
+<p>In the following examples, the button-look-alike is actually an anchor tag. This is the correct tag to use because the purpose of the element is to allow the user to navigate to a new page.</p>
 {% highlight html %}
 <a href="https://apply.turing.io" class="[add class(es) to make this appear as a button]">
   <span>Apply Now</span>
@@ -63,8 +50,7 @@ subnav:
 {% endhighlight %}
 
 <h3 class="s-h3">Savile Buttons</h3>
-<p>Although many elements that appear as buttons, but are not technically buttons, will live in our software suite,
-  Savile still refers to the element as "button" and uses such in the class names.</p>
+<p>Although many elements that appear as buttons, but are not technically buttons, will live in our software suite, Savile still refers to the element as "button" and uses such in the class names.</p>
 <table class="spaced-table">
   <thead>
     <tr class="table-head-row">
@@ -108,9 +94,7 @@ subnav:
   </tbody>
 </table>
 
-<a id="paragraphs">
-  <h2 class="s-h2">Paragraphs</h2>
-</a>
+<h2 id="paragraphs" class="s-h2">Paragraphs</h2>
 <table class="spaced-table">
   <thead>
     <tr class="table-head-row">
