@@ -193,7 +193,11 @@ figure {
   font-size: 1rem;
   border: 1px solid var(--s-color-gray-200);
   background-color: var(--s-color-gray-100);
-  td, th {
+  th {
+    padding: 1rem;
+    text-align: left;
+  }
+  td {
     padding: 1rem;
   }
 }
