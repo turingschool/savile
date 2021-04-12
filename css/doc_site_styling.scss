@@ -193,7 +193,7 @@ figure {
   font-size: 1rem;
   border: 1px solid var(--s-color-gray-200);
   background-color: var(--s-color-gray-100);
-  td {
+  td, th {
     padding: 1rem;
   }
 }
@@ -274,6 +274,29 @@ figure {
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
 
+//ASSETS
+
+.image-sample-cell {
+  width: 92px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.preview-image {
+  max-width: 92px;
+  max-height: 92px;
+}
+
+.preview-icon {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.file-cell {
+  padding: 0.5rem 1rem;
+  border-left: 1px solid var(--s-color-gray-200);
+}
+
 /* ----------------------------------------- */
 /* ----- Footer ----- */
 /* ----------------------------------------- */
@@ -302,17 +325,4 @@ figure {
 
 .token-table-borders .s-border-radius-pill {
   width: 10rem;
-}
-
-/* ----------------------------------------- */
-/* ----- Elements  ----- */
-/* ----------------------------------------- */
-.preview-image {
-  max-width: 92px;
-  max-height: 92px;
-}
-
-.preview-icon {
-  max-width: 32px;
-  max-height: 32px;
 }

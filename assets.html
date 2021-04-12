@@ -9,7 +9,7 @@ permalink: /assets/
 <p>To manage these assets, you will need an AWS account with permissions for the Savile Assets S3 bucket.</p>
 
 <h3 class="s-h3">Images</h3>
-<table class="assets-table spaced-table">
+<table class="spaced-table">
   <thead>
     <tr class="table-head-row">
       <th class="preview-column"></th>
@@ -21,13 +21,13 @@ permalink: /assets/
   <tbody>
     {% assign images = site.data.assets | where: "group", "images" %}
     {% for asset in images %}
-      <tr class="token-table-row">
+      <tr class="table-row">
         <td class="image-sample-cell">
           <img src="{{ asset.url }}" class="preview-image" />
         </td>
-        <td>{{ asset.file }}</td>
-        <td>{{ asset.size }}</td>
-        <td>
+        <td class="file-cell">{{ asset.file }}</td>
+        <td class="file-cell">{{ asset.size }}</td>
+        <td class="file-cell">
           <a href="{{ asset.url }}" target="_blank" class="s-link">{{ asset.url }}</a>
         </td>
       </tr>
@@ -48,13 +48,13 @@ permalink: /assets/
   <tbody>
     {% assign icons = site.data.assets | where: "group", "icons" %}
     {% for asset in icons %}
-      <tr class="token-table-row">
+      <tr class="table-row">
         <td class="image-sample-cell">
           <img src="{{ asset.url }}" class="preview-icon" />
         </td>
-        <td class="element-code-cell">{{ asset.file }}</td>
-        <td>{{ asset.size }}</td>
-        <td>
+        <td class="file-cell">{{ asset.file }}</td>
+        <td class="file-cell">{{ asset.size }}</td>
+        <td class="file-cell">
           <a href="{{ asset.url }}" target="_blank" class="s-link">{{ asset.url }}</a>
         </td>
       </tr>
@@ -74,10 +74,10 @@ permalink: /assets/
   <tbody>
     {% assign fonts = site.data.assets | where: "group", "fonts" %}
     {% for asset in fonts %}
-      <tr class="token-table-row">
-        <td class="element-code-cell">{{ asset.file }}</td>
-        <td>{{ asset.size }}</td>
-        <td>
+      <tr class="table-row">
+        <td class="file-cell">{{ asset.file }}</td>
+        <td class="file-cell">{{ asset.size }}</td>
+        <td class="file-cell">
           <a href="{{ asset.url }}" target="_blank" class="s-link">{{ asset.url }}</a>
         </td>
       </tr>
