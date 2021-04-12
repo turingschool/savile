@@ -12,6 +12,7 @@ More information about internal engineering @ Turing is available on [Turing's E
 - [Local Set Up](#local-set-up)
 - [Contributing](#contributing)
 - [How To: Add a Token, Element or Component](#how-to-add-a-token-element-or-component)
+- [How To: Update the Assets Page](#how-to-update-the-assets-page)
 - [Terminology](#terminology)
 
 ## Savile Guiding Principles
@@ -22,8 +23,8 @@ While we have Guiding Principles for our overarching work on the Turing Engineer
 - **Simple.** This is a lightweight package in term of size. It is conceptually simple and straightforward; intuitive naming and reasonable variants. A developer should be able to read through our docs and in a couple hours have a good handle on how it works and how to utilize it.
 - **Extensible.** It is built in a way that various team members can build on top of it relatively easily. Ways to override and customize are available and documented.
 - **Durable.** The current form will last and continue to work, for all users and all app, regardless of tech stack.
-- **Composable.** - Utils and variants can be combined in many ways to create custom designs.
-- **Innocuous.** - It plays friendly w other tools like Bootstrap, MaterialUI, etc. and is web platform-agnostic.
+- **Composable.** Utils and variants can be combined in many ways to create custom designs.
+- **Innocuous.** It plays friendly with other tools like Bootstrap, MaterialUI, etc. and is web platform-agnostic.
 
 ## Local Set Up
 
@@ -36,29 +37,35 @@ To set the project up locally on your machine:
 
 Please follow Turing's shared [How to Contribute](https://www.notion.so/turingschool/How-to-Contribute-1b88e17f755c491989e4b2bc84db93c7) guide.
 
+Anything that is merged into the `main` branch will be immediately available on the `latest` version, which has been communicated to users that it may not be stable. If you'd like your changes to be on a new version, make sure to follow the guidance outlined in [contributing.md](./contributing.md).
+
 ## How To: Add a Token, Element or Component
 
 The workflow to add a token, element or component to Savile is as follows:
 
-- Touch a new `.scss` file in within the appropriate sub-directory of the css directory at the root of the project. The file name should match the name of the token/element/component you are building. Find the [terminology below](#terminology) as well as project naming conventions (coming soon).
+- Touch a new `.scss` file in within the appropriate sub-directory of the css/design_system directory at the root of the project. The file name should match the name of the token/element/component you are building. Find the [terminology below](#terminology) as well as project naming conventions (coming soon).
 - Write the CSS for your token/element/component
 - Above the CSS code, create a multi-line CSS comment. **The comment must start with two asterisks following the forward slash: `/**`**. Provide any relevant information in the comment, using the available attributes (listed below). See the following example for the specific syntax the docs generator expects:
     - `title` - this will be presented on the docs site and will be the name of the CSS file that is generated in the `docs` directory.
+    - `category` - this should match the parent directory (elements, tokens, etc.)
     - `status` - is this a draft, complete, not-maintained, etc?
+    - `value` - for variables, this should hold the value it stores. For class names, this should hold the class name wihtout the `.`
     - `description` - short description that the user of Savile will be provided with on the docs site
     - `example` - the HTML you write here will be rendered as the actual element; this provides an example of how this CSS will style the element.
+    - some optional attributes may be used based on how the page that renders it is built; defer to any similar files or make up something new that you need!
 
     ```css
     /**
-     * @title Button
-     * @status draft
-     * @description Our basic button
-     *
-     * @example
-     * <button class="button">
-     *   Click me
-     * </button>
-     */
+    * @title Base Button
+    * @category elements
+    * @element_type button
+    * @status draft
+    * @value s-button
+    * @description Our base button styles. Any other button class can be used in addition to this, to get the desired variant.
+    *
+    * @example
+    * <button class="s-button">Base Button</button>
+    */
     ```
 
 - In your terminal, run `ruby build_css_docs.rb` to run the generator, which will take the single SCSS file you created and wrote, and both feed the CSS into the design system (`_site/css`), and take the documentation and make it markdown-friendly (`docs`).
@@ -73,6 +80,8 @@ If changes are made to the S3 bucket (add/remove files), then you can update the
 ```bash
 $ ruby ./build_assets_data.rb
 ```
+
+If you'd like to add to or update the assets in the S3 bucket and don't have access, please contact @Tanner on Slack.
 
 ## Terminology
 
