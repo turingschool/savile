@@ -20,10 +20,10 @@ permalink: /utils/
   </thead>
   {% for util in utils %}
   <tr class="table-row">
-    <td class="util-class-cell">.{{ util.title }}</td>
+    <td class="util-class-cell">{% highlight html %}{{ util.title }}{% endhighlight %}</td>
     <td class="token-value-cell">{% highlight html %}{{ util | remove: '<p>' | remove: '</p>' }}{% endhighlight %}</td>
-    <td class="token-example-cell">{{ util }}</td>
+    <td class="element-sample-cell">{{ util }}</td>
   </tr>
   {% endfor %}
 </table>
-{% endfor %}hh
+{% endfor %}
