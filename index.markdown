@@ -5,7 +5,7 @@ layout: default
 
 ## Turing School's Design System
 
-Nicknamed after Savile Row, Savile is the Design System for all sites and applications in the Turing Software suite. It is open-sourced though, so available for any who are interested to use!
+Nicknamed after <a class="s-link" href="https://en.wikipedia.org/wiki/Savile_Row" target="blank">Savile Row</a>, Savile is the Design System for all sites and applications in the Turing Software suite. It is open-sourced though, so available for any who are interested to use!
 
 ### Adding Savile to an Application
 
