@@ -1,6 +1,6 @@
 ---
 title: Extra Small Body Text
 category: typography
-value: ".s-text-body-xs"
+value: s-text-body-xs
 order: 9
 ---
