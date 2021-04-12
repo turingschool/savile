@@ -23,20 +23,20 @@ To add Savile to a project, import the URL of the version you'd like to use in t
   <tbody>
     <tr class="table-row">
       <td class="token-title-cell">1.1 - <em>latest stable release</em></td>
-      <td class="token-value-cell">
-        <a class="s-link" href="https://savile.turing.io/css/versions/v1/1.1.css" target="blank">https://savile.turing.io/css/versions/v1/1.1.css</a>
+      <td class="token-title-cell">
+        <a class="s-link" href="https://savile.turing.io/css/v1/1.1.css" target="blank">https://savile.turing.io/css/v1/1.1.css</a>
       </td>
     </tr>
     <tr class="table-row">
       <td class="token-title-cell">1.0</td>
-      <td class="token-value-cell">
-        <a class="s-link" href="https://savile.turing.io/css/versions/v1/1.0.css" target="blank">https://savile.turing.io/css/versions/v1/1.0.css</a>
+      <td class="token-title-cell">
+        <a class="s-link" href="https://savile.turing.io/css/v1/1.0.css" target="blank">https://savile.turing.io/css/v1/1.0.css</a>
       </td>
     </tr>
     <tr class="table-row">
       <td class="token-title-cell">Latest - <em>not stable, only recommended for experimental use</em></td>
-      <td class="token-value-cell">
-        <a class="s-link" href="https://savile.turing.io/css/main.css" target="blank">https://savile.turing.io/css/versions/v1/1-latest.css</a>
+      <td class="token-title-cell">
+        <a class="s-link" href="https://savile.turing.io/css/main.css" target="blank">https://savile.turing.io/css/main.css</a>
       </td>
     </tr>
   </tbody>
