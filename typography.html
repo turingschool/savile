@@ -6,14 +6,17 @@ permalink: /typography/
 
 <p>The available Typography classes only provide font-family, font-size and font-weight. See <a href="{{site.url}}/elements" class="s-link">Elements -> Paragraph</a> text for color variations on paragraph elements, and <a href="{{site.url}}/colors" class="s-link">Colors</a> for color usage recommendations with text.</p>
 <table class="token-table">
+  <thead>
+    <tr class="table-head-row">
+      <td>Class Name</td>
+      <td>Example</td>
+    </tr>
+  </thead>
   {% for type in site.typography %}
-    <tr class="token-table-row">
-      <td class="token-title-description-cell">
-        <span class="{{ type.value | replace: '.', '' }}">
-        {{ type.title }}
-      </td>
-      <td class="token-value-cell">
-        <code>{{ type.value }}</code>
+    <tr class="table-row">
+      <td class="token-value-cell">{% highlight html %}{{ type.value }}{% endhighlight %}</td>
+      <td class="token-title-cell">
+        <span class="{{ type.value | replace: '.', '' }}">{{ type.title }}</span>
       </td>
     </tr>
   {% endfor %}
