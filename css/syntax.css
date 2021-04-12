@@ -1,3 +1,6 @@
+/* Syntax highlighting rules taken from FE curriculum site - https://github.com/turingschool/front-end-curriculum/blob/gh-pages/_sass/syntax.scss */
+/* with exception of background color to use a Savile grey, and removing border around code snippets */
+
 code {
   font-family: monospace;
   font-size: 1.2em;
