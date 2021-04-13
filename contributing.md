@@ -38,21 +38,18 @@ Full repo bundles of all cut releases are listed on the [releases](https://githu
 ### Cutting a New Version
 
 #### Cutting a new MINOR version on the current MAJOR Version (Most Common)
-1. Checkout a new branch following the name conventions `v[CURRENT_MAJOR_VERSION].[UPDATED_MINOR_VERSION]` (e.q. `v1.3`)
-2. Build the site. This can be done with `bundle exec jekyll build`
-3. Locate the `_site/css/main.css` file and copy the contents to clipboard
-4. Create a new file under `css/[CURRENT_MAJOR_VERSION]/`; name the file following the naming convention `[UPDATED_MINOR_VERSION]-main.css` (e.g `css/v1/1.3-main.css`). Paste what is on your clipboard into this file
-5. Override the current `v[CURRENT_MAJOR_VERSION]/latest.css` (e.g. `v1/latest.css`) with the contents of `_site/css/main.css` as well.
-6. Commit this new and updated file with `git commit -m "Cut v[version-number] release"`, e.g. "Cut v1.3 release"
-7. Push these changes up and make a PR
-8. Once merged make a new release in Github by going to https://github.com/turingschool/savile/releases and click 'Draft a new release'. Tag version (e.g v1.3),target (main) and release title (e.g 1.3), and what new features are included
+1. Checkout a new branch following the name conventions `v[CURRENT_MAJOR_VERSION].[UPDATED_MINOR_VERSION]` (e.g. `v1.3`)
+1. Run the helper script `./bin/build-version [version-number]` (e.g. `./bin/build-version 1.3`)
+1. Commit this new and updated file with `git commit -m "Cut v[version-number] release"`, e.g. "Cut v1.3 release"
+1. Push these changes up and make a PR
+1. Once merged make a new release in Github by going to https://github.com/turingschool/savile/releases and click 'Draft a new release'. Tag version (e.g v1.3),target (main) and release title (e.g 1.3), and what new features are included
 
 Once this PR is merged, two things will happen:
 - The `main` branch will be updated with these changes (as you'd expect)
 - Savile users can now choose to access this new version at `https://savile.turing.edu/css/[MAJOR_VERSION]/[FILE_NAME].css`, e.g. `https://savile.turing.edu/css/v1/1.3-main.css`
 
 #### Cutting a new MAJOR version
-Similar to the instructions above with the extra step of creating a new folder (before step 4) with the major version number under `css` and rather than updating `[MAJOR_VERSION]-latest.css` you will need to _create_ that file.
+Same as instructions above, except that you'll use `0` for the minor version (e.g. `v2.0`)
 
 #### Cutting a new MINOR version on an older MAJOR Version (Not Common)
 This may be done when fixing a bug or making an update to an older version of Savile.
