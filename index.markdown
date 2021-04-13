@@ -5,57 +5,35 @@ layout: default
 
 ## Turing School's Design System
 
-Nicknamed after <a class="s-link" href="https://en.wikipedia.org/wiki/Savile_Row" target="blank">Savile Row</a>, Savile is the Design System for all sites and applications in the Turing Software suite. It is open-sourced though, so available for any who are interested to use!
+Nicknamed after <a class="s-link" href="https://en.wikipedia.org/wiki/Savile_Row" target="blank">Savile Row</a>, Savile is the Design System for all sites and applications in the Turing Software suite. It is open-sourced though, so available to anyone who is interested in using it!
 
 <br>
 
-### Adding Savile to an Application
+### Adding Savile to a Project
 
-Savile is language and framework agnostic, so no matter what an application is built in, it can utilize this design system. This means that the setup details may vary based on the framework.
+To add Savile to a project, link the version you'd like to use in the `<head>` tag of your HTML. You can find a list of versions on the <a href="https://github.com/turingschool/savile/releases" target="blank" class="s-link">releases page</a>. For example, to link version 1.1:
+```html
+<link rel="stylesheet" href="https://savile.turing.io/css/v1/1.1.css">
+```
+If you don't need to lock in a specific version, but just want the latest release for a given major version, you can reference the `-latest.css` file.
+```html
+<link rel="stylesheet" href="https://savile.turing.io/css/v1/1-latest.css">
+```
 
-To add Savile to a project, import the URL of the version you'd like to use in the appropriate place. 
+**Simply importing Savile should not change the styles of your existing application**. This is because Savile's classes are prefixed with `s-`, so the likelihood of them clashing with other CSS is very low.
 
-<table class="spaced-table">
-  <thead>
-    <tr class="table-head-row">
-      <th>Version Number</th>
-      <th>URL</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="table-row">
-      <td class="token-title-cell">1.1 - <em>latest stable release</em></td>
-      <td class="token-title-cell">
-        <a class="s-link" href="https://savile.turing.io/css/v1/1.1.css" target="blank">https://savile.turing.io/css/v1/1.1.css</a>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td class="token-title-cell">Latest - <em>only recommended for experimental use</em></td>
-      <td class="token-title-cell">
-        <a class="s-link" href="https://savile.turing.io/css/1-latest.css" target="blank">https://savile.turing.io/css/1-latest.css</a>
-      </td>
-    </tr>
-    <tr class="table-row">
-      <td class="token-title-cell">1.0</td>
-      <td class="token-title-cell">
-        <a class="s-link" href="https://savile.turing.io/css/v1/1.0.css" target="blank">https://savile.turing.io/css/v1/1.0.css</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-Simply importing Savile should not make any changes to your existing application. _When Savile is added to an existing Turing application, you may notice very small changes in the weight of some fonts. This is because some of the older applications use older versions of font files, and Savile will override the font source._
+_Caveat: when Savile is added to an existing Turing application, you may notice very small changes in the weight of some fonts. This is because some of the older applications use older versions of font files, and Savile will override the font source._
 
 <br>
 
-### Using Savile in an Application
+### Using Savile in a Project
 
-Once Savile is added to your project, variables, class names, and assets will be available anywhere in your project. 
+Once Savile is added to your project, variables and class names will be available anywhere in your project. 
 
 In the documentation, you will find:
 - variables for Tokens and Colors
 - class names and some usage examples for Typography, Utils, Elements, and Components
-- URLs for brand assets
+- URLs for Brand Assets
 
 The variables listed in Tokens and Colors are CSS variables which do work as expected in SCSS and SASS. As an example, for the variable `--s-color-cyan-400`, the following syntax needs to be used:
 
@@ -64,3 +42,7 @@ The variables listed in Tokens and Colors are CSS variables which do work as exp
   color: var(--s-color-cyan-400);
 }
 ```
+
+#### Static Assets
+
+To learn how to use Savile's static assets like images and icons, check out the <a href="/assets" class="s-link">Assets page</a>.
