@@ -1,0 +1,5 @@
+# Production build configuration.
+# Overrides settings in _config.yml when used with build command, e.g.
+#   $ jekyll build --config _config.yml,_config_production.yml
+sass:
+  style: compressed

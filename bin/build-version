@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+
+if ARGV.empty?
+  puts "ERROR. Must supply a version number, example:"
+  puts "$ #{__FILE__} 3.2"
+  exit
+end
+
+full_version = ARGV.first
+major, minor = full_version.split('.')
+ARGV.clear # allows gets later
+
+ROOT_DIR = File.absolute_path('..', __dir__)
+source_css = File.join(ROOT_DIR, '_site', 'css', 'main.css')
+major_version_dir = File.join(ROOT_DIR, 'css', "v#{major}")
+FileUtils.mkdir_p(major_version_dir)
+new_version_file = File.join(major_version_dir, "#{full_version}.css")
+new_latest_file = File.join(major_version_dir, "#{major}-latest.css")
+
+puts 'This script will build a new main.css and create two new files:'
+puts "- #{new_version_file}"
+puts "- #{new_latest_file}"
+puts ''
+puts 'Are you sure you want to continue? [Y/n]'
+answer = gets.chomp
+
+if answer == 'n'
+  puts 'Aborting!'
+  exit 1
+end
+
+puts 'Building site & compiling CSS for production...'
+system 'bundle exec jekyll build --config _config.yml,_config_production.yml'
+
+FileUtils.cp(source_css, new_version_file)
+FileUtils.cp(source_css, new_latest_file)
+
+puts "Version #{full_version} built!"
+puts ''
+puts 'Read contributing.md for instructions on how to release'
