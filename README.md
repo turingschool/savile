@@ -37,7 +37,7 @@ To set the project up locally on your machine:
 
 Please follow Turing's shared [How to Contribute](https://www.notion.so/turingschool/How-to-Contribute-1b88e17f755c491989e4b2bc84db93c7) guide.
 
-Anything that is merged into the `main` branch will be immediately available on the `latest` version, which has been communicated to users that it may not be stable. If you'd like your changes to be on a new version, make sure to follow the guidance outlined in [contributing.md](./contributing.md).
+Anything that is merged into the `main` branch will not be immediately available on the `latest` version (or any other version). To release a new version and publish the latest changes, make sure to follow the guidance outlined in [contributing.md](./contributing.md).
 
 ## How To: Add a Token, Element or Component
 
@@ -56,16 +56,16 @@ The workflow to add a token, element or component to Savile is as follows:
 
     ```css
     /**
-    * @title Base Button
-    * @category elements
-    * @element_type button
-    * @status draft
-    * @value s-button
-    * @description Our base button styles. Any other button class can be used in addition to this, to get the desired variant.
-    *
-    * @example
-    * <button class="s-button">Base Button</button>
-    */
+     * @title Base Button
+     * @category elements
+     * @element_type button
+     * @status draft
+     * @value s-button
+     * @description Our base button styles. Any other button class can be used in addition to this, to get the desired variant.
+     *
+     * @example
+     * <button class="s-button">Base Button</button>
+     */
     ```
 
 - In your terminal, run `ruby build_css_docs.rb` to run the generator, which will take the single SCSS file you created and wrote, and both feed the CSS into the design system (`_site/css`), and take the documentation and make it markdown-friendly (`docs`).
@@ -81,7 +81,7 @@ If changes are made to the S3 bucket (add/remove files), then you can update the
 $ ruby ./build_assets_data.rb
 ```
 
-If you'd like to add to or update the assets in the S3 bucket and don't have access, please contact @Tanner on Slack.
+If you'd like to add to or update the assets in the S3 bucket and don't have access, please post a message in the #fancy-boots channel on Slack.
 
 ## Terminology
 
