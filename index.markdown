@@ -57,7 +57,7 @@ In the documentation, you will find:
 - class names and some usage examples for Typography, Utils, Elements, and Components
 - URLs for brand assets
 
-The variables listed in Tokens and Colors are CSS variables which do work as expected in SCSS and SASS. As an example, for the variable `--s-color-cyn-400`, the following syntax needs to be used:
+The variables listed in Tokens and Colors are CSS variables which do work as expected in SCSS and SASS. As an example, for the variable `--s-color-cyan-400`, the following syntax needs to be used:
 
 ```css
 .selector {
