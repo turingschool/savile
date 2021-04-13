@@ -68,17 +68,17 @@ The workflow to add a token, element or component to Savile is as follows:
      */
     ```
 
-- In your terminal, run `ruby build_css_docs.rb` to run the generator, which will take the single SCSS file you created and wrote, and both feed the CSS into the design system (`_site/css`), and take the documentation and make it markdown-friendly (`docs`).
+- In your terminal, run `./bin/build-css-docs` to run the generator, which will take the single SCSS file you created and wrote, and both feed the CSS into the design system (`_site/css`), and take the documentation and make it markdown-friendly (`docs`).
 - While running the project locally, visit the appropriate URI in the browser. You should see this newly created token/element/component displayed with it's respective information.
 
 ## How To: Update the Assets Page
 
-The `_data/assets.yml` file is dynamically generated from [this XML page](https://turing-savile-assets.s3.amazonaws.com/?list-type=2) using the `build_assets_data.rb` script.
+The `_data/assets.yml` file is dynamically generated from [this XML page](https://turing-savile-assets.s3.amazonaws.com/?list-type=2) using the `./bin/build-assets-data` script.
 
 If changes are made to the S3 bucket (add/remove files), then you can update the assets page in the docs by re-running the script:
 
 ```bash
-$ ruby ./build_assets_data.rb
+$ ./bin/build-assets-data
 ```
 
 If you'd like to add to or update the assets in the S3 bucket and don't have access, please post a message in the #fancy-boots channel on Slack.

@@ -1,12 +1,15 @@
+#!/usr/bin/env ruby
+
 require "crass"
 require "pp"
 require "yaml"
 require "FileUtils"
 require "sassc"
 
-LOAD_DIR = File.join(__dir__, 'css/design_system')
+ROOT_DIR = File.absolute_path('..', __dir__)
+LOAD_DIR = File.join(ROOT_DIR, 'css/design_system')
 LOAD_FILE = File.join(LOAD_DIR, 'index.scss')
-DESTINATION_DIR = File.join(__dir__, 'docs')
+DESTINATION_DIR = File.join(ROOT_DIR, 'docs')
 
 def extract_docs_from_css(tree)
   prev_comment = nil
