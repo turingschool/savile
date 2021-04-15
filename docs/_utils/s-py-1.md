@@ -2,6 +2,8 @@
 title: s-py-1
 category: utils
 util_type: padding
-order: 34
+order: 19
 ---
-<span class="s-py-1"></span>
+<div class="s-py-1">
+  <code>s-py-1</code>
+</div>
