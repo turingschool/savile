@@ -2,6 +2,8 @@
 title: s-pr-4
 category: utils
 util_type: padding
-order: 57
+order: 42
 ---
-<span class="s-pr-4"></span>
+<div class="s-pr-4">
+  <code>s-pr-4</code>
+</div>

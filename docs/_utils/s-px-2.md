@@ -2,6 +2,8 @@
 title: s-px-2
 category: utils
 util_type: padding
-order: 40
+order: 25
 ---
-<span class="s-px-2"></span>
+<div class="s-px-2">
+  <code>s-px-2</code>
+</div>

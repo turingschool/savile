@@ -2,6 +2,8 @@
 title: s-ml-4
 category: utils
 util_type: margin
-order: 101
+order: 86
 ---
-<span class="s-ml-4"></span>
+<div class="s-ml-4">
+  <code>s-ml-4</code>
+</div>

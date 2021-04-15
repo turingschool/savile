@@ -2,6 +2,8 @@
 title: s-pb-3
 category: utils
 util_type: padding
-order: 51
+order: 36
 ---
-<span class="s-pb-3"></span>
+<div class="s-pb-3">
+  <code>s-pb-3</code>
+</div>

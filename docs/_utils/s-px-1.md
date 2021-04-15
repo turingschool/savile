@@ -2,6 +2,8 @@
 title: s-px-1
 category: utils
 util_type: padding
-order: 33
+order: 18
 ---
-<span class="s-px-1"></span>
+<div class="s-px-1">
+  <code>s-px-1</code>
+</div>
