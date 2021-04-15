@@ -4,6 +4,7 @@
 
 /* Add any scss classes you wish to extend */
 @import "design_system/utils/borders";
+@import "design_system/utils/spacing";
 @import "syntax.css";
 
 body {
@@ -178,17 +179,6 @@ figure {
   margin-bottom: var(--s-space-48);
 }
 
-.table-row:nth-child(even) {
-  background-color: var(--s-color-gray-100);
-  margin: 100px;
-}
-
-.table-row:nth-child(odd) {
-  pre, code {
-    background-color: var(--s-color-white);
-  }
-}
-
 .table-head-row {
   font-size: 1rem;
   border: 1px solid var(--s-color-gray-200);
@@ -204,6 +194,16 @@ figure {
 
 .table-row {
   border: 1px solid var(--s-color-gray-200);
+}
+
+.table-row:nth-child(even) {
+  background-color: var(--s-color-gray-100);
+}
+
+.table-row:nth-child(odd) {
+  pre, code {
+    background-color: var(--s-color-white);
+  }
 }
 
 .dark-cell {
@@ -244,10 +244,27 @@ figure {
 }
 
 // UTIL Specific Tables
-.util-class-cell {
-  padding: var(--s-space-16);
-  width: 20%;
-  border-right: 1px solid var(--s-color-gray-200);
+.utils-table {
+  .table-row td {
+    @extend .s-p-3;
+  }
+
+  .util-class-cell {
+    width: 20%;
+    border-right: 1px solid var(--s-color-gray-200);
+  }
+
+  .util-value-cell {
+    border-right: 1px solid var(--s-color-gray-200);
+
+    pre {
+      @extend .s-m-0;
+      @extend .s-p-0;
+    }
+  }
+
+  .util-example-cell {
+  }
 }
 
 // ELEMENT Specific Tables
@@ -261,7 +278,7 @@ figure {
   width: 45%;
   max-width: 500px;
   border-right: 1px solid var(--s-color-gray-200);
-  
+
   pre {
     margin-bottom: 0;
     white-space: pre-wrap;
@@ -317,9 +334,17 @@ figure {
 }
 
 /* ----------------------------------------- */
-/* ----- Borders ----- */
+/* ----- Utils Tables ----- */
 /* ----------------------------------------- */
-.token-table-borders [class*="s-border"] {
+:root {
+  --stripe-color: var(--s-color-yellow-500);
+}
+.stripes {
+  background-image: linear-gradient(45deg,var(--stripe-color) 12.5%,transparent 12.5%,transparent 50%,var(--stripe-color) 50%,var(--stripe-color) 62.5%,transparent 62.5%,transparent 100%);
+  background-size: 5px 5px;
+}
+
+.utils-table-borders [class*="s-border"] {
   display: block;
   width: 5rem;
   height: 5rem;
@@ -327,6 +352,35 @@ figure {
   margin: var(--s-space-16) auto;
 }
 
-.token-table-borders .s-border-radius-pill {
+.utils-table-borders .s-border-radius-pill {
   width: 10rem;
+}
+
+.utils-table-margins {
+  .example-container {
+    @extend .stripes;
+    display: table-cell;
+  }
+
+  [class*="s-m"] {
+    @extend .s-border;
+    code {
+      @extend .s-p-1;
+      display: block;
+      background-color: var(--s-color-white);
+    }
+  }
+}
+
+.utils-table-padding {
+  [class*="s-p"] {
+    @extend .stripes;
+    @extend .s-border;
+
+    code {
+      @extend .s-p-1;
+      display: block;
+      background-color: var(--s-color-white);
+    }
+  }
 }
