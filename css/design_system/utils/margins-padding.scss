@@ -1,0 +1,76 @@
+$space-types:
+  "p" "padding",
+  "m" "margin";
+
+$widths:
+  "0" "0",
+  "1" "4",
+  "2" "8",
+  "3" "16",
+  "4" "24",
+  "5" "40";
+
+$sides:
+  "t" "top",
+  "r" "right",
+  "b" "bottom",
+  "l" "left";
+
+$dimensions: "x", "y";
+
+@each $spacing-class, $spacing-prop in $space-types {
+  @each $width, $space in $widths {
+    /**
+     * @title s-#{$spacing-class}-#{$width}
+     * @category utils
+     * @util_type #{$spacing-prop}
+     *
+     * @example
+     * <span class="s-#{$spacing-class}-#{$width}"></span>
+     */
+    .s-#{$spacing-class}-#{$width} {
+      #{$spacing-prop}: var(--s-space-#{$space}) !important;
+    }
+
+    /**
+     * @title s-#{$spacing-class}x-#{$width}
+     * @category utils
+     * @util_type #{$spacing-prop}
+     *
+     * @example
+     * <span class="s-#{$spacing-class}x-#{$width}"></span>
+     */
+    .s-#{$spacing-class}x-#{$width} {
+      #{$spacing-prop}-left: var(--s-space-#{$space}) !important;
+      #{$spacing-prop}-right: var(--s-space-#{$space}) !important;
+    }
+
+    /**
+     * @title s-#{$spacing-class}y-#{$width}
+     * @category utils
+     * @util_type #{$spacing-prop}
+     *
+     * @example
+     * <span class="s-#{$spacing-class}y-#{$width}"></span>
+     */
+    .s-#{$spacing-class}y-#{$width} {
+      #{$spacing-prop}-top: var(--s-space-#{$space}) !important;
+      #{$spacing-prop}-bottom: var(--s-space-#{$space}) !important;
+    }
+
+    @each $side-class, $side-prop in $sides {
+      /**
+       * @title s-#{$spacing-class}#{$side-class}-#{$width}
+       * @category utils
+       * @util_type #{$spacing-prop}
+       *
+       * @example
+       * <span class="s-#{$spacing-class}#{$side-class}-#{$width}"></span>
+       */
+      .s-#{$spacing-class}#{$side-class}-#{$width} {
+        #{$spacing-prop}-#{$side-prop}: var(--s-space-#{$space}) !important;
+      }
+    }
+  }
+}
+
