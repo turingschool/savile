@@ -1,4 +1,4 @@
-<table class="table token-table-borders">
+<table class="table utils-table {{ include.table_class }}">
   <thead>
     <tr class="table-head-row">
       <th>Class Name</th>
@@ -11,11 +11,13 @@
     <td class="util-class-cell">
       <code>.{{ util.title }}</code>
     </td>
-    <td class="token-value-cell">
+    <td class="util-value-cell">
       {% highlight html %}{{ util | remove: '<p>' | remove: '</p>' }}{% endhighlight %}
     </td>
-    <td class="token-example-cell">
-      {{ util | remove: '<p>' | remove: '</p>' }}
+    <td class="util-example-cell">
+      <div class="example-container">
+        {{ util | remove: '<p>' | remove: '</p>' }}
+      </div>
     </td>
   </tr>
   {% endfor %}
