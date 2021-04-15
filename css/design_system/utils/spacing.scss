@@ -18,56 +18,46 @@ $sides:
 
 $dimensions: "x", "y";
 
+@mixin docstring($class, $prop) {
+  /**
+   * @title #{$class}
+   * @category utils
+   * @util_type #{$prop}
+   *
+   * @example
+   * <div class="#{$class}">
+   *   <code>#{$class}</code>
+   * </div>
+   */
+}
+
 @each $spacing-class, $spacing-prop in $space-types {
   @each $width, $space in $widths {
-    /**
-     * @title s-#{$spacing-class}-#{$width}
-     * @category utils
-     * @util_type #{$spacing-prop}
-     *
-     * @example
-     * <span class="s-#{$spacing-class}-#{$width}"></span>
-     */
-    .s-#{$spacing-class}-#{$width} {
+    $class-name: "s-#{$spacing-class}-#{$width}";
+    @include docstring($class-name, $spacing-prop);
+    .#{$class-name} {
       #{$spacing-prop}: var(--s-space-#{$space}) !important;
     }
 
-    /**
-     * @title s-#{$spacing-class}x-#{$width}
-     * @category utils
-     * @util_type #{$spacing-prop}
-     *
-     * @example
-     * <span class="s-#{$spacing-class}x-#{$width}"></span>
-     */
-    .s-#{$spacing-class}x-#{$width} {
+    $dim-x-class-name: "s-#{$spacing-class}x-#{$width}";
+    @include docstring($dim-x-class-name, $spacing-prop);
+    .#{$dim-x-class-name} {
       #{$spacing-prop}-left: var(--s-space-#{$space}) !important;
       #{$spacing-prop}-right: var(--s-space-#{$space}) !important;
     }
 
-    /**
-     * @title s-#{$spacing-class}y-#{$width}
-     * @category utils
-     * @util_type #{$spacing-prop}
-     *
-     * @example
-     * <span class="s-#{$spacing-class}y-#{$width}"></span>
-     */
-    .s-#{$spacing-class}y-#{$width} {
+    $dim-y-class-name: "s-#{$spacing-class}y-#{$width}";
+    @include docstring($dim-y-class-name, $spacing-prop);
+    .#{$dim-y-class-name} {
       #{$spacing-prop}-top: var(--s-space-#{$space}) !important;
       #{$spacing-prop}-bottom: var(--s-space-#{$space}) !important;
     }
 
     @each $side-class, $side-prop in $sides {
-      /**
-       * @title s-#{$spacing-class}#{$side-class}-#{$width}
-       * @category utils
-       * @util_type #{$spacing-prop}
-       *
-       * @example
-       * <span class="s-#{$spacing-class}#{$side-class}-#{$width}"></span>
-       */
-      .s-#{$spacing-class}#{$side-class}-#{$width} {
+      $side-class-name: "s-#{$spacing-class}#{$side-class}-#{$width}";
+      @include docstring($side-class-name, $spacing-prop);
+
+      .#{$side-class-name} {
         #{$spacing-prop}-#{$side-prop}: var(--s-space-#{$space}) !important;
       }
     }
