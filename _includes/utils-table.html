@@ -1,0 +1,22 @@
+<table class="table token-table-borders">
+  <thead>
+    <tr class="table-head-row">
+      <th>Class Name</th>
+      <th>HTML</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  {% for util in include.utils %}
+  <tr class="table-row">
+    <td class="util-class-cell">
+      <code>.{{ util.title }}</code>
+    </td>
+    <td class="token-value-cell">
+      {% highlight html %}{{ util | remove: '<p>' | remove: '</p>' }}{% endhighlight %}
+    </td>
+    <td class="token-example-cell">
+      {{ util | remove: '<p>' | remove: '</p>' }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
