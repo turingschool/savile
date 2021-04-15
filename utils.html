@@ -2,28 +2,25 @@
 title: Utilities
 layout: default
 permalink: /utils/
+subnav:
+  margins: Margins
+  padding: Padding
+  borders: Borders
 ---
 
-<h2>Borders</h2>
+<h2 id="margins" class="s-h2">Margins</h2>
+{% assign margin_utils = site.utils | where: "util_type", "margin" %}
+{% include utils-table.html utils=margin_utils %}
+
+<h2 id="padding" class="s-h2">Padding</h2>
+{% assign padding_utils = site.utils | where: "util_type", "padding" %}
+{% include utils-table.html utils=padding_utils %}
+
+<h2 id="borders" class="s-h2">Borders</h2>
 {% assign border_utils = site.utils | where: "util_type", "border" %}
 {% assign border_groups = "sides, width, radius" | split: ", " %}
 {% for border_group in border_groups %}
-<h3>{{ border_group | capitalize}}</h3>
-{% assign utils = border_utils | where: "border_group", border_group %}
-<table class="table token-table-borders">
-  <thead>
-    <tr class="table-head-row">
-      <th>Class Name</th>
-      <th>HTML</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  {% for util in utils %}
-  <tr class="table-row">
-    <td class="util-class-cell">{% highlight html %}{{ util.title }}{% endhighlight %}</td>
-    <td class="token-value-cell">{% highlight html %}{{ util | remove: '<p>' | remove: '</p>' }}{% endhighlight %}</td>
-    <td class="element-sample-cell">{{ util }}</td>
-  </tr>
-  {% endfor %}
-</table>
+<h3 class="s-h3">{{ border_group | capitalize}}</h3>
+  {% assign utils = border_utils | where: "border_group", border_group %}
+  {% include utils-table.html utils=utils %}
 {% endfor %}
