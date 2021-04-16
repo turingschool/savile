@@ -16,11 +16,11 @@ $sides: border, border-top, border-right, border-bottom, border-left;
 }
 
 $widths:
-  "0" "0",
-  "1" "2",
-  "2" "4",
-  "3" "8",
-  "4" "12";
+  "0" "--s-space-0",
+  "1" "--s-space-2",
+  "2" "--s-space-4",
+  "3" "--s-space-8",
+  "4" "--s-space-12";
 
 @each $width, $value in $widths {
   /**
@@ -33,7 +33,7 @@ $widths:
   * <span class="s-border s-border-width-#{$width}"></span>
   */
   .s-border-width-#{$width} {
-    border-width: var(--s-space-#{$value});
+    border-width: var(#{$value});
   }
 }
 
