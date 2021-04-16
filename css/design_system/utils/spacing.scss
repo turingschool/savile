@@ -3,12 +3,12 @@ $space-types:
   "m" "margin";
 
 $widths:
-  "0" "0",
-  "1" "4",
-  "2" "8",
-  "3" "16",
-  "4" "24",
-  "5" "40";
+  "0" "--s-space-0",
+  "1" "--s-space-4",
+  "2" "--s-space-8",
+  "3" "--s-space-16",
+  "4" "--s-space-24",
+  "5" "--s-space-40";
 
 $sides:
   "t" "top",
@@ -32,25 +32,25 @@ $dimensions: "x", "y";
 }
 
 @each $spacing-class, $spacing-prop in $space-types {
-  @each $width, $space in $widths {
+  @each $width, $space-var in $widths {
     $class-name: "s-#{$spacing-class}-#{$width}";
     @include docstring($class-name, $spacing-prop);
     .#{$class-name} {
-      #{$spacing-prop}: var(--s-space-#{$space}) !important;
+      #{$spacing-prop}: var(#{$space-var}) !important;
     }
 
     $dim-x-class-name: "s-#{$spacing-class}x-#{$width}";
     @include docstring($dim-x-class-name, $spacing-prop);
     .#{$dim-x-class-name} {
-      #{$spacing-prop}-left: var(--s-space-#{$space}) !important;
-      #{$spacing-prop}-right: var(--s-space-#{$space}) !important;
+      #{$spacing-prop}-left: var(#{$space-var}) !important;
+      #{$spacing-prop}-right: var(#{$space-var}) !important;
     }
 
     $dim-y-class-name: "s-#{$spacing-class}y-#{$width}";
     @include docstring($dim-y-class-name, $spacing-prop);
     .#{$dim-y-class-name} {
-      #{$spacing-prop}-top: var(--s-space-#{$space}) !important;
-      #{$spacing-prop}-bottom: var(--s-space-#{$space}) !important;
+      #{$spacing-prop}-top: var(#{$space-var}) !important;
+      #{$spacing-prop}-bottom: var(#{$space-var}) !important;
     }
 
     @each $side-class, $side-prop in $sides {
@@ -58,7 +58,7 @@ $dimensions: "x", "y";
       @include docstring($side-class-name, $spacing-prop);
 
       .#{$side-class-name} {
-        #{$spacing-prop}-#{$side-prop}: var(--s-space-#{$space}) !important;
+        #{$spacing-prop}-#{$side-prop}: var(#{$space-var}) !important;
       }
     }
   }
