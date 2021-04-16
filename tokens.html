@@ -10,6 +10,8 @@ subnav:
   font-family: Font Family
 ---
 
+<p class="s-p">The tokens listed below are part of Savile, but are mainly intended for internal use. If one wants to use the variables listed here in another project, they are available and require the CSS variable syntax (e.g. <code>color: var(--s-color-gray-100);</code>).</p>
+
 {% assign grouped_tokens = site.tokens | group_by: "token_type" %}
 
 {% for token_group in grouped_tokens %}

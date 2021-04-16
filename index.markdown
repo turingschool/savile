@@ -35,14 +35,6 @@ In the documentation, you will find:
 - class names and some usage examples for Typography, Utils, Elements, and Components
 - URLs for Brand Assets
 
-The variables listed in Tokens and Colors are CSS variables which do work as expected in SCSS and SASS. As an example, for the variable `--s-color-cyan-400`, the following syntax needs to be used:
-
-```css
-.selector {
-  color: var(--s-color-cyan-400);
-}
-```
-
 #### Static Assets
 
 To learn how to use Savile's static assets like images and icons, check out the <a href="/assets" class="s-link">Assets page</a>.
