@@ -2,7 +2,7 @@
 title: s-py-4
 category: utils
 util_type: padding
-order: 40
+order: 41
 ---
 <div class="s-py-4">
   <code>s-py-4</code>

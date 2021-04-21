@@ -2,7 +2,7 @@
 title: s-mx-4
 category: utils
 util_type: margin
-order: 81
+order: 82
 ---
 <div class="s-mx-4">
   <code>s-mx-4</code>

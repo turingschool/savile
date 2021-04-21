@@ -2,7 +2,7 @@
 title: s-my-1
 category: utils
 util_type: margin
-order: 61
+order: 62
 ---
 <div class="s-my-1">
   <code>s-my-1</code>
