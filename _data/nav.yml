@@ -4,6 +4,8 @@
   url: /tokens/
 - text: Colors
   url: /colors/
+- text: Styling Content
+  url: /content/
 - text: Typography
   url: /typography/
 - text: Utils
