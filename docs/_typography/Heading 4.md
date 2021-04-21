@@ -2,5 +2,5 @@
 title: Heading 4
 category: typography
 value: s-h4
-order: 4
+order: 5
 ---
