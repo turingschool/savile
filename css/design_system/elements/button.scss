@@ -22,11 +22,11 @@
   display: inline-block;
   line-height: 17px;
   letter-spacing: .5px; 
-  text-decoration: none;
+  text-decoration: none !important;
   text-transform: uppercase;
   cursor: pointer;
 
-  color: var(--s-color-gray-100);
+  color: var(--s-color-gray-100) !important;
   background-color: var(--s-color-gray-700);
 }
 
@@ -43,7 +43,7 @@
  */
  
 .s-button-primary {
-  color: var(--s-color-cyan-700);
+  color: var(--s-color-cyan-700) !important;
   background-color: var(--s-color-cyan-400);
 }
 
@@ -60,7 +60,7 @@
  **/
  
 .s-button-primary-inverse {
-  color: var(--s-color-cyan-400);
+  color: var(--s-color-cyan-400) !important;
   background-color: var(--s-color-cyan-700);
 }
 
@@ -77,7 +77,7 @@
  */
  
 .s-button-secondary {
-  color: var(--s-color-gray-700);
+  color: var(--s-color-gray-700) !important;
   background-color: var(--s-color-gray-100);
   border: 2px solid var(--s-color-gray-700);
 }
