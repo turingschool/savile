@@ -43,7 +43,6 @@ collections:
   colors:
     sort_by: title
   content:
-    sort_by: order
   typography:
     sort_by: order
   utils:

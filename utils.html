@@ -9,10 +9,6 @@ subnav:
   borders: Borders
 ---
 
-<h2 id="body" class="s-h2">Base Savile</h2>
-{% assign body_utils = site.utils | where: "util_type", "body" %}
-{% include utils-table.html utils=body_utils %}
-
 <h2 id="margins" class="s-h2">Margins</h2>
 {% assign margin_utils = site.utils | where: "util_type", "margin" %}
 {% include utils-table.html utils=margin_utils table_class="utils-table-margins" %}
