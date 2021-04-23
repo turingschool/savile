@@ -8,7 +8,7 @@ require 'rexml/document'
 
 AWS_ASSETS_XML = URI('https://turing-savile-assets.s3.amazonaws.com/?list-type=2')
 
-ASSETS_HOST_URL = 'https://assets.turing.io/'
+ASSETS_HOST_URL = 'https://assets.turing.edu/'
 ROOT_DIR = File.absolute_path('..', __dir__)
 ASSETS_DATA_FILE = File.join(ROOT_DIR, '_data', 'assets.yml')
 
