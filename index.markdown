@@ -13,11 +13,11 @@ Nicknamed after <a class="s-link" href="https://en.wikipedia.org/wiki/Savile_Row
 
 To add Savile to a project, link the version you'd like to use in the `<head>` tag of your HTML. You can find a list of versions on the <a href="https://github.com/turingschool/savile/releases" target="blank" class="s-link">releases page</a>. For example, to link version 1.1:
 ```html
-<link rel="stylesheet" href="https://savile.turing.io/css/v1/1.1.css">
+<link rel="stylesheet" href="https://savile.turing.edu/css/v1/1.1.css">
 ```
 If you don't need to lock in a specific version, but just want the latest release for a given major version, you can reference the `-latest.css` file.
 ```html
-<link rel="stylesheet" href="https://savile.turing.io/css/v1/1-latest.css">
+<link rel="stylesheet" href="https://savile.turing.edu/css/v1/1-latest.css">
 ```
 
 **Simply importing Savile should not change the styles of your existing application**. This is because Savile's classes are prefixed with `s-`, so the likelihood of them clashing with other CSS is very low.
@@ -28,7 +28,7 @@ _Caveat: when Savile is added to an existing Turing application, you may notice 
 
 ### Using Savile in a Project
 
-Once Savile is added to your project, variables and class names will be available anywhere in your project. 
+Once Savile is added to your project, variables and class names will be available anywhere in your project.
 
 In the documentation, you will find:
 - variables for Tokens and Colors

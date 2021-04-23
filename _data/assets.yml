@@ -1,821 +1,821 @@
 ---
 - file: favicon.ico
   group: images
-  url: https://assets.turing.io/favicon.ico
+  url: https://assets.turing.edu/favicon.ico
   size: 5.303kb
 - file: Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.otf
   size: 29.875kb
 - file: Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.ttf
   size: 32.891kb
 - file: Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.woff
   size: 17.813kb
 - file: Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed.woff2
   size: 13.367kb
 - file: Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.otf
   size: 30.516kb
 - file: Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.ttf
   size: 35.117kb
 - file: Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.woff
   size: 19.438kb
 - file: Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W107_Extra_Black_Condensed_Oblique.woff2
   size: 14.746kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light.otf
   size: 27.035kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light.ttf
   size: 31.07kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light.woff
   size: 18.316kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light.woff2
   size: 13.664kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.otf
   size: 28.344kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.ttf
   size: 31.996kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.woff
   size: 17.82kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed.woff2
   size: 13.316kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.otf
   size: 29.32kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.ttf
   size: 34.02kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.woff
   size: 19.273kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Condensed_Oblique.woff2
   size: 14.355kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.otf
   size: 26.941kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.ttf
   size: 31.109kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.woff
   size: 17.613kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded.woff2
   size: 13.074kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.otf
   size: 28.223kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.ttf
   size: 33.156kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.woff
   size: 19.129kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Expanded_Oblique.woff2
   size: 14.23kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.otf
   size: 28.016kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.ttf
   size: 32.867kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.woff
   size: 19.398kb
 - file: Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W25_Ultra_Light_Italic.woff2
   size: 14.711kb
 - file: Helvetica_Neue_LT_Std-W35_Thin.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin.otf
   size: 27.465kb
 - file: Helvetica_Neue_LT_Std-W35_Thin.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin.ttf
   size: 31.563kb
 - file: Helvetica_Neue_LT_Std-W35_Thin.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin.woff
   size: 18.781kb
 - file: Helvetica_Neue_LT_Std-W35_Thin.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin.woff2
   size: 14.266kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed.otf
   size: 28.605kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed.ttf
   size: 32.121kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed.woff
   size: 17.895kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed.woff2
   size: 13.391kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.otf
   size: 29.848kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.ttf
   size: 34.133kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.woff
   size: 19.41kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Condensed_Oblique.woff2
   size: 14.5kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Expanded.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded.otf
   size: 26.824kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Expanded.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded.ttf
   size: 31.273kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Expanded.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded.woff
   size: 18.234kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Expanded.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded.woff2
   size: 13.652kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.otf
   size: 28.117kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.ttf
   size: 33.508kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.woff
   size: 19.898kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Expanded_Oblique.woff2
   size: 14.918kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Italic.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Italic.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Italic.otf
   size: 28.098kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Italic.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Italic.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Italic.ttf
   size: 32.68kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Italic.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Italic.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Italic.woff
   size: 19.305kb
 - file: Helvetica_Neue_LT_Std-W35_Thin_Italic.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W35_Thin_Italic.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W35_Thin_Italic.woff2
   size: 14.621kb
 - file: Helvetica_Neue_LT_Std-W45_Light.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light.otf
   size: 27.461kb
 - file: Helvetica_Neue_LT_Std-W45_Light.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light.ttf
   size: 30.75kb
 - file: Helvetica_Neue_LT_Std-W45_Light.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light.woff
   size: 17.879kb
 - file: Helvetica_Neue_LT_Std-W45_Light.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light.woff2
   size: 13.242kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed.otf
   size: 27.125kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed.ttf
   size: 28.668kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed.woff
   size: 16.734kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed.woff2
   size: 12.352kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.otf
   size: 28.125kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.ttf
   size: 30.629kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.woff
   size: 18.109kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Condensed_Oblique.woff2
   size: 13.352kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Expanded.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded.otf
   size: 27.133kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Expanded.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded.ttf
   size: 30.988kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Expanded.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded.woff
   size: 18.195kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Expanded.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded.woff2
   size: 13.641kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.otf
   size: 28.594kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.ttf
   size: 33.066kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.woff
   size: 19.668kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Expanded_Oblique.woff2
   size: 14.734kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Italic.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Italic.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Italic.otf
   size: 27.957kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Italic.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Italic.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Italic.ttf
   size: 32.039kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Italic.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Italic.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Italic.woff
   size: 18.719kb
 - file: Helvetica_Neue_LT_Std-W45_Light_Italic.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W45_Light_Italic.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W45_Light_Italic.woff2
   size: 13.934kb
 - file: Helvetica_Neue_LT_Std-W55_Normal.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal.otf
   size: 26.832kb
 - file: Helvetica_Neue_LT_Std-W55_Normal.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal.ttf
   size: 30.313kb
 - file: Helvetica_Neue_LT_Std-W55_Normal.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal.woff
   size: 17.828kb
 - file: Helvetica_Neue_LT_Std-W55_Normal.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal.woff2
   size: 13.406kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed.otf
   size: 27.957kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed.ttf
   size: 32.891kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed.woff
   size: 18.27kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed.woff2
   size: 13.805kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.otf
   size: 29.129kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.ttf
   size: 35.109kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.woff
   size: 19.91kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Condensed_Oblique.woff2
   size: 15.063kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Expanded.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded.otf
   size: 26.969kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Expanded.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded.ttf
   size: 30.055kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Expanded.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded.woff
   size: 17.602kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Expanded.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded.woff2
   size: 13.008kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.otf
   size: 28.258kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.ttf
   size: 32.141kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.woff
   size: 18.949kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Expanded_Oblique.woff2
   size: 14.199kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Italic.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Italic.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Italic.otf
   size: 27.746kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Italic.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Italic.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Italic.ttf
   size: 32.172kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Italic.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Italic.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Italic.woff
   size: 18.832kb
 - file: Helvetica_Neue_LT_Std-W55_Normal_Italic.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W55_Normal_Italic.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W55_Normal_Italic.woff2
   size: 14.168kb
 - file: Helvetica_Neue_LT_Std-W65_Medium.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium.otf
   size: 27.598kb
 - file: Helvetica_Neue_LT_Std-W65_Medium.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium.ttf
   size: 30.867kb
 - file: Helvetica_Neue_LT_Std-W65_Medium.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium.woff
   size: 18.172kb
 - file: Helvetica_Neue_LT_Std-W65_Medium.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium.woff2
   size: 13.637kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed.otf
   size: 29.668kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed.ttf
   size: 32.223kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed.woff
   size: 17.73kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed.woff2
   size: 13.332kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.otf
   size: 30.531kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.ttf
   size: 34.238kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.woff
   size: 19.289kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Condensed_Oblique.woff2
   size: 14.477kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Expanded.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded.otf
   size: 27.484kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Expanded.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded.ttf
   size: 31.848kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Expanded.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded.woff
   size: 18.563kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Expanded.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded.woff2
   size: 13.996kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.otf
   size: 28.508kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.ttf
   size: 33.977kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.woff
   size: 20.043kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Expanded_Oblique.woff2
   size: 15.141kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Italic.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Italic.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Italic.otf
   size: 28.102kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Italic.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Italic.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Italic.ttf
   size: 32.191kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Italic.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Italic.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Italic.woff
   size: 18.941kb
 - file: Helvetica_Neue_LT_Std-W65_Medium_Italic.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W65_Medium_Italic.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W65_Medium_Italic.woff2
   size: 14.281kb
 - file: Helvetica_Neue_LT_Std-W75_Bold.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold.otf
   size: 27.578kb
 - file: Helvetica_Neue_LT_Std-W75_Bold.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold.ttf
   size: 31.246kb
 - file: Helvetica_Neue_LT_Std-W75_Bold.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold.woff
   size: 18.316kb
 - file: Helvetica_Neue_LT_Std-W75_Bold.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold.woff2
   size: 13.719kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed.otf
   size: 28.582kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed.ttf
   size: 31.484kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed.woff
   size: 17.645kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed.woff2
   size: 13.109kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.otf
   size: 29.719kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.ttf
   size: 33.293kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.woff
   size: 18.988kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Condensed_Oblique.woff2
   size: 14.164kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Expanded.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded.otf
   size: 27.555kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Expanded.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded.ttf
   size: 30.824kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Expanded.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded.woff
   size: 17.895kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Expanded.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded.woff2
   size: 13.473kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.otf
   size: 28.699kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.ttf
   size: 32.664kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.woff
   size: 19.395kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Expanded_Oblique.woff2
   size: 14.535kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Italic.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Italic.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Italic.otf
   size: 28.039kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Italic.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Italic.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Italic.ttf
   size: 32.113kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Italic.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Italic.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Italic.woff
   size: 18.691kb
 - file: Helvetica_Neue_LT_Std-W75_Bold_Italic.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W75_Bold_Italic.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W75_Bold_Italic.woff2
   size: 13.863kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy.otf
   size: 28.41kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy.ttf
   size: 31.227kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy.woff
   size: 18.164kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy.woff2
   size: 13.566kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed.otf
   size: 29.75kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed.ttf
   size: 32.492kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed.woff
   size: 17.762kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed.woff2
   size: 13.313kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.otf
   size: 30.508kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.ttf
   size: 34.711kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.woff
   size: 19.543kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Condensed_Oblique.woff2
   size: 14.68kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Expanded.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded.otf
   size: 28.211kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Expanded.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded.ttf
   size: 29.953kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Expanded.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded.woff
   size: 17.758kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Expanded.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded.woff2
   size: 13.137kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.otf
   size: 29.602kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.ttf
   size: 32.063kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.woff
   size: 19.289kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Expanded_Oblique.woff2
   size: 14.352kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Italic.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Italic.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Italic.otf
   size: 28.797kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Italic.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Italic.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Italic.ttf
   size: 32.043kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Italic.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Italic.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Italic.woff
   size: 18.852kb
 - file: Helvetica_Neue_LT_Std-W85_Heavy_Italic.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Italic.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W85_Heavy_Italic.woff2
   size: 14.074kb
 - file: Helvetica_Neue_LT_Std-W95_Black.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black.otf
   size: 29.004kb
 - file: Helvetica_Neue_LT_Std-W95_Black.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black.ttf
   size: 31.398kb
 - file: Helvetica_Neue_LT_Std-W95_Black.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black.woff
   size: 18.457kb
 - file: Helvetica_Neue_LT_Std-W95_Black.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black.woff2
   size: 13.875kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Condensed.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed.otf
   size: 29.281kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Condensed.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed.ttf
   size: 31.129kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Condensed.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed.woff
   size: 17.063kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Condensed.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed.woff2
   size: 12.68kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.otf
   size: 29.977kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.ttf
   size: 33.191kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.woff
   size: 18.684kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Condensed_Oblique.woff2
   size: 13.914kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Expanded.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded.otf
   size: 28.555kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Expanded.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded.ttf
   size: 30.113kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Expanded.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded.woff
   size: 17.711kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Expanded.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded.woff2
   size: 13.137kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.otf
   size: 29.801kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.ttf
   size: 31.922kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.woff
   size: 19.043kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Expanded_Oblique.woff2
   size: 14.121kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Italic.otf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.otf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.otf
   size: 28.945kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Italic.ttf
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.ttf
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.ttf
   size: 32.289kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Italic.woff
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.woff
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.woff
   size: 18.949kb
 - file: Helvetica_Neue_LT_Std-W95_Black_Italic.woff2
   group: fonts
-  url: https://assets.turing.io/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.woff2
+  url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.woff2
   size: 14.195kb
 - file: github.svg
   group: icons
-  url: https://assets.turing.io/icons/github.svg
+  url: https://assets.turing.edu/icons/github.svg
   size: 2.061kb
 - file: search.png
   group: icons
-  url: https://assets.turing.io/icons/search.png
+  url: https://assets.turing.edu/icons/search.png
   size: 11.908kb
 - file: turing-school-mark-256.png
   group: images
-  url: https://assets.turing.io/turing-school-mark-256.png
+  url: https://assets.turing.edu/turing-school-mark-256.png
   size: 13.566kb
 - file: turing-school-mark-gray.png
   group: images
-  url: https://assets.turing.io/turing-school-mark-gray.png
+  url: https://assets.turing.edu/turing-school-mark-gray.png
   size: 45.829kb
