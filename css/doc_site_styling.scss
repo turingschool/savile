@@ -245,6 +245,9 @@ figure {
 
 // UTIL Specific Tables
 .utils-table {
+
+  margin-bottom: var(--s-space-48);
+
   .table-row td {
     @extend .s-p-3;
   }

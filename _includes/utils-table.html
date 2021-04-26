@@ -11,9 +11,15 @@
     <td class="util-class-cell">
       <code>.{{ util.title }}</code>
     </td>
+    {% if util.util_type contains "text-" or util.util_type contains "font-") %}
+    <td class="util-value-cell">
+      {% highlight html %}{{ util }}{% endhighlight %}
+    </td>
+    {% else %}
     <td class="util-value-cell">
       {% highlight html %}{{ util | remove: '<p>' | remove: '</p>' }}{% endhighlight %}
     </td>
+    {% endif %}
     <td class="util-example-cell">
       <div class="example-container">
         {{ util | remove: '<p>' | remove: '</p>' }}

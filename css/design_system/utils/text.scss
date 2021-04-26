@@ -1,0 +1,69 @@
+@mixin docstring($class, $prop) {
+  /**
+   * @title #{$class}
+   * @category utils
+   * @util_type #{$prop}
+   *
+   * @example
+   * <p class="#{$class}">Sample text</p>
+   */
+}
+
+// text-align utils
+$align-options: "start", "center", "end";
+
+@each $option in $align-options {
+  $class-name: "s-text-#{$option}";
+  @include docstring($class-name, "text-align");
+  .#{$class-name} {
+    text-align: #{$option};
+  }
+}
+
+// text-wrap utils - unsure on this...
+// $wrap-options: 
+//   "wrap" "break-word", 
+//   "nowrap" "normal";
+
+// @each $option, $value in $wrap-options {
+//   $class-name: "s-text-#{$option}";
+//   @include docstring($class-name);
+//   .#{$class-name} {
+//     overflow-wrap: #{$value};
+//   }
+// }
+
+// text-decoration utils
+$decoration-options: "line-through", "none", "underline";
+
+@each $option in $decoration-options {
+  $class-name: "s-text-decor-#{$option}";
+  @include docstring($class-name, "text-decoration");
+  .#{$class-name} {
+    text-decoration: #{$option};
+  }
+}
+
+// text-transform utils
+$transform-options: "capitalize", "lowercase", "uppercase";
+
+@each $option in $transform-options {
+  $class-name: "s-text-#{$option}";
+  @include docstring($class-name, "text-transform");
+  .#{$class-name} {
+    text-transform: #{$option};
+  }
+}
+
+// font-weight utils
+$font-weights-options: "ultra-light", "light", "normal", "bold", "heavy";
+
+@each $option in $font-weights-options {
+  $class-name: "s-fw-#{$option}";
+  $value: --s-font-weight-#{$option};
+  @include docstring($class-name, "font-weight");
+  .#{$class-name} {
+    font-weight: var($value);
+  }
+}
+
