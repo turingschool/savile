@@ -2,6 +2,6 @@
 title: s-fw-bold
 category: utils
 util_type: font-weight
-order: 122
+order: 113
 ---
-<p class="s-fw-bold">Sample text</p>
+<p class="s-fw-bold">Example text</p>

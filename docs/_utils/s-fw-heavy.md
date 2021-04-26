@@ -2,6 +2,6 @@
 title: s-fw-heavy
 category: utils
 util_type: font-weight
-order: 123
+order: 114
 ---
-<p class="s-fw-heavy">Sample text</p>
+<p class="s-fw-heavy">Example text</p>
