@@ -3,10 +3,30 @@ title: Utilities
 layout: default
 permalink: /utils/
 subnav:
+  font-weight: Font Weight
+  text-align: Text Align
+  text-transform: Text Decoration
+  text-transform: Text Transform
   margins: Margins
   padding: Padding
   borders: Borders
 ---
+
+<h2 id="font-weight" class="s-h2">Font Weight</h2>
+{% assign text_utils = site.utils | where: "util_type", "font-weight" %}
+{% include utils-table.html utils=text_utils %}
+
+<h2 id="text-align" class="s-h2">Text Align</h2>
+{% assign text_utils = site.utils | where: "util_type", "text-align" %}
+{% include utils-table.html utils=text_utils %}
+
+<h2 id="text-decoration" class="s-h2">Text Decoration</h2>
+{% assign text_utils = site.utils | where: "util_type", "text-decoration" %}
+{% include utils-table.html utils=text_utils %}
+
+<h2 id="text-transform" class="s-h2">Text Transform</h2>
+{% assign text_utils = site.utils | where: "util_type", "text-transform" %}
+{% include utils-table.html utils=text_utils %}
 
 <h2 id="margins" class="s-h2">Margins</h2>
 {% assign margin_utils = site.utils | where: "util_type", "margin" %}
