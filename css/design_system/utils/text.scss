@@ -5,57 +5,70 @@
    * @util_type #{$prop}
    *
    * @example
-   * <p class="#{$class}">Sample text</p>
+   * <p class="#{$class}">Example text</p>
    */
 }
 
-// text-align utils
-$align-options: "start", "center", "end";
-
-@each $option in $align-options {
-  $class-name: "s-text-#{$option}";
-  @include docstring($class-name, "text-align");
-  .#{$class-name} {
-    text-align: #{$option};
-  }
+@mixin docstring_messy($class, $prop) {
+  /**
+   * @title #{$class}
+   * @category utils
+   * @util_type #{$prop}
+   *
+   * @example
+   * <p class="#{$class}">exaMple tEXT</p>
+   */
 }
 
-// text-wrap utils - unsure on this...
-// $wrap-options: 
-//   "wrap" "break-word", 
-//   "nowrap" "normal";
-
-// @each $option, $value in $wrap-options {
-//   $class-name: "s-text-#{$option}";
-//   @include docstring($class-name);
-//   .#{$class-name} {
-//     overflow-wrap: #{$value};
-//   }
-// }
-
-// text-decoration utils
-$decoration-options: "line-through", "none", "underline";
-
-@each $option in $decoration-options {
-  $class-name: "s-text-decor-#{$option}";
-  @include docstring($class-name, "text-decoration");
-  .#{$class-name} {
-    text-decoration: #{$option};
-  }
+// text-align
+.s-text-start {
+  @include docstring("s-text-start", "text-align");
+  text-align: start;
 }
 
-// text-transform utils
-$transform-options: "capitalize", "lowercase", "uppercase";
-
-@each $option in $transform-options {
-  $class-name: "s-text-#{$option}";
-  @include docstring($class-name, "text-transform");
-  .#{$class-name} {
-    text-transform: #{$option};
-  }
+.s-text-center {
+  @include docstring("s-text-center", "text-align");
+  text-align: center;
 }
 
-// font-weight utils
+.s-text-end {
+  @include docstring("s-text-end", "text-align");
+  text-align: end;
+}
+
+// text-decoration
+.s-text-decor-line-through {
+  @include docstring("s-text-decor-line-through", "text-decoration");
+  text-decoration: line-through;
+}
+
+.s-text-decor-none {
+  @include docstring("s-text-decor-none", "text-decoration");
+  text-decoration: none;
+}
+
+.s-text-decor-underline {
+  @include docstring("s-text-decor-underline", "text-decoration");
+  text-decoration: underline;
+}
+
+// text-transform
+.s-text-capitalize {
+  @include docstring_messy("s-text-capitalize", "text-transform");
+  text-transform: capitalize;
+}
+
+.s-text-lowercase {
+  @include docstring_messy("s-text-lowercase", "text-transform");
+  text-transform: lowercase;
+}
+
+.s-text-uppercase {
+  @include docstring_messy("s-text-uppercase", "text-transform");
+  text-transform: uppercase;
+}
+
+// font-weight
 $font-weights-options: "ultra-light", "light", "normal", "bold", "heavy";
 
 @each $option in $font-weights-options {
