@@ -2,6 +2,6 @@
 title: s-text-decor-line-through
 category: utils
 util_type: text-decoration
-order: 113
+order: 1
 ---
-<p class="s-text-decor-line-through">Sample text</p>
+<p class="s-text-decor-line-through">Example text</p>

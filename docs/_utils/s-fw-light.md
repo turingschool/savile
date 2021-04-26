@@ -2,6 +2,6 @@
 title: s-fw-light
 category: utils
 util_type: font-weight
-order: 120
+order: 111
 ---
-<p class="s-fw-light">Sample text</p>
+<p class="s-fw-light">Example text</p>

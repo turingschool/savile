@@ -2,6 +2,6 @@
 title: s-text-decor-underline
 category: utils
 util_type: text-decoration
-order: 115
+order: 1
 ---
-<p class="s-text-decor-underline">Sample text</p>
+<p class="s-text-decor-underline">Example text</p>

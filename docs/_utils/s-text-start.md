@@ -2,6 +2,6 @@
 title: s-text-start
 category: utils
 util_type: text-align
-order: 110
+order: 1
 ---
-<p class="s-text-start">Sample text</p>
+<p class="s-text-start">Example text</p>
