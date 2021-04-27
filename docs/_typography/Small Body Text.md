@@ -2,5 +2,5 @@
 title: Small Body Text
 category: typography
 value: s-text-body-sm
-order: 9
+order: 8
 ---

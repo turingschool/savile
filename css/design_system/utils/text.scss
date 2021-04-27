@@ -21,50 +21,50 @@
 }
 
 // text-align
+@include docstring("s-text-start", "text-align");
 .s-text-start {
-  @include docstring("s-text-start", "text-align");
   text-align: start;
 }
 
+@include docstring("s-text-center", "text-align");
 .s-text-center {
-  @include docstring("s-text-center", "text-align");
   text-align: center;
 }
 
+@include docstring("s-text-end", "text-align");
 .s-text-end {
-  @include docstring("s-text-end", "text-align");
   text-align: end;
 }
 
 // text-decoration
+@include docstring("s-text-decor-line-through", "text-decoration");
 .s-text-decor-line-through {
-  @include docstring("s-text-decor-line-through", "text-decoration");
   text-decoration: line-through;
 }
 
+@include docstring("s-text-decor-none", "text-decoration");
 .s-text-decor-none {
-  @include docstring("s-text-decor-none", "text-decoration");
   text-decoration: none;
 }
 
+@include docstring("s-text-decor-underline", "text-decoration");
 .s-text-decor-underline {
-  @include docstring("s-text-decor-underline", "text-decoration");
   text-decoration: underline;
 }
 
 // text-transform
+@include docstring_messy("s-text-capitalize", "text-transform");
 .s-text-capitalize {
-  @include docstring_messy("s-text-capitalize", "text-transform");
   text-transform: capitalize;
 }
 
+@include docstring_messy("s-text-lowercase", "text-transform");
 .s-text-lowercase {
-  @include docstring_messy("s-text-lowercase", "text-transform");
   text-transform: lowercase;
 }
 
+@include docstring_messy("s-text-uppercase", "text-transform");
 .s-text-uppercase {
-  @include docstring_messy("s-text-uppercase", "text-transform");
   text-transform: uppercase;
 }
 
