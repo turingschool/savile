@@ -72,7 +72,7 @@
 $font-weights-options: "ultra-light", "light", "normal", "bold", "heavy";
 
 @each $option in $font-weights-options {
-  $class-name: "s-fw-#{$option}";
+  $class-name: "s-font-#{$option}";
   $value: --s-font-weight-#{$option};
   @include docstring($class-name, "font-weight");
   .#{$class-name} {
