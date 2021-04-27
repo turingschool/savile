@@ -4,4 +4,4 @@ category: utils
 util_type: text-transform
 order: 116
 ---
-<p class="s-text-lowercase">exaMple tEXT</p>
+<p class="s-text-lowercase">exaMPle teXT</p>
