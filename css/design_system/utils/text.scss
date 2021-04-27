@@ -1,69 +1,58 @@
-@mixin docstring($class, $prop) {
+@mixin docstring($class, $prop, $example_text) {
   /**
    * @title #{$class}
    * @category utils
    * @util_type #{$prop}
    *
    * @example
-   * <p class="#{$class}">Example text</p>
-   */
-}
-
-@mixin docstring_messy($class, $prop) {
-  /**
-   * @title #{$class}
-   * @category utils
-   * @util_type #{$prop}
-   *
-   * @example
-   * <p class="#{$class}">exaMple tEXT</p>
+   * <p class="#{$class}">#{$example_text}</p>
    */
 }
 
 // text-align
-@include docstring("s-text-start", "text-align");
+@include docstring("s-text-start", "text-align", "Example text");
 .s-text-start {
   text-align: start;
 }
 
-@include docstring("s-text-center", "text-align");
+@include docstring("s-text-center", "text-align", "Example text");
 .s-text-center {
   text-align: center;
 }
 
-@include docstring("s-text-end", "text-align");
+@include docstring("s-text-end", "text-align", "Example text");
 .s-text-end {
   text-align: end;
 }
 
 // text-decoration
-@include docstring("s-text-decor-line-through", "text-decoration");
+@include docstring("s-text-decor-line-through", "text-decoration", "Example text");
 .s-text-decor-line-through {
   text-decoration: line-through;
 }
 
-@include docstring("s-text-decor-none", "text-decoration");
+@include docstring("s-text-decor-none", "text-decoration", "Example text");
 .s-text-decor-none {
   text-decoration: none;
 }
 
-@include docstring("s-text-decor-underline", "text-decoration");
+@include docstring("s-text-decor-underline", "text-decoration", "Example text");
 .s-text-decor-underline {
   text-decoration: underline;
 }
 
 // text-transform
-@include docstring_messy("s-text-capitalize", "text-transform");
+@include docstring("s-text-capitalize", "text-transform", "exaMPle teXT");
 .s-text-capitalize {
   text-transform: capitalize;
 }
 
-@include docstring_messy("s-text-lowercase", "text-transform");
+@include docstring("s-text-lowercase", "text-transform", "exaMPle teXT");
 .s-text-lowercase {
   text-transform: lowercase;
 }
 
-@include docstring_messy("s-text-uppercase", "text-transform");
+@include docstring("s-text-uppercase", "text-transform", "exaMPle teXT");
 .s-text-uppercase {
   text-transform: uppercase;
 }
@@ -74,7 +63,7 @@ $font-weights-options: "ultra-light", "light", "normal", "bold", "heavy";
 @each $option in $font-weights-options {
   $class-name: "s-font-#{$option}";
   $value: --s-font-weight-#{$option};
-  @include docstring($class-name, "font-weight");
+  @include docstring($class-name, "font-weight", "Example text");
   .#{$class-name} {
     font-weight: var($value);
   }
