@@ -2,5 +2,5 @@
 title: Body Text
 category: typography
 value: s-text-body
-order: 8
+order: 7
 ---
