@@ -4,4 +4,4 @@ category: utils
 util_type: font-weight
 order: 118
 ---
-<p class="s-font-ultra-light">Example text</p>
+<span class="s-font-ultra-light">Example text</span>
