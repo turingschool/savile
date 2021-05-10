@@ -4,4 +4,4 @@ category: utils
 util_type: text-transform
 order: 115
 ---
-<p class="s-text-capitalize">exaMPle teXT</p>
+<span class="s-text-capitalize">exaMPle teXT</span>

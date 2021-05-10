@@ -4,4 +4,4 @@ category: utils
 util_type: text-align
 order: 111
 ---
-<p class="s-text-end">Example text</p>
+<span class="s-text-end">Example text</span>
