@@ -5,9 +5,7 @@
    * @util_type #{$prop}
    *
    * @example
-   * <div>
-   *  <p class="#{$class}">#{$example_text}</p>
-   * </div>
+   *  <#{$tag_type} class="#{$class}">#{$example_text}</#{$tag_type}>
    */
 }
 
