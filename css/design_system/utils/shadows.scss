@@ -1,0 +1,24 @@
+$shadow-sizes: "sm", "md", "lg";
+
+@mixin docstring($class, $prop) {
+  /**
+   * @title #{$class}
+   * @category utils
+   * @util_type #{$prop}
+   *
+   * @example
+   * <div class="#{$class}">
+   *   <div class="s-p-2"></div>
+   * </div>
+   */
+}
+
+@each $shadow-size in $shadow-sizes {
+  $value: "--s-shadow-#{$shadow-size}";
+  $class-name: "s-shadow-#{$shadow-size}";
+
+  @include docstring($class-name, "shadow");
+  .#{$class-name} {
+    box-shadow: var(#{$value});
+  }
+}
