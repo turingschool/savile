@@ -62,7 +62,7 @@ figure {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 0 var(--s-space-16);
+  padding: 0 var(--s-space-5);
   z-index: 2;
   position: relative;
 }
@@ -73,7 +73,7 @@ figure {
 
 .search-wrapper {
   align-self: center;
-  padding: var(--s-space-4) var(--s-space-32);
+  padding: var(--s-space-2) var(--s-space-9);
   display: flex;
 }
 
@@ -130,13 +130,13 @@ figure {
 .main-nav-item a,
 .sub-nav-item a {
   display: block;
-  padding: var(--s-space-16) var(--s-space-32) var(--s-space-12);
+  padding: var(--s-space-5) var(--s-space-9) var(--s-space-4);
   text-decoration: none;
   color: inherit;
 }
 
 .sub-nav-item a {
-  padding: var(--s-space-8) var(--s-space-48) var(--s-space-4);
+  padding: var(--s-space-3) var(--s-space-11) var(--s-space-2);
   font-weight: var(--s-font-weight-normal);
   text-transform: none;
 }
@@ -155,7 +155,7 @@ figure {
 /* ----------------------------------------- */
 .main {
   overflow-y: scroll;
-  padding: var(--s-space-64);
+  padding: var(--s-space-13);
   padding-top: 0;
 }
 
@@ -164,7 +164,7 @@ figure {
 }
 
 .main-content-container {
-  margin-top: var(--s-space-16);
+  margin-top: var(--s-space-5);
 }
 
 .table {
@@ -176,7 +176,7 @@ figure {
   width: 100%;
   border-spacing: 0;
   border: 1px solid var(--s-color-gray-200);
-  margin-bottom: var(--s-space-48);
+  margin-bottom: var(--s-space-11);
 }
 
 .table-head-row {
@@ -214,7 +214,7 @@ figure {
 // TOKEN Specific Tables
 .token-title-cell {
   width: auto;
-  padding: var(--s-space-16);
+  padding: var(--s-space-5);
   overflow-wrap: break-word;
   border-right: 1px solid var(--s-color-gray-200);
 
@@ -224,12 +224,12 @@ figure {
 }
 
 .token-description-cell {
-  margin-top: var(--s-space-8);
+  margin-top: var(--s-space-3);
 }
 
 .token-value-cell {
   width: 30%;
-  padding: var(--s-space-16);
+  padding: var(--s-space-5);
   border-right: 1px solid var(--s-color-gray-200);
 }
 
@@ -324,7 +324,7 @@ figure {
 .footer-copyright-wrapper {
   display: flex;
   background-color: var(--s-color-gray-800);
-  padding: 0 var(--s-space-16);
+  padding: 0 var(--s-space-5);
 }
 
 .footer-copyright-wrapper p {
@@ -349,7 +349,7 @@ figure {
   width: 5rem;
   height: 5rem;
   background-color: var(--s-color-gray-300);
-  margin: var(--s-space-16) auto;
+  margin: var(--s-space-5) auto;
 }
 
 .utils-table-borders .s-border-radius-pill {
