@@ -4,7 +4,7 @@ category: content
 description: Our base content styles. If this class is added to the body tag (or any
   container tag), all its children will receive this styling.
 value: ".s-content"
-order: 129
+order: 132
 ---
 <section class="s-content">
  <p>Sample paragraph</p>
