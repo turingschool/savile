@@ -1,26 +1,23 @@
 :root {
   /**
-   * @title --s-shadow-s
+   * @title --s-shadow-sm
    * @category tokens
    * @token_type shadows
-   * @value 0 1px 3px hsla(0, 0%, 0.2)
-   * @description description
+   * @value 0 1px 3px var(--s-color-gray-600)
    */
-  --s-shadow-s: 0 1px 3px hsla(0, 0%, 0.2);
+  --s-shadow-sm: 0 1px 3px var(--s-color-gray-600);
   /**
-   * @title --s-shadow-m
+   * @title --s-shadow-md
    * @category tokens
    * @token_type shadows
-   * @value 0 4px 6px hsla(0, 0%, 0.2)
-   * @description description
+   * @value 0 4px 6px var(--s-color-gray-600)
    */
-  --s-shadow-m: 0 4px 6px hsla(0, 0%, 0.2);
+  --s-shadow-md: 0 4px 6px var(--s-color-gray-600);
   /**
-   * @title --s-shadow-l
+   * @title --s-shadow-lg
    * @category tokens
    * @token_type shadows
-   * @value 0 15px 35px hsla(0, 0%, 0.2)
-   * @description description
+   * @value 0 15px 35px var(--s-color-gray-600)
    */
-  --s-shadow-l: 0 15px 35px hsla(0, 0%, 0.2);
+  --s-shadow-lg: 0 15px 35px var(--s-color-gray-600);
 }
