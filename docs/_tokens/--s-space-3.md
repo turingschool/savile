@@ -1,8 +1,8 @@
 ---
-title: "--s-space-48"
+title: "--s-space-3"
 category: tokens
 token_type: spacing
-value: 3rem
+value: 0.5rem
 description: description
-order: 12
+order: 4
 ---

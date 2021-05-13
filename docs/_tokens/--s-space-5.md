@@ -1,8 +1,8 @@
 ---
-title: "--s-space-20"
+title: "--s-space-5"
 category: tokens
 token_type: spacing
-value: 1.25rem
+value: 1rem
 description: description
-order: 7
+order: 6
 ---
