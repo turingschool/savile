@@ -35,18 +35,12 @@ $colors:
 
 @each $color, $inverted_bg in $colors {
   $color-name: str-slice($color, 11);
-<<<<<<< HEAD
   
   $text-class-name: "s-text-#{$color-name}";
   $text-example-classes: "s-text-#{$color-name}";
   @if $inverted_bg {
     $text-example-classes: "s-text-#{$color-name} s-bg-black";
   } 
-=======
-  $bg-class-name: "s-bg-#{$color-name}";
-  $text-class-name: "s-text-#{$color-name}";
-  $border-class-name: "s-border-#{$color-name}";
->>>>>>> 4e4a29d (Remove '-color' from  color utils)
 
   $bg-class-name: "s-bg-#{$color-name}";
   $border-class-name: "s-border-#{$color-name}";
