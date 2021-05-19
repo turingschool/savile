@@ -3,7 +3,7 @@ title: Primary Nav
 category: components
 status: early draft
 description: Navigation component w/ primary and secondary variants.
-order: 133
+order: 193
 ---
 <nav class="nav nav-primary">
   <ul>

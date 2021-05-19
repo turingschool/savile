@@ -3,6 +3,7 @@ title: Utilities
 layout: default
 permalink: /utils/
 subnav:
+  colors: Colors
   font-weight: Font Weight
   text-align: Text Align
   text-decoration: Text Decoration
@@ -12,6 +13,15 @@ subnav:
   borders: Borders
   shadows: Shadows
 ---
+
+<h2 id="colors" class="s-h2">Colors</h2>
+{% assign color_utils = site.utils | where: "util_type", "color" %}
+{% assign color_groups = "text, background, border" | split: ", " %}
+{% for color_group in color_groups %}
+<h3 class="s-h3">{{ color_group | capitalize}}</h3>
+  {% assign utils = color_utils | where: "color_group", color_group %}
+  {% include utils-table.html utils=utils table_class="utils-table-colors"%}
+{% endfor %}
 
 <h2 id="font-weight" class="s-h2 s-mt-5">Font Weight</h2>
 {% assign text_utils = site.utils | where: "util_type", "font-weight" %}

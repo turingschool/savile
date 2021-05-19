@@ -1,0 +1,62 @@
+// List of all available color tokens, with a boolean that indicates if they need a dark barkground
+$colors: 
+  "--s-color-black" false, 
+  "--s-color-white" true, 
+  "--s-color-cyan-400" true,
+  "--s-color-cyan-500" true,
+  "--s-color-cyan-600" true,
+  "--s-color-cyan-700" false,
+  "--s-color-gray-100" true,
+  "--s-color-gray-200" true,
+  "--s-color-gray-300" true,
+  "--s-color-gray-400" true,
+  "--s-color-gray-500" true,
+  "--s-color-gray-600" false,
+  "--s-color-gray-700" false,
+  "--s-color-gray-800" false,
+  "--s-color-red-500" true,
+  "--s-color-red-600" false,
+  "--s-color-red-700" false,
+  "--s-color-yellow-500" true,
+  "--s-color-yellow-600" true,
+  "--s-color-yellow-700" true;
+
+@mixin docstring($class, $util_type, $color_type, $text, $example_class) {
+  /**
+   * @title #{$class}
+   * @category utils
+   * @util_type #{$util_type}
+   * @color_group #{$color_type}
+   *
+   * @example
+   * <div class="#{$example_class}">#{$text}</div>
+   */
+}
+
+@each $color, $inverted_bg in $colors {
+  $color-name: str-slice($color, 11);
+  
+  $text-class-name: "s-text-#{$color-name}";
+  $text-example-classes: "s-text-#{$color-name}";
+  @if $inverted_bg {
+    $text-example-classes: "s-text-#{$color-name} s-bg-black";
+  } 
+
+  $bg-class-name: "s-bg-#{$color-name}";
+  $border-class-name: "s-border-#{$color-name}";
+
+  @include docstring($text-class-name, "color", "text", "Text", $text-example-classes);
+  .#{$text-class-name} {
+    color: var(#{$color});
+  }
+
+  @include docstring($bg-class-name, "color", "background", "", $bg-class-name);
+  .#{$bg-class-name} {
+    background-color: var(#{$color});
+  }
+
+  @include docstring($border-class-name, "color", "border", "", $border-class-name);
+  .#{$border-class-name} {
+    border-color: var(#{$color});
+  }
+}
