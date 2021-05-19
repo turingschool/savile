@@ -384,3 +384,21 @@ figure {
     }
   }
 }
+
+.utils-table-colors {
+  [class*="s-text"] {
+    @extend .s-pt-3;
+    @extend .s-pl-3;
+  }
+
+  [class*="s-bg"] {
+    height: 30px;
+  }
+
+  [class*="s-border"] {
+    @extend .s-border-width-2;
+    border-style: solid;
+    height: 35px;
+    width: 100%;
+  }
+}
