@@ -2,13 +2,17 @@
 title: Components
 layout: default
 permalink: /components/
+subnav:
+  footer: Footer
 ---
 
-<table>
-{% for component in site.components %}
-    <tr>
-      <td>{{ component }}</td>
-      <td><code>{{ component.title }}</code></td>
-    </tr>
+<h2 id="footer">Footer</h2>
+<p>The <code>.s-footer</code> class can be applied to any container element to create a footer. It is built to allow for variants, as demonstrated in the examples below.</p>
+
+{% assign footers = site.components | where: "component_type", "footer" %}
+{% for footer in footers %}
+  <h3>{{footer.title}}</h3>
+  <p>{{footer.description}}</p>
+  {{ footer }}
+  {% highlight html %}{{ footer }}{% endhighlight %}
 {% endfor %}
-</table>
