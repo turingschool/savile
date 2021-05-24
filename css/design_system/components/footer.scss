@@ -1,0 +1,52 @@
+ /**
+ * @title Footer
+ * @category components
+ * @status draft
+ * @value s-footer
+ * @description 
+ *
+ * @example
+ * <footer class="s-footer">
+ *  <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
+ *  <div class="s-footer-right">
+ *    <a>Privacy</a>
+ *    <a>Programs</a>
+ *    <a>Try Coding</a>
+ *  </div>
+ * </footer>
+ */
+
+ .s-footer {
+  background-color: var(--s-color-gray-800);
+  padding: var(--s-space-6) var(--s-space-12) var(--s-space-8);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  p {
+    @extend .s-m-0;
+    color: var(--s-color-gray-200);
+    text-align: start;
+  }
+
+  a {
+    @extend .s-text-uppercase;
+    @extend .s-text-body-sm;
+    @extend .s-font-bold;
+    text-decoration: none;
+    color: var(--s-color-gray-200);
+    letter-spacing: var(--s-space-1);
+  }
+
+  a:hover {
+    color: var(--s-color-white);
+  }
+
+  .s-footer-right a {
+    @extend .s-ml-4;
+  }
+
+  .s-footer-left a {
+    @extend .s-mr-4;
+  }
+ }
