@@ -11,8 +11,8 @@ order: 195
    <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
  </div>
  <div class="s-footer-right">
-   <a class="s-footer-link" href="/privacy">Privacy Policy</a>
-   <a class="s-footer-link" href="https://turing.edu/programs/" target="blank">Programs</a>
-   <a class="s-footer-link" href="https://turing.edu/try-coding/">Try Coding</a>
+   <a class="s-footer-link">Privacy Policy</a>
+   <a class="s-footer-link">Programs</a>
+   <a class="s-footer-link">Try Coding</a>
  </div>
 </footer>

@@ -42,9 +42,9 @@
  *    <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
  *  </div>
  *  <div class="s-footer-right">
- *    <a class="s-footer-link" href="/privacy">Privacy Policy</a>
- *    <a class="s-footer-link" href="https://turing.edu/programs/" target="blank">Programs</a>
- *    <a class="s-footer-link" href="https://turing.edu/try-coding/">Try Coding</a>
+ *    <a class="s-footer-link">Privacy Policy</a>
+ *    <a class="s-footer-link">Programs</a>
+ *    <a class="s-footer-link">Try Coding</a>
  *  </div>
  * </footer>
  */
@@ -73,10 +73,10 @@
   text-decoration: none;
   letter-spacing: var(--s-space-1);
   cursor: pointer;
-}
 
-.s-footer-link:hover {
-  @extend .s-text-white;
+  &:hover {
+    @extend .s-text-white;
+  }
 }
 
  /**
@@ -88,14 +88,14 @@
  * @example
  * <footer class="s-footer">
  *  <div class="s-footer-left">
- *    <a class="s-footer-icon" href="https://www.facebook.com/turingschool/"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/facebook-grey-100.svg"/></a>
- *    <a class="s-footer-icon" href="https://twitter.com/turingschool"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/twitter-grey-100.svg"/></a>
- *    <a class="s-footer-icon" href="https://github.com/turingschool"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/github-grey-100.svg"/></a>
+ *    <a class="s-footer-icon"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/facebook-grey-100.svg"/></a>
+ *    <a class="s-footer-icon"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/twitter-grey-100.svg"/></a>
+ *    <a class="s-footer-icon"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/github-grey-100.svg"/></a>
  *  </div> 
  *  <div class="s-footer-right">
- *    <a class="s-footer-link" href="/privacy">Privacy Policy</a>
- *    <a class="s-footer-link" href="mailto:robyn@turing.edu">Contact</a>
- *    <a class="s-footer-link" href="https://writing.turing.edu/" target="blank">Perspectives</a>
+ *    <a class="s-footer-link">Privacy Policy</a>
+ *    <a class="s-footer-link">Contact</a>
+ *    <a class="s-footer-link">Perspectives</a>
  *  </div>
  * </footer>
  */
@@ -104,7 +104,12 @@
   @extend .s-pr-4;
   @extend .s-pl-2;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   img {
     height: 20px;
+    width: 20px;
   }
 }
