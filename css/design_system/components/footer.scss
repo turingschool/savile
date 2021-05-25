@@ -7,94 +7,103 @@
  *
  * @example
  * <footer class="s-footer">
- *  <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
+ *  <div class="s-footer-content">
+ *    <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
+ *  </div>
  * </footer>
  */
 
- .s-footer {
-  background-color: var(--s-color-gray-800);
-  padding: var(--s-space-6) var(--s-space-12) var(--s-space-8);
+.s-footer {
+  @extend .s-p-4;
+  @extend .s-bg-gray-800;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
 
+.s-footer-content {
   p {
     @extend .s-m-0;
-    color: var(--s-color-gray-200);
-    text-align: start;
+    @extend .s-text-gray-100;
+    @extend .s-text-start;
   }
-
-  a {
-    @extend .s-text-uppercase;
-    @extend .s-text-body-sm;
-    @extend .s-font-bold;
-    text-decoration: none;
-    color: var(--s-color-gray-200);
-    letter-spacing: var(--s-space-1);
-    cursor: pointer;
-  }
-
-  a:hover {
-    color: var(--s-color-white);
-  }
-
-  .s-footer-right a {
-    @extend .s-ml-4;
-  }
-
-  .s-footer-left a {
-    @extend .s-mr-4;
-  }
-
-  img {
-    height: 22px;
-  }
- }
+}
 
  /**
  * @title Footer with Links
  * @category components
  * @component_type footer
- * @value s-footer-l
  * @description Footer with paragraph text and one set of links. Use of the <code>.s-footer-right</code> class ensures proper spacing between links.
  *
  * @example
  * <footer class="s-footer">
- *  <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
+ *  <div class="s-footer-content">
+ *    <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
+ *  </div>
  *  <div class="s-footer-right">
- *    <a href="/privacy">Privacy Policy</a>
- *    <a href="https://turing.edu/programs/" target="blank">Programs</a>
- *    <a href="https://turing.edu/try-coding/">Try Coding</a>
+ *    <a class="s-footer-link" href="/privacy">Privacy Policy</a>
+ *    <a class="s-footer-link" href="https://turing.edu/programs/" target="blank">Programs</a>
+ *    <a class="s-footer-link" href="https://turing.edu/try-coding/">Try Coding</a>
  *  </div>
  * </footer>
  */
 
-.s-footer-l {
-  background-color: var(--s-color-gray-800);
+.s-footer-left {
+  > :first-child {
+    @extend .s-ml-0;
+    @extend .s-pl-0;
+  }
+}
+
+.s-footer-right {
+  > :last-child {
+    @extend .s-mr-0;
+    @extend .s-pr-0;
+  }
+}
+
+.s-footer-link {
+  @extend .s-text-uppercase;
+  @extend .s-text-body-sm;
+  @extend .s-font-bold;
+  @extend .s-text-gray-100;
+  @extend .s-pr-4;
+  @extend .s-pl-2;
+  text-decoration: none;
+  letter-spacing: var(--s-space-1);
+  cursor: pointer;
+}
+
+.s-footer-link:hover {
+  @extend .s-text-white;
 }
 
  /**
  * @title Footer with Links and Social Icons
  * @category components
  * @component_type footer
- * @value s-footer-2l
  * @description Footer with two set of links; one being social icons. Use of the <code>.s-footer-right</code> and <code>.s-footer-left</code> classes ensure proper spacing between links and icons within their respective containers.
  *
  * @example
  * <footer class="s-footer">
  *  <div class="s-footer-left">
- *    <a href="https://www.facebook.com/turingschool/"><img src="https://d682ma8ami8n4.cloudfront.net/images/facebook.svg"/></a>
- *    <a href="https://twitter.com/turingschool"><img src="https://d682ma8ami8n4.cloudfront.net/images/twitter.svg"/></a>
- *    <a href="https://github.com/turingschool"><img src="https://d682ma8ami8n4.cloudfront.net/images/git.svg"/></a>
+ *    <a class="s-footer-icon" href="https://www.facebook.com/turingschool/"><img src="https://d682ma8ami8n4.cloudfront.net/images/facebook.svg"/></a>
+ *    <a class="s-footer-icon" href="https://twitter.com/turingschool"><img src="https://d682ma8ami8n4.cloudfront.net/images/twitter.svg"/></a>
+ *    <a class="s-footer-icon" href="https://github.com/turingschool"><img src="https://d682ma8ami8n4.cloudfront.net/images/git.svg"/></a>
  *  </div> 
  *  <div class="s-footer-right">
- *    <a href="/privacy">Privacy Policy</a>
- *    <a href="mailto:robyn@turing.edu">Contact</a>
- *    <a href="https://writing.turing.edu/" target="blank">Perspectives</a>
+ *    <a class="s-footer-link" href="/privacy">Privacy Policy</a>
+ *    <a class="s-footer-link" href="mailto:robyn@turing.edu">Contact</a>
+ *    <a class="s-footer-link" href="https://writing.turing.edu/" target="blank">Perspectives</a>
  *  </div>
  * </footer>
  */
 
-.s-footer-2l {
-  background-color: var(--s-color-gray-800);
+.s-footer-icon {
+  @extend .s-pr-4;
+  @extend .s-pl-2;
+
+  img {
+    height: 20px;
+  }
 }
