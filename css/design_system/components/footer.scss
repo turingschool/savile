@@ -19,11 +19,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .s-footer-content {
-  p {
-    @extend .s-m-0;
+  * {
+    @extend .s-my-0;
     @extend .s-text-gray-100;
     @extend .s-text-start;
   }
