@@ -31,8 +31,8 @@
     @extend .s-text-gray-800;
     @extend .s-text-uppercase;
     @extend .s-m-0;
-    font-size: var(--s-font-size-lg);
-    font-weight: var(--s-font-weight-heavy);
+    @extend .s-font-heavy;
+    font-size: var(--s-font-size-lg); 
   }
 
   .s-card-subtitle {
@@ -98,14 +98,14 @@
 
   .s-card-title {
     @extend .s-m-0;
+    @extend .s-font-heavy;
     font-size: 1.25rem;
-    font-weight: var(--s-font-weight-heavy);
   }
 
   .s-card-subtitle {
+    @extend .s-font-light;
     margin-top: var(--s-space-1);
     font-size: 0.875rem;
-    font-weight: var(--s-font-weight-light);
   }
 }
 
