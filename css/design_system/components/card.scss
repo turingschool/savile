@@ -57,3 +57,58 @@
   @extend .s-text-body-xs;
   @extend .s-text-end;
 }
+
+ /**
+ * @title Profile Card
+ * @category components
+ * @component_type card
+ * @value s-card
+ * @description The Profile Card is designed to include a photo in the header, an addition to title, subtitle, content, and a button.
+ *
+ * @example
+ * <div class="s-card">
+ *  <div class="s-card-profile-header">
+ *    <img class="s-card-profile-pic" src="https://d682ma8ami8n4.cloudfront.net/images/staff/kasperowicz.jpg">
+ *    <div class="s-card-profile-header-right">
+ *      <h2 class="s-card-title">Card Title</h2>
+ *      <h3 class="s-card-subtitle">Card Subtitle</h3>
+ *    </div> 
+ *  </div> 
+ *  <div class="s-card-content">
+ *    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus odio quis sit mattis in luctus. Dignissim auctor aliquam suspendisse non in ac, purus. Aliquam arcu justo quam lorem at id proin morbi. A arcu accumsan, eu id fringilla non.</p>
+ *    <button class="s-card-profile-btn s-button s-button-secondary">Example Button</button>
+ *  </div>
+ * </div>
+ */
+
+ .s-card-profile-header {
+   @extend .s-text-gray-800;
+   @extend .s-pb-3;
+   display: flex;
+
+   .s-card-profile-pic {
+     @extend .s-border-radius-circle;
+     width: 72px;
+     height: 72px;
+   }
+  
+  .s-card-profile-header-right {
+    @extend .s-px-4;
+  }
+
+  .s-card-title {
+    @extend .s-m-0;
+    font-size: 1.25rem;
+    font-weight: var(--s-font-weight-heavy);
+  }
+
+  .s-card-subtitle {
+    margin-top: var(--s-space-1);
+    font-size: 0.875rem;
+    font-weight: var(--s-font-weight-light);
+  }
+}
+
+.s-card-profile-btn {
+  float: right;
+}
