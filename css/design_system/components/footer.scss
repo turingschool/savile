@@ -3,7 +3,7 @@
  * @category components
  * @component_type footer
  * @value s-footer
- * @description Simple footer with paragraph text only
+ * @description Simple footer with paragraph text only. The <code>.s-footer-content</code> class should be used on the container that wraps content.
  *
  * @example
  * <footer class="s-footer">
@@ -34,7 +34,7 @@
  * @title Footer with Links
  * @category components
  * @component_type footer
- * @description Footer with paragraph text and one set of links. Use of the <code>.s-footer-right</code> class ensures proper spacing between links.
+ * @description Footer with paragraph text and one set of links. Use of the <code>.s-footer-right</code> and <code>.s-footer-link</code> classes ensure proper spacing between links.
  *
  * @example
  * <footer class="s-footer">
@@ -83,7 +83,7 @@
  * @title Footer with Links and Social Icons
  * @category components
  * @component_type footer
- * @description Footer with two set of links; one being social icons. Use of the <code>.s-footer-right</code> and <code>.s-footer-left</code> classes ensure proper spacing between links and icons within their respective containers.
+ * @description Footer with two set of links; one being social icons. Use of the <code>.s-footer-right</code> and <code>.s-footer-left</code>, and <code>.s-footer-icon</code> and <code>.s-footer-link</code> classes ensure proper spacing between links and icons within their respective containers, as well as vertical alignment.
  *
  * @example
  * <footer class="s-footer">
