@@ -9,9 +9,9 @@ order: 196
 ---
 <footer class="s-footer">
  <div class="s-footer-left">
-   <a class="s-footer-icon" href="https://www.facebook.com/turingschool/"><img src="https://d682ma8ami8n4.cloudfront.net/images/facebook.svg"/></a>
-   <a class="s-footer-icon" href="https://twitter.com/turingschool"><img src="https://d682ma8ami8n4.cloudfront.net/images/twitter.svg"/></a>
-   <a class="s-footer-icon" href="https://github.com/turingschool"><img src="https://d682ma8ami8n4.cloudfront.net/images/git.svg"/></a>
+   <a class="s-footer-icon" href="https://www.facebook.com/turingschool/"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/facebook-grey-100.svg"/></a>
+   <a class="s-footer-icon" href="https://twitter.com/turingschool"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/twitter-grey-100.svg"/></a>
+   <a class="s-footer-icon" href="https://github.com/turingschool"><img src="https://turing-io-assets.s3-us-west-2.amazonaws.com/images/github-grey-100.svg"/></a>
  </div> 
  <div class="s-footer-right">
    <a class="s-footer-link" href="/privacy">Privacy Policy</a>
