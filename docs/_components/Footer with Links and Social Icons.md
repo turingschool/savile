@@ -3,8 +3,9 @@ title: Footer with Links and Social Icons
 category: components
 component_type: footer
 description: Footer with two set of links; one being social icons. Use of the <code>.s-footer-right</code>
-  and <code>.s-footer-left</code> classes ensure proper spacing between links and
-  icons within their respective containers.
+  and <code>.s-footer-left</code>, and <code>.s-footer-icon</code> and <code>.s-footer-link</code>
+  classes ensure proper spacing between links and icons within their respective containers,
+  as well as vertical alignment.
 order: 196
 ---
 <footer class="s-footer">
