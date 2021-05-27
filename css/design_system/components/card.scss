@@ -14,9 +14,7 @@
  *  <div class="s-card-content">
  *    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus odio quis sit mattis in luctus. Dignissim auctor aliquam suspendisse non in ac, purus. Aliquam arcu justo quam lorem at id proin morbi. A arcu accumsan, eu id fringilla non.</p>
  *  </div>
- *  <div class="s-card-footer">
- *    <p>Footer content</p>
- *  </div>
+ *  <div class="s-card-footer">Footer content</div>
  * </div>
  */
 
@@ -51,10 +49,6 @@
     @extend .s-text-gray-800;
     @extend .s-text-body-xs;
     @extend .s-text-end;
-
-    p {
-      @extend .s-m-0;
-    }
   }
 }
 
