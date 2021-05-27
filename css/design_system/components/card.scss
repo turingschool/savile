@@ -3,112 +3,109 @@
  * @category components
  * @component_type card
  * @value s-card
- * @description The basic card allows for a title, subtitle, content, and footer - all of which are optional. The example below shows a card that does use all options.
+ * @description The basic card allows for a title, subtitle, content, and footer - all of which are optional. The following example shows a card that uses all options.
  *
  * @example
  * <div class="s-card">
- *  <div class="s-card-basic-header">
+ *  <div class="s-card-header">
  *    <h2 class="s-card-title">Card Title</h2>
  *    <h3 class="s-card-subtitle">Card Subtitle</h3>
  *  </div> 
  *  <div class="s-card-content">
  *    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus odio quis sit mattis in luctus. Dignissim auctor aliquam suspendisse non in ac, purus. Aliquam arcu justo quam lorem at id proin morbi. A arcu accumsan, eu id fringilla non.</p>
- *    <p class="s-card-footer">Footer content</p>
+ *  </div>
+ *  <div class="s-card-footer">
+ *    <p>Footer content</p>
  *  </div>
  * </div>
  */
 
 .s-card {
   @extend .s-p-4;
-  display: inline-block;
+  @extend .s-shadow-sm;
   border-radius: var(--s-space-1);
   border-top: 8px solid var(--s-color-cyan-600);
-  box-shadow: 0 1px 3px var(--s-color-gray-400);
-}
 
-.s-card-basic-header {
-  .s-card-title {
-    @extend .s-text-gray-800;
-    @extend .s-text-uppercase;
-    @extend .s-m-0;
-    @extend .s-font-heavy;
-    font-size: var(--s-font-size-lg); 
+  .s-card-header {
+    .s-card-title {
+      @extend .s-text-gray-800;
+      @extend .s-text-uppercase;
+      @extend .s-m-0;
+      @extend .s-font-heavy;
+      font-size: var(--s-font-size-lg); 
+    }
+
+    .s-card-subtitle {
+      @extend .s-text-gray-600;
+      margin-top: var(--s-space-1);
+      letter-spacing: 0.75px;
+      font-size: var(--s-font-size-md);
+    }
   }
 
-  .s-card-subtitle {
-    @extend .s-text-gray-500;
-    margin-top: var(--s-space-1);
-    letter-spacing: 0.75px;
-    font-size: 1.25rem;
-  }
-}
-
-.s-card-content {
-  * {
+  .s-card-content * {
     @extend .s-text-gray-800;
   }
-  > :last-child {
-    @extend .s-m-0;
-  }
-}
 
-.s-card-footer {
-  @extend .s-text-gray-800;
-  @extend .s-text-body-xs;
-  @extend .s-text-end;
+  .s-card-footer {
+    @extend .s-text-gray-800;
+    @extend .s-text-body-xs;
+    @extend .s-text-end;
+
+    p {
+      @extend .s-m-0;
+    }
+  }
 }
 
  /**
  * @title Profile Card
  * @category components
  * @component_type card
- * @value s-card
- * @description The Profile Card is designed to include a photo in the header, an addition to title, subtitle, content, and a button.
+ * @value s-card-profile
+ * @description The Profile Card is designed to include a photo in the header, an addition to title, subtitle, content, and a button. The example that follows demonstrates how color variants can be achieved using the color utils.
  *
  * @example
- * <div class="s-card">
- *  <div class="s-card-profile-header">
+ * <div class="s-card s-card-profile s-border-yellow-500">
+ *  <div class="s-card-header">
  *    <img class="s-card-profile-pic" src="https://d682ma8ami8n4.cloudfront.net/images/staff/kasperowicz.jpg">
- *    <div class="s-card-profile-header-right">
+ *    <div class="s-card-header-right">
  *      <h2 class="s-card-title">Card Title</h2>
  *      <h3 class="s-card-subtitle">Card Subtitle</h3>
  *    </div> 
  *  </div> 
  *  <div class="s-card-content">
  *    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus odio quis sit mattis in luctus. Dignissim auctor aliquam suspendisse non in ac, purus. Aliquam arcu justo quam lorem at id proin morbi. A arcu accumsan, eu id fringilla non.</p>
- *    <button class="s-card-profile-btn s-button s-button-secondary">Example Button</button>
+ *  </div>
+ *  <div class="s-card-footer">
+ *    <button class="s-button s-button-secondary">Example Button</button>
  *  </div>
  * </div>
  */
 
- .s-card-profile-header {
-   @extend .s-text-gray-800;
-   @extend .s-pb-3;
-   display: flex;
-
-   .s-card-profile-pic {
-     @extend .s-border-radius-circle;
-     width: 72px;
-     height: 72px;
-   }
+ .s-card.s-card-profile {
+   .s-card-header {
+     @extend .s-text-gray-800;
+     @extend .s-pb-3;
+     display: flex;
   
-  .s-card-profile-header-right {
-    @extend .s-px-4;
+     .s-card-profile-pic {
+       @extend .s-border-radius-circle;
+       width: 72px;
+       height: 72px;
+     }
+    
+    .s-card-header-right {
+      @extend .s-ml-4;
+    }
+  
+    .s-card-title {
+      font-size: var(--s-font-size-lg);
+    }
+  
+    .s-card-subtitle {
+      @extend .s-font-light;
+      font-size: var(--s-font-size-sm);
+    }
   }
-
-  .s-card-title {
-    @extend .s-m-0;
-    @extend .s-font-heavy;
-    font-size: 1.25rem;
-  }
-
-  .s-card-subtitle {
-    @extend .s-font-light;
-    margin-top: var(--s-space-1);
-    font-size: 0.875rem;
-  }
-}
-
-.s-card-profile-btn {
-  float: right;
-}
+ }

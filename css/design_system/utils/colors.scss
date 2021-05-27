@@ -57,6 +57,6 @@ $colors:
 
   @include docstring($border-class-name, "color", "border", "", $border-class-name);
   .#{$border-class-name} {
-    border-color: var(#{$color});
+    border-color: var(#{$color}) !important;
   }
 }
