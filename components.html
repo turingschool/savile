@@ -8,7 +8,7 @@ subnav:
 ---
 
 <h2 id="card">Cards</h2>
-<p>Both card variants are <code>inline-block</code> elements, so will take the up the width they require unless provided with rules to limit their width. The examples below show cards that are the width of this page because no additional styling has been placed on their containers.</p>
+<p>Both card variants are <code>block</code> elements, so will take the up the width of their parent container unless provided with rules to limit their width. The examples below show cards that are the width of this page because no additional styling has been placed on their parent containers.</p>
 
 {% assign cards = site.components | where: "component_type", "card" %}
 {% for card in cards %}
