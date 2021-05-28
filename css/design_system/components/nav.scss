@@ -1,55 +1,54 @@
-:root {
-  --nav-height: 4rem;
-}
-
 /**
  * @title Primary Nav
  * @category components
- * @status early draft
- * @description Navigation component w/ primary and secondary variants.
+ * @component_type nav
+ * @description This navigation component can be used with or without the menu.
  * @example
- * <nav class="nav nav-primary">
- *   <ul>
- *     <li>Nav element 1</li>
- *     <li>Nav element 2</li>
+ * <nav class="s-nav">
+ *   <a class="s-nav-icon" href="/" aria-label="Home">
+ *     <img class="s-nav-icon" src="https://assets.turing.edu/turing-school-mark-gray.png" alt="" />
+ *   </a>
+ *   <ul class="s-nav-menu">
+ *     <li>Link One</li>
+ *     <li>Link Two</li>
+ *     <li>Link Three</li>
  *   </ul>
  * </nav>
  */
-.nav {
-  font-weight: var(--s-font-weight-bold);
-  height: var(--nav-height);
+
+.s-nav {
+  @extend .s-shadow-sm;
+  @extend .s-py-2;
+  @extend .s-px-4;
+  @extend .s-font-bold;
+  letter-spacing: 0.75px;
   position: sticky;
-  width: 100%;
   z-index: 99;
-  margin-bottom: 0.5rem;
-}
-
-.nav ul {
-  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: flex-end;
-}
+  justify-content: space-between;
+  align-items: center;
 
-.nav ul li {
-  text-align: center;
-  padding: 1rem;
-}
+  .s-nav-icon {
+    height: 50px;
+    width: 50px;
+  }
 
-.nav ul li a {
-  color: var(--color-primary);
-  text-transform: uppercase;
-}
+  .s-nav-menu {
+    list-style: none;
+    display: flex;
+    @extend .s-mb-1;
 
-.nav.nav-primary {
-  background: var(--color-white);
-  top: 0;
-}
+    * {
+      @extend .s-text-uppercase;
+      @extend .s-ml-3;
+      @extend .s-border-bottom;
+      border-color: transparent;
 
-.nav.nav-secondary {
-  background: var(--color-primary-dark);
-  color: var(--color-white);
-  position: sticky;
-  top: var(--nav-height);
+      &:hover, &:active {
+        @extend .s-border-cyan-400;
+        cursor: pointer;
+      }
+    }
+  }
 }
