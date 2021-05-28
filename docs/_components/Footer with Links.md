@@ -4,7 +4,7 @@ category: components
 component_type: footer
 description: Footer with paragraph text and one set of links. Use of the <code>.s-footer-right</code>
   and <code>.s-footer-link</code> classes ensure proper spacing between links.
-order: 195
+order: 194
 ---
 <footer class="s-footer">
  <div class="s-footer-content">
