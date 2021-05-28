@@ -5,7 +5,7 @@ component_type: footer
 value: s-footer
 description: Simple footer with paragraph text only. The <code>.s-footer-content</code>
   class should be used on the container that wraps content.
-order: 194
+order: 193
 ---
 <footer class="s-footer">
  <div class="s-footer-content">
