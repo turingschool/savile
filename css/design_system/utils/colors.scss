@@ -60,3 +60,8 @@ $colors:
     border-color: var(#{$color}) !important;
   }
 }
+
+@include docstring("s-border-transparent", "color", "border", "", "s-border-transparent");
+.s-border-transparent {
+  border-color: transparent;
+}
