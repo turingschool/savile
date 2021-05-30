@@ -1,17 +1,17 @@
 /**
- * @title Primary Nav
+ * @title Primary Navigation Bar
  * @category components
  * @component_type nav
  * @description This navigation component can be used with or without the menu.
  * @example
  * <nav class="s-nav">
- *   <a class="s-nav-icon" href="/" aria-label="Home">
- *     <img class="s-nav-icon" src="https://assets.turing.edu/turing-school-mark-gray.png" alt="" />
+ *   <a class="s-nav-icon" href="/">
+ *     <img src="https://assets.turing.edu/turing-school-mark-gray.png" alt="Home" />
  *   </a>
  *   <ul class="s-nav-menu">
- *     <li>Link One</li>
- *     <li>Link Two</li>
- *     <li>Link Three</li>
+ *     <li><a href="#">Link One</a></li>
+ *     <li><a href="#">Link Two</a></li>
+ *     <li><a href="#">Link Three</a></li>
  *   </ul>
  * </nav>
  */
@@ -20,9 +20,8 @@
   @extend .s-shadow-sm;
   @extend .s-py-2;
   @extend .s-px-4;
-  @extend .s-font-bold;
   letter-spacing: 0.75px;
-  position: sticky;
+  // position: sticky;
   z-index: 99;
   display: flex;
   align-items: flex-end;
@@ -30,19 +29,26 @@
   align-items: center;
 
   .s-nav-icon {
-    height: 50px;
-    width: 50px;
+    display: block;
+    
+    img {
+      height: 50px;
+      width: 50px;
+    }
   }
 
-  .s-nav-menu {
+  ul.s-nav-menu {
     list-style: none;
     display: flex;
     @extend .s-mb-1;
 
-    * {
+    li a {
       @extend .s-text-uppercase;
       @extend .s-ml-3;
       @extend .s-border-bottom;
+      @extend .s-font-bold;
+      @extend .s-text-gray-700;
+      @extend .s-text-decor-none;
       border-color: transparent;
 
       &:hover, &:active {
