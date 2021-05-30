@@ -6,7 +6,7 @@ value: s-card-profile
 description: The Profile Card is designed to include a photo in the header, an addition
   to title, subtitle, content, and a button. The example that follows demonstrates
   how color variants can be achieved using the color utils.
-order: 197
+order: 198
 ---
 <div class="s-card s-card-profile s-border-yellow-500">
  <div class="s-card-header">
