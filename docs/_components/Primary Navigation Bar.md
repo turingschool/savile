@@ -2,10 +2,11 @@
 title: Primary Navigation Bar
 category: components
 component_type: nav
-description: This navigation component can be used with or without the menu.
+description: This navigation component can be used with or without the menu. The class
+  `.s-nav-sticky` is optional and will add a sticky position.
 order: 193
 ---
-<nav class="s-nav">
+<nav class="s-nav s-nav-sticky">
   <a class="s-nav-icon" href="/">
     <img src="https://assets.turing.edu/turing-school-mark-gray.png" alt="Home" />
   </a>
