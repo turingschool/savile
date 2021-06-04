@@ -5,4 +5,17 @@
 # Requires that the PERCY_TOKEN env variable be set.
 # https://docs.percy.io/docs/jekyll
 
+if [[ -z "${PERCY_TOKEN}" ]]; then
+  echo "PERCY_TOKEN has not been set. Please run this script with this env variable."
+  echo "  Example:"
+  echo "  $ PERCY_TOKEN=abcd ./bin/percy"
+  exit 1
+fi
+
+# First generate a fresh build of the site
+echo "Running 'bundle exec jekyll build'..."
+bundle exec jekyll build
+
+# Then capture the snapshots for Percy
+echo "Running 'npx percy snapshot _site/'..."
 npx percy snapshot _site/
