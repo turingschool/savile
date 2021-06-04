@@ -2,8 +2,6 @@
 
 The Turing School of Software and Design's Design System. The site provides an everything-in-one-place guide to our style guide and available utils and class names for pre-built components that conform to the style guide. The design system itself is consumed by all* sites and apps in the Turing suite via CDN.
 
-[Project managed on Basecamp.](https://3.basecamp.com/3494409/projects/19192671)
-
 More information about internal engineering @ Turing is available on [Turing's Engineering Wiki](https://www.notion.so/Engineering-Wiki-29887c546265429db78560f47525d9f2). Look here to find documentation on topics like our [Guiding Principles,](https://www.notion.so/Guiding-Principles-57dc38f1b6454645bf23b252bc22b440) [How to Contribute](https://www.notion.so/How-to-Contribute-1b88e17f755c491989e4b2bc84db93c7), and [Project Standards](https://www.notion.so/Project-Standards-889a4f2b26b04dc091039f209f823c3c).
 
 ## Table of Contents
