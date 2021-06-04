@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Generate snapshots for Percy
+#
+# Requires that the PERCY_TOKEN env variable be set.
+# https://docs.percy.io/docs/jekyll
+
+npx percy snapshot _site/
