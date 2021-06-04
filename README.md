@@ -37,6 +37,12 @@ Please follow Turing's shared [How to Contribute](https://www.notion.so/turingsc
 
 Anything that is merged into the `main` branch will not be immediately available on the `latest` version (or any other version). To release a new version and publish the latest changes, make sure to follow the guidance outlined in [contributing.md](./contributing.md).
 
+### Generating Snapshots for your Pull Request
+
+We use [Percy](https://percy.io/) to generate visual diffs of changes introduced. This helps ensure that every pull request includes a clear summary of how the code changes affected the site UI.
+
+When you are ready to submit your PR for review, please create a Percy build by running the script `$ ./bin/percy`. You will need the `PERCY_TOKEN` environment variable to be set - this can be found by logging into Percy (account info is in the shared Turing 1password).
+
 ## How To: Add a Token, Element or Component
 
 The workflow to add a token, element or component to Savile is as follows:
