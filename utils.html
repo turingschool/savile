@@ -5,6 +5,7 @@ permalink: /utils/
 subnav:
   colors: Colors
   font-weight: Font Weight
+  font-size: Font Size
   text-align: Text Align
   text-decoration: Text Decoration
   text-transform: Text Transform
@@ -25,6 +26,10 @@ subnav:
 
 <h2 id="font-weight" class="s-h2 s-mt-5">Font Weight</h2>
 {% assign text_utils = site.utils | where: "util_type", "font-weight" %}
+{% include utils-table.html utils=text_utils %}
+
+<h2 id="font-size" class="s-h2 s-mt-5">Font Size</h2>
+{% assign text_utils = site.utils | where: "util_type", "font-size" %}
 {% include utils-table.html utils=text_utils %}
 
 <h2 id="text-align" class="s-h2 s-mt-5">Text Align</h2>

@@ -69,3 +69,14 @@ $font-weights-options: "ultra-light", "light", "normal", "bold", "heavy";
   }
 }
 
+// font-size
+$font-sizes-options: "xxs", "xs", "sm", "md", "lg", "xl", "xxl";
+
+@each $option in $font-sizes-options {
+  $class-name: "s-font-#{$option}";
+  $value: --s-font-size-#{$option};
+  @include docstring($class-name, "font-size", "Example", "span");
+  .#{$class-name} {
+    font-size: var($value);
+  }
+}
