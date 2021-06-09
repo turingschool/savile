@@ -5,7 +5,7 @@ component_type: card
 value: s-card
 description: The basic card allows for a title, subtitle, content, and footer - all
   of which are optional. The following example shows a card that uses all options.
-order: 197
+order: 204
 ---
 <div class="s-card">
  <div class="s-card-header">

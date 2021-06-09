@@ -6,7 +6,7 @@ description: Footer with two set of links; one being social icons. Use of the <c
   and <code>.s-footer-left</code>, and <code>.s-footer-icon</code> and <code>.s-footer-link</code>
   classes ensure proper spacing between links and icons within their respective containers,
   as well as vertical alignment.
-order: 196
+order: 203
 ---
 <footer class="s-footer">
  <div class="s-footer-left">
