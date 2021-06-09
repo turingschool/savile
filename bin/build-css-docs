@@ -9,7 +9,9 @@ require "sassc"
 ROOT_DIR = File.absolute_path('..', __dir__)
 LOAD_DIR = File.join(ROOT_DIR, 'css/design_system')
 LOAD_FILE = File.join(LOAD_DIR, 'index.scss')
-DESTINATION_DIR = File.join(ROOT_DIR, 'docs')
+DESTINATION_DIR = File.join(ROOT_DIR, '_data')
+
+ALL_DOCS = []
 
 def extract_docs_from_css(tree)
   prev_comment = nil
@@ -25,28 +27,21 @@ def extract_docs_from_css(tree)
       prev_comment = clean_comment node[:value]
     end
 
-    if (node[:node] == :style_rule || node[:node] == :property) && prev_comment
-      doc = {}
-
-      doc['content'] = prev_comment
-
-      doc_attrs = parse_attributes(doc['content'])
-
-      doc['example'] = doc_attrs.delete('example') if doc_attrs['example']
-      doc['attrs'] = doc_attrs
+    if prev_comment
+      doc = parse_attributes(prev_comment)
 
       # keeps declarations in order of where they are defined in docs file
-      doc['attrs']['order'] = order += 1
+      doc['order'] = order += 1
+      # TODO: use category-independent ordering (so that order is only re-calculated within a category)
 
-      doc['title'] = doc.dig('attrs', 'title')
-      doc['category'] = (doc.dig('attrs', 'category') || 'misc').downcase
+      doc['category'] = (doc['category'] || 'misc').downcase
 
       unless doc['title']
         doc['title'] = node.dig(:selector, :value) if node[:node] == :style_rule
         doc['title'] = node[:name] if node[:node] == :property
       end
 
-      write_to_collection(doc)
+      ALL_DOCS << doc
 
       prev_comment = nil
     end
@@ -63,34 +58,25 @@ def parse_attributes(docstring)
   Hash[names_and_values.each_slice(2).to_a]
 end
 
-def write_to_collection(doc)
-  docs_folder = File.join(DESTINATION_DIR, '_' + doc['category'])
-  Dir.mkdir docs_folder unless Dir.exist? docs_folder
-  filename = doc['title'] + '.md'
+def write_data_files(docs)
+  data_folder = File.join(ROOT_DIR, '_data')
+  disclaimer = "# -- WARNING! This file is generated programmatically. DO NOT EDIT DIRECTLY --\n"
 
-  front_matter = doc['attrs'].to_yaml
-  front_matter += "---\n"
-
-  doc_content = front_matter
-
-  doc_content += doc['example'] if doc['example']
-
-  File.write(File.join(docs_folder, filename), doc_content)
+  by_category = docs.group_by { |doc| doc['category'] }
+  by_category.each_pair do |category, docs|
+    puts category
+    filepath = File.join(DESTINATION_DIR, category + '.yml')
+    File.write(filepath, disclaimer + docs.to_yaml)
+  end
 end
 
 def clean_comment(comment_text)
   comment_text.lines.map { |l| l.sub(/^\s*\*\s?/, '') }.join
 end
 
-def reset_docs_dir
-  FileUtils.rm_rf(DESTINATION_DIR)
-  Dir.mkdir(DESTINATION_DIR)
-end
-
-reset_docs_dir
-
 scss = File.read(LOAD_FILE)
 css = SassC::Engine.new(scss, load_paths: [LOAD_DIR]).render
 tree = ::Crass.parse(css, :preserve_comments => true)
 
 extract_docs_from_css(tree)
+write_data_files(ALL_DOCS)

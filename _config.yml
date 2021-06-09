@@ -35,23 +35,6 @@ assets_url: https://assets.turing.edu
 # plugins:
 #   - jekyll-feed
 
-collections_dir: docs
-
-collections:
-  tokens:
-    sort_by: order
-  colors:
-    sort_by: title
-  content:
-  typography:
-    sort_by: order
-  utils:
-    sort_by: order
-  elements:
-    sort_by: order
-  components:
-    sort_by: order
-
 sass:
   sass_dir: css
 

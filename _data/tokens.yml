@@ -1,0 +1,194 @@
+# -- WARNING! This file is generated programmatically. DO NOT EDIT DIRECTLY --
+---
+- title: "--s-font-size-xxs"
+  category: tokens
+  token_type: font-size
+  value: 0.625rem
+  description: xxs Font size
+  order: 1
+- title: "--s-font-size-xs"
+  category: tokens
+  token_type: font-size
+  value: 0.75rem
+  description: xs Font size
+  order: 2
+- title: "--s-font-size-sm"
+  category: tokens
+  token_type: font-size
+  value: 0.875rem
+  description: sm Font size
+  order: 3
+- title: "--s-font-size-md"
+  category: tokens
+  token_type: font-size
+  value: 1rem
+  description: md Font size
+  order: 4
+- title: "--s-font-size-lg"
+  category: tokens
+  token_type: font-size
+  value: 1.5rem
+  description: lg Font size
+  order: 5
+- title: "--s-font-size-xl"
+  category: tokens
+  token_type: font-size
+  value: 2rem
+  description: xl Font size
+  order: 6
+- title: "--s-font-size-xxl"
+  category: tokens
+  token_type: font-size
+  value: 3rem
+  description: xxl Font size
+  order: 7
+- title: "--s-font-weight-ultra-light"
+  category: tokens
+  token_type: font-weight
+  value: '200'
+  description: ultra-light Font weight
+  order: 8
+- title: "--s-font-weight-light"
+  category: tokens
+  token_type: font-weight
+  value: '300'
+  description: light Font weight
+  order: 9
+- title: "--s-font-weight-normal"
+  category: tokens
+  token_type: font-weight
+  value: '400'
+  description: normal Font weight
+  order: 10
+- title: "--s-font-weight-bold"
+  category: tokens
+  token_type: font-weight
+  value: '700'
+  description: bold Font weight
+  order: 11
+- title: "--s-font-weight-heavy"
+  category: tokens
+  token_type: font-weight
+  value: '900'
+  description: heavy Font weight
+  order: 12
+- title: "--s-font-family-default"
+  category: tokens
+  token_type: font-family
+  value: |-
+    Helvetica Neue
+    Default Font Family
+  order: 13
+- title: "--s-font-family-alternate"
+  category: tokens
+  token_type: font-family
+  value: |-
+    Roboto Slab
+    Alternate Font Family
+  order: 14
+- title: "--s-font-family-mono"
+  category: tokens
+  token_type: font-family
+  value: |-
+    Roboto Mono
+    Monospace Font Family
+  order: 15
+- title: "--s-space-0"
+  category: tokens
+  token_type: spacing
+  value: 0rem
+  description: description
+  order: 1
+- title: "--s-space-1"
+  category: tokens
+  token_type: spacing
+  value: 0.125rem
+  description: description
+  order: 2
+- title: "--s-space-2"
+  category: tokens
+  token_type: spacing
+  value: 0.25rem
+  description: description
+  order: 3
+- title: "--s-space-3"
+  category: tokens
+  token_type: spacing
+  value: 0.5rem
+  description: description
+  order: 4
+- title: "--s-space-4"
+  category: tokens
+  token_type: spacing
+  value: 0.75rem
+  description: description
+  order: 5
+- title: "--s-space-5"
+  category: tokens
+  token_type: spacing
+  value: 1rem
+  description: description
+  order: 6
+- title: "--s-space-6"
+  category: tokens
+  token_type: spacing
+  value: 1.25rem
+  description: description
+  order: 7
+- title: "--s-space-7"
+  category: tokens
+  token_type: spacing
+  value: 1.5rem
+  description: description
+  order: 8
+- title: "--s-space-8"
+  category: tokens
+  token_type: spacing
+  value: 1.75rem
+  description: description
+  order: 9
+- title: "--s-space-9"
+  category: tokens
+  token_type: spacing
+  value: 2rem
+  description: description
+  order: 10
+- title: "--s-space-10"
+  category: tokens
+  token_type: spacing
+  value: 2.5rem
+  description: description
+  order: 11
+- title: "--s-space-11"
+  category: tokens
+  token_type: spacing
+  value: 3rem
+  description: description
+  order: 12
+- title: "--s-space-12"
+  category: tokens
+  token_type: spacing
+  value: 3.5rem
+  description: description
+  order: 13
+- title: "--s-space-13"
+  category: tokens
+  token_type: spacing
+  value: 4rem
+  description: description
+  order: 14
+- title: "--s-shadow-sm"
+  category: tokens
+  token_type: shadows
+  value: 0 1px 3px var(--s-color-gray-600)
+  order: 1
+- title: "--s-shadow-md"
+  category: tokens
+  token_type: shadows
+  value: 0 4px 6px var(--s-color-gray-600)
+  order: 2
+- title: "--s-shadow-lg"
+  category: tokens
+  token_type: shadows
+  value: 0 15px 35px var(--s-color-gray-600)
+  order: 3

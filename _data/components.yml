@@ -1,0 +1,94 @@
+# -- WARNING! This file is generated programmatically. DO NOT EDIT DIRECTLY --
+---
+- title: Primary Navigation Bar
+  category: components
+  component_type: nav
+  description: This navigation component can be used with or without the menu.
+  example: |-
+    <nav class="s-nav s-nav-sticky">
+      <a class="s-nav-icon" href="/">
+        <img src="https://assets.turing.edu/turing-school-mark-gray.png" alt="Home" />
+      </a>
+      <ul class="s-nav-menu">
+        <li><a href="#">Link One</a></li>
+        <li><a href="#">Link Two</a></li>
+        <li><a href="#">Link Three</a></li>
+      </ul>
+    </nav>
+  order: 202
+- title: Simple Footer
+  category: components
+  component_type: footer
+  value: s-footer
+  description: Simple footer with paragraph text only. The <code>.s-footer-content</code>
+    class should be used on the container that wraps content.
+  example: |-
+    <footer class="s-footer">
+     <div class="s-footer-content">
+       <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
+     </div>
+    </footer>
+  order: 203
+- title: Footer with Links
+  category: components
+  component_type: footer
+  description: Footer with paragraph text and one set of links. Use of the <code>.s-footer-right</code>
+    and <code>.s-footer-link</code> classes ensure proper spacing between links.
+  example: |-
+    <footer class="s-footer">
+     <div class="s-footer-content">
+       <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
+     </div>
+     <div class="s-footer-right">
+       <a class="s-footer-link">Privacy Policy</a>
+       <a class="s-footer-link">Programs</a>
+       <a class="s-footer-link">Try Coding</a>
+     </div>
+    </footer>
+  order: 204
+- title: Footer with Links and Social Icons
+  category: components
+  component_type: footer
+  description: Footer with two set of links; one being social icons. Use of the <code>.s-footer-right</code>
+    and <code>.s-footer-left</code>, and <code>.s-footer-icon</code> and <code>.s-footer-link</code>
+    classes ensure proper spacing between links and icons within their respective
+    containers, as well as vertical alignment.
+  example: "<footer class=\"s-footer\">\n <div class=\"s-footer-left\">\n   <a class=\"s-footer-icon\"><img
+    src=\"https://turing-io-assets.s3-us-west-2.amazonaws.com/images/facebook-grey-100.svg\"/></a>\n
+    \  <a class=\"s-footer-icon\"><img src=\"https://turing-io-assets.s3-us-west-2.amazonaws.com/images/twitter-grey-100.svg\"/></a>\n
+    \  <a class=\"s-footer-icon\"><img src=\"https://turing-io-assets.s3-us-west-2.amazonaws.com/images/github-grey-100.svg\"/></a>\n
+    </div> \n <div class=\"s-footer-right\">\n   <a class=\"s-footer-link\">Privacy
+    Policy</a>\n   <a class=\"s-footer-link\">Contact</a>\n   <a class=\"s-footer-link\">Perspectives</a>\n
+    </div>\n</footer>"
+  order: 205
+- title: Basic Card
+  category: components
+  component_type: card
+  value: s-card
+  description: The basic card allows for a title, subtitle, content, and footer -
+    all of which are optional. The following example shows a card that uses all options.
+  example: "<div class=\"s-card\">\n <div class=\"s-card-header\">\n   <h2 class=\"s-card-title\">Card
+    Title</h2>\n   <h3 class=\"s-card-subtitle\">Card Subtitle</h3>\n </div> \n <div
+    class=\"s-card-content\">\n   <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Vestibulum risus odio quis sit mattis in luctus. Dignissim auctor aliquam
+    suspendisse non in ac, purus. Aliquam arcu justo quam lorem at id proin morbi.
+    A arcu accumsan, eu id fringilla non.</p>\n </div>\n <div class=\"s-card-footer\">Footer
+    content</div>\n</div>"
+  order: 206
+- title: Profile Card
+  category: components
+  component_type: card
+  value: s-card-profile
+  description: The Profile Card is designed to include a photo in the header, an addition
+    to title, subtitle, content, and a button. The example that follows demonstrates
+    how color variants can be achieved using the color utils.
+  example: "<div class=\"s-card s-card-profile s-border-yellow-500\">\n <div class=\"s-card-header\">\n
+    \  <img class=\"s-card-profile-pic\" src=\"https://d682ma8ami8n4.cloudfront.net/images/staff/kasperowicz.jpg\">\n
+    \  <div class=\"s-card-header-right\">\n     <h2 class=\"s-card-title\">Card Title</h2>\n
+    \    <h3 class=\"s-card-subtitle\">Card Subtitle</h3>\n   </div> \n </div> \n
+    <div class=\"s-card-content\">\n   <p>Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Vestibulum risus odio quis sit mattis in luctus. Dignissim auctor
+    aliquam suspendisse non in ac, purus. Aliquam arcu justo quam lorem at id proin
+    morbi. A arcu accumsan, eu id fringilla non.</p>\n </div>\n <div class=\"s-card-footer\">\n
+    \  <button class=\"s-button s-button-secondary\">Example Button</button>\n </div>\n</div>"
+  order: 207

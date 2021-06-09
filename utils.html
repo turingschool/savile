@@ -16,7 +16,7 @@ subnav:
 ---
 
 <h2 id="colors" class="s-h2">Colors</h2>
-{% assign color_utils = site.utils | where: "util_type", "color" %}
+{% assign color_utils = site.data.utils | where: "util_type", "color" %}
 {% assign color_groups = "text, background, border" | split: ", " %}
 {% for color_group in color_groups %}
 <h3 class="s-h3">{{ color_group | capitalize}}</h3>
@@ -25,35 +25,35 @@ subnav:
 {% endfor %}
 
 <h2 id="font-weight" class="s-h2 s-mt-5">Font Weight</h2>
-{% assign text_utils = site.utils | where: "util_type", "font-weight" %}
+{% assign text_utils = site.data.utils | where: "util_type", "font-weight" %}
 {% include utils-table.html utils=text_utils %}
 
 <h2 id="font-size" class="s-h2 s-mt-5">Font Size</h2>
-{% assign text_utils = site.utils | where: "util_type", "font-size" %}
+{% assign text_utils = site.data.utils | where: "util_type", "font-size" %}
 {% include utils-table.html utils=text_utils %}
 
 <h2 id="text-align" class="s-h2 s-mt-5">Text Align</h2>
-{% assign text_utils = site.utils | where: "util_type", "text-align" %}
+{% assign text_utils = site.data.utils | where: "util_type", "text-align" %}
 {% include utils-table.html utils=text_utils %}
 
 <h2 id="text-decoration" class="s-h2 s-mt-5">Text Decoration</h2>
-{% assign text_utils = site.utils | where: "util_type", "text-decoration" %}
+{% assign text_utils = site.data.utils | where: "util_type", "text-decoration" %}
 {% include utils-table.html utils=text_utils %}
 
 <h2 id="text-transform" class="s-h2 s-mt-5">Text Transform</h2>
-{% assign text_utils = site.utils | where: "util_type", "text-transform" %}
+{% assign text_utils = site.data.utils | where: "util_type", "text-transform" %}
 {% include utils-table.html utils=text_utils %}
 
 <h2 id="margins" class="s-h2 s-mt-5">Margins</h2>
-{% assign margin_utils = site.utils | where: "util_type", "margin" %}
+{% assign margin_utils = site.data.utils | where: "util_type", "margin" %}
 {% include utils-table.html utils=margin_utils table_class="utils-table-margins" %}
 
 <h2 id="padding" class="s-h2 s-mt-5">Padding</h2>
-{% assign padding_utils = site.utils | where: "util_type", "padding" %}
+{% assign padding_utils = site.data.utils | where: "util_type", "padding" %}
 {% include utils-table.html utils=padding_utils table_class="utils-table-padding" %}
 
 <h2 id="borders" class="s-h2 s-mt-5">Borders</h2>
-{% assign border_utils = site.utils | where: "util_type", "border" %}
+{% assign border_utils = site.data.utils | where: "util_type", "border" %}
 {% assign border_groups = "sides, width, radius" | split: ", " %}
 {% for border_group in border_groups %}
 <h3 class="s-h3">{{ border_group | capitalize}}</h3>
@@ -62,5 +62,5 @@ subnav:
 {% endfor %}
 
 <h2 id="shadows" class="s-h2 s-mt-5">Shadows</h2>
-{% assign shadow_utils = site.utils | where: "util_type", "shadow" %}
+{% assign shadow_utils = site.data.utils | where: "util_type", "shadow" %}
 {% include utils-table.html utils=shadow_utils table_class="utils-table-padding" %}

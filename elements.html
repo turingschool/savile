@@ -60,13 +60,13 @@ subnav:
     </tr>
   </thead>
   <tbody>
-    {% assign buttons = site.elements | where: "element_type", "button" %}
+    {% assign buttons = site.data.elements | where: "element_type", "button" %}
     {% for button in buttons %}
     <tr class="table-row">
       <td class="element-class-cell">{% highlight html %}{{ button.value }}{% endhighlight %}</td>
-      <td class="element-code-cell">{% highlight html %}{{ button | remove: '<p>' | remove: '</p>' }}{% endhighlight %}
+      <td class="element-code-cell">{% highlight html %}{{ button.example | remove: '<p>' | remove: '</p>' }}{% endhighlight %}
       </td>
-      <td class="element-sample-cell">{{ button }}</td>
+      <td class="element-sample-cell">{{ button.example }}</td>
     </tr>
     {% endfor %}
   </tbody>
@@ -82,13 +82,13 @@ subnav:
     </tr>
   </thead>
   <tbody>
-    {% assign links = site.elements | where: "element_type", "link" %}
+    {% assign links = site.data.elements | where: "element_type", "link" %}
     {% for link in links %}
     <tr class="table-row">
       <td class="element-class-cell">{% highlight html %}{{ link.value }}{% endhighlight %}</td>
-      <td class="element-code-cell">{% highlight html %}{{ link | remove: '<p>' | remove: '</p>' }}{% endhighlight %}
+      <td class="element-code-cell">{% highlight html %}{{ link.example | remove: '<p>' | remove: '</p>' }}{% endhighlight %}
       </td>
-      <td class="element-sample-cell">{{ link }}</td>
+      <td class="element-sample-cell">{{ link.example }}</td>
     </tr>
     {% endfor %}
   </tbody>
@@ -104,23 +104,23 @@ subnav:
     </tr>
   </thead>
   <tbody>
-    {% assign texts = site.elements | where: "element_type", "text" %}
+    {% assign texts = site.data.elements | where: "element_type", "text" %}
     {% assign light_texts = texts | where: "light_text", "true" %}
     {% assign dark_texts = texts | where: "light_text", nil %}
 
     {% for text in dark_texts %}
     <tr class="table-row">
       <td class="element-class-cell">{% highlight html %}{{ text.value }}{% endhighlight %}</td>
-      <td class="element-code-cell">{% highlight html %}{{ text }}{% endhighlight %}</td>
-      <td class="element-sample-cell">{{ text }}</td>
+      <td class="element-code-cell">{% highlight html %}{{ text.example }}{% endhighlight %}</td>
+      <td class="element-sample-cell">{{ text.example }}</td>
     </tr>
     {% endfor %}
 
     {% for text in light_texts %}
     <tr class="table-row">
       <td class="element-class-cell">{% highlight html %}{{ text.value }}{% endhighlight %}</td>
-      <td class="element-code-cell">{% highlight html %}{{ text }}{% endhighlight %}</td>
-      <td class="element-sample-cell dark-cell">{{ text }}</td>
+      <td class="element-code-cell">{% highlight html %}{{ text.example }}{% endhighlight %}</td>
+      <td class="element-sample-cell dark-cell">{{ text.example }}</td>
     </tr>
     {% endfor %}
   </tbody>
