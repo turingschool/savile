@@ -12,10 +12,10 @@ LOAD_FILE = File.join(LOAD_DIR, 'index.scss')
 DESTINATION_DIR = File.join(ROOT_DIR, '_data')
 
 ALL_DOCS = []
+CATEGORY_ORDER = Hash.new(0)
 
 def extract_docs_from_css(tree)
   prev_comment = nil
-  order = 0
 
   tree.each do |node|
     if node[:children]
@@ -29,12 +29,11 @@ def extract_docs_from_css(tree)
 
     if prev_comment
       doc = parse_attributes(prev_comment)
+      doc['category'] = (doc['category'] || 'misc').downcase
 
       # keeps declarations in order of where they are defined in docs file
-      doc['order'] = order += 1
-      # TODO: use category-independent ordering (so that order is only re-calculated within a category)
-
-      doc['category'] = (doc['category'] || 'misc').downcase
+      doc['order'] = doc['order']&.to_i || CATEGORY_ORDER[doc['category']]
+      CATEGORY_ORDER[doc['category']] = doc['order'] + 1
 
       unless doc['title']
         doc['title'] = node.dig(:selector, :value) if node[:node] == :style_rule

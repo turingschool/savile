@@ -7,7 +7,7 @@
     <div class="s-p-0">
       <code>s-p-0</code>
     </div>
-  order: 10
+  order: 0
 - title: s-px-0
   category: utils
   util_type: padding
@@ -15,7 +15,7 @@
     <div class="s-px-0">
       <code>s-px-0</code>
     </div>
-  order: 11
+  order: 1
 - title: s-py-0
   category: utils
   util_type: padding
@@ -23,7 +23,7 @@
     <div class="s-py-0">
       <code>s-py-0</code>
     </div>
-  order: 12
+  order: 2
 - title: s-pt-0
   category: utils
   util_type: padding
@@ -31,7 +31,7 @@
     <div class="s-pt-0">
       <code>s-pt-0</code>
     </div>
-  order: 13
+  order: 3
 - title: s-pr-0
   category: utils
   util_type: padding
@@ -39,7 +39,7 @@
     <div class="s-pr-0">
       <code>s-pr-0</code>
     </div>
-  order: 14
+  order: 4
 - title: s-pb-0
   category: utils
   util_type: padding
@@ -47,7 +47,7 @@
     <div class="s-pb-0">
       <code>s-pb-0</code>
     </div>
-  order: 15
+  order: 5
 - title: s-pl-0
   category: utils
   util_type: padding
@@ -55,7 +55,7 @@
     <div class="s-pl-0">
       <code>s-pl-0</code>
     </div>
-  order: 16
+  order: 6
 - title: s-p-1
   category: utils
   util_type: padding
@@ -63,7 +63,7 @@
     <div class="s-p-1">
       <code>s-p-1</code>
     </div>
-  order: 17
+  order: 7
 - title: s-px-1
   category: utils
   util_type: padding
@@ -71,7 +71,7 @@
     <div class="s-px-1">
       <code>s-px-1</code>
     </div>
-  order: 18
+  order: 8
 - title: s-py-1
   category: utils
   util_type: padding
@@ -79,7 +79,7 @@
     <div class="s-py-1">
       <code>s-py-1</code>
     </div>
-  order: 19
+  order: 9
 - title: s-pt-1
   category: utils
   util_type: padding
@@ -87,7 +87,7 @@
     <div class="s-pt-1">
       <code>s-pt-1</code>
     </div>
-  order: 20
+  order: 10
 - title: s-pr-1
   category: utils
   util_type: padding
@@ -95,7 +95,7 @@
     <div class="s-pr-1">
       <code>s-pr-1</code>
     </div>
-  order: 21
+  order: 11
 - title: s-pb-1
   category: utils
   util_type: padding
@@ -103,7 +103,7 @@
     <div class="s-pb-1">
       <code>s-pb-1</code>
     </div>
-  order: 22
+  order: 12
 - title: s-pl-1
   category: utils
   util_type: padding
@@ -111,7 +111,7 @@
     <div class="s-pl-1">
       <code>s-pl-1</code>
     </div>
-  order: 23
+  order: 13
 - title: s-p-2
   category: utils
   util_type: padding
@@ -119,7 +119,7 @@
     <div class="s-p-2">
       <code>s-p-2</code>
     </div>
-  order: 24
+  order: 14
 - title: s-px-2
   category: utils
   util_type: padding
@@ -127,7 +127,7 @@
     <div class="s-px-2">
       <code>s-px-2</code>
     </div>
-  order: 25
+  order: 15
 - title: s-py-2
   category: utils
   util_type: padding
@@ -135,7 +135,7 @@
     <div class="s-py-2">
       <code>s-py-2</code>
     </div>
-  order: 26
+  order: 16
 - title: s-pt-2
   category: utils
   util_type: padding
@@ -143,7 +143,7 @@
     <div class="s-pt-2">
       <code>s-pt-2</code>
     </div>
-  order: 27
+  order: 17
 - title: s-pr-2
   category: utils
   util_type: padding
@@ -151,7 +151,7 @@
     <div class="s-pr-2">
       <code>s-pr-2</code>
     </div>
-  order: 28
+  order: 18
 - title: s-pb-2
   category: utils
   util_type: padding
@@ -159,7 +159,7 @@
     <div class="s-pb-2">
       <code>s-pb-2</code>
     </div>
-  order: 29
+  order: 19
 - title: s-pl-2
   category: utils
   util_type: padding
@@ -167,7 +167,7 @@
     <div class="s-pl-2">
       <code>s-pl-2</code>
     </div>
-  order: 30
+  order: 20
 - title: s-p-3
   category: utils
   util_type: padding
@@ -175,7 +175,7 @@
     <div class="s-p-3">
       <code>s-p-3</code>
     </div>
-  order: 31
+  order: 21
 - title: s-px-3
   category: utils
   util_type: padding
@@ -183,7 +183,7 @@
     <div class="s-px-3">
       <code>s-px-3</code>
     </div>
-  order: 32
+  order: 22
 - title: s-py-3
   category: utils
   util_type: padding
@@ -191,7 +191,7 @@
     <div class="s-py-3">
       <code>s-py-3</code>
     </div>
-  order: 33
+  order: 23
 - title: s-pt-3
   category: utils
   util_type: padding
@@ -199,7 +199,7 @@
     <div class="s-pt-3">
       <code>s-pt-3</code>
     </div>
-  order: 34
+  order: 24
 - title: s-pr-3
   category: utils
   util_type: padding
@@ -207,7 +207,7 @@
     <div class="s-pr-3">
       <code>s-pr-3</code>
     </div>
-  order: 35
+  order: 25
 - title: s-pb-3
   category: utils
   util_type: padding
@@ -215,7 +215,7 @@
     <div class="s-pb-3">
       <code>s-pb-3</code>
     </div>
-  order: 36
+  order: 26
 - title: s-pl-3
   category: utils
   util_type: padding
@@ -223,7 +223,7 @@
     <div class="s-pl-3">
       <code>s-pl-3</code>
     </div>
-  order: 37
+  order: 27
 - title: s-p-4
   category: utils
   util_type: padding
@@ -231,7 +231,7 @@
     <div class="s-p-4">
       <code>s-p-4</code>
     </div>
-  order: 38
+  order: 28
 - title: s-px-4
   category: utils
   util_type: padding
@@ -239,7 +239,7 @@
     <div class="s-px-4">
       <code>s-px-4</code>
     </div>
-  order: 39
+  order: 29
 - title: s-py-4
   category: utils
   util_type: padding
@@ -247,7 +247,7 @@
     <div class="s-py-4">
       <code>s-py-4</code>
     </div>
-  order: 40
+  order: 30
 - title: s-pt-4
   category: utils
   util_type: padding
@@ -255,7 +255,7 @@
     <div class="s-pt-4">
       <code>s-pt-4</code>
     </div>
-  order: 41
+  order: 31
 - title: s-pr-4
   category: utils
   util_type: padding
@@ -263,7 +263,7 @@
     <div class="s-pr-4">
       <code>s-pr-4</code>
     </div>
-  order: 42
+  order: 32
 - title: s-pb-4
   category: utils
   util_type: padding
@@ -271,7 +271,7 @@
     <div class="s-pb-4">
       <code>s-pb-4</code>
     </div>
-  order: 43
+  order: 33
 - title: s-pl-4
   category: utils
   util_type: padding
@@ -279,7 +279,7 @@
     <div class="s-pl-4">
       <code>s-pl-4</code>
     </div>
-  order: 44
+  order: 34
 - title: s-p-5
   category: utils
   util_type: padding
@@ -287,7 +287,7 @@
     <div class="s-p-5">
       <code>s-p-5</code>
     </div>
-  order: 45
+  order: 35
 - title: s-px-5
   category: utils
   util_type: padding
@@ -295,7 +295,7 @@
     <div class="s-px-5">
       <code>s-px-5</code>
     </div>
-  order: 46
+  order: 36
 - title: s-py-5
   category: utils
   util_type: padding
@@ -303,7 +303,7 @@
     <div class="s-py-5">
       <code>s-py-5</code>
     </div>
-  order: 47
+  order: 37
 - title: s-pt-5
   category: utils
   util_type: padding
@@ -311,7 +311,7 @@
     <div class="s-pt-5">
       <code>s-pt-5</code>
     </div>
-  order: 48
+  order: 38
 - title: s-pr-5
   category: utils
   util_type: padding
@@ -319,7 +319,7 @@
     <div class="s-pr-5">
       <code>s-pr-5</code>
     </div>
-  order: 49
+  order: 39
 - title: s-pb-5
   category: utils
   util_type: padding
@@ -327,7 +327,7 @@
     <div class="s-pb-5">
       <code>s-pb-5</code>
     </div>
-  order: 50
+  order: 40
 - title: s-pl-5
   category: utils
   util_type: padding
@@ -335,7 +335,7 @@
     <div class="s-pl-5">
       <code>s-pl-5</code>
     </div>
-  order: 51
+  order: 41
 - title: s-m-0
   category: utils
   util_type: margin
@@ -343,7 +343,7 @@
     <div class="s-m-0">
       <code>s-m-0</code>
     </div>
-  order: 52
+  order: 42
 - title: s-mx-0
   category: utils
   util_type: margin
@@ -351,7 +351,7 @@
     <div class="s-mx-0">
       <code>s-mx-0</code>
     </div>
-  order: 53
+  order: 43
 - title: s-my-0
   category: utils
   util_type: margin
@@ -359,7 +359,7 @@
     <div class="s-my-0">
       <code>s-my-0</code>
     </div>
-  order: 54
+  order: 44
 - title: s-mt-0
   category: utils
   util_type: margin
@@ -367,7 +367,7 @@
     <div class="s-mt-0">
       <code>s-mt-0</code>
     </div>
-  order: 55
+  order: 45
 - title: s-mr-0
   category: utils
   util_type: margin
@@ -375,7 +375,7 @@
     <div class="s-mr-0">
       <code>s-mr-0</code>
     </div>
-  order: 56
+  order: 46
 - title: s-mb-0
   category: utils
   util_type: margin
@@ -383,7 +383,7 @@
     <div class="s-mb-0">
       <code>s-mb-0</code>
     </div>
-  order: 57
+  order: 47
 - title: s-ml-0
   category: utils
   util_type: margin
@@ -391,7 +391,7 @@
     <div class="s-ml-0">
       <code>s-ml-0</code>
     </div>
-  order: 58
+  order: 48
 - title: s-m-1
   category: utils
   util_type: margin
@@ -399,7 +399,7 @@
     <div class="s-m-1">
       <code>s-m-1</code>
     </div>
-  order: 59
+  order: 49
 - title: s-mx-1
   category: utils
   util_type: margin
@@ -407,7 +407,7 @@
     <div class="s-mx-1">
       <code>s-mx-1</code>
     </div>
-  order: 60
+  order: 50
 - title: s-my-1
   category: utils
   util_type: margin
@@ -415,7 +415,7 @@
     <div class="s-my-1">
       <code>s-my-1</code>
     </div>
-  order: 61
+  order: 51
 - title: s-mt-1
   category: utils
   util_type: margin
@@ -423,7 +423,7 @@
     <div class="s-mt-1">
       <code>s-mt-1</code>
     </div>
-  order: 62
+  order: 52
 - title: s-mr-1
   category: utils
   util_type: margin
@@ -431,7 +431,7 @@
     <div class="s-mr-1">
       <code>s-mr-1</code>
     </div>
-  order: 63
+  order: 53
 - title: s-mb-1
   category: utils
   util_type: margin
@@ -439,7 +439,7 @@
     <div class="s-mb-1">
       <code>s-mb-1</code>
     </div>
-  order: 64
+  order: 54
 - title: s-ml-1
   category: utils
   util_type: margin
@@ -447,7 +447,7 @@
     <div class="s-ml-1">
       <code>s-ml-1</code>
     </div>
-  order: 65
+  order: 55
 - title: s-m-2
   category: utils
   util_type: margin
@@ -455,7 +455,7 @@
     <div class="s-m-2">
       <code>s-m-2</code>
     </div>
-  order: 66
+  order: 56
 - title: s-mx-2
   category: utils
   util_type: margin
@@ -463,7 +463,7 @@
     <div class="s-mx-2">
       <code>s-mx-2</code>
     </div>
-  order: 67
+  order: 57
 - title: s-my-2
   category: utils
   util_type: margin
@@ -471,7 +471,7 @@
     <div class="s-my-2">
       <code>s-my-2</code>
     </div>
-  order: 68
+  order: 58
 - title: s-mt-2
   category: utils
   util_type: margin
@@ -479,7 +479,7 @@
     <div class="s-mt-2">
       <code>s-mt-2</code>
     </div>
-  order: 69
+  order: 59
 - title: s-mr-2
   category: utils
   util_type: margin
@@ -487,7 +487,7 @@
     <div class="s-mr-2">
       <code>s-mr-2</code>
     </div>
-  order: 70
+  order: 60
 - title: s-mb-2
   category: utils
   util_type: margin
@@ -495,7 +495,7 @@
     <div class="s-mb-2">
       <code>s-mb-2</code>
     </div>
-  order: 71
+  order: 61
 - title: s-ml-2
   category: utils
   util_type: margin
@@ -503,7 +503,7 @@
     <div class="s-ml-2">
       <code>s-ml-2</code>
     </div>
-  order: 72
+  order: 62
 - title: s-m-3
   category: utils
   util_type: margin
@@ -511,7 +511,7 @@
     <div class="s-m-3">
       <code>s-m-3</code>
     </div>
-  order: 73
+  order: 63
 - title: s-mx-3
   category: utils
   util_type: margin
@@ -519,7 +519,7 @@
     <div class="s-mx-3">
       <code>s-mx-3</code>
     </div>
-  order: 74
+  order: 64
 - title: s-my-3
   category: utils
   util_type: margin
@@ -527,7 +527,7 @@
     <div class="s-my-3">
       <code>s-my-3</code>
     </div>
-  order: 75
+  order: 65
 - title: s-mt-3
   category: utils
   util_type: margin
@@ -535,7 +535,7 @@
     <div class="s-mt-3">
       <code>s-mt-3</code>
     </div>
-  order: 76
+  order: 66
 - title: s-mr-3
   category: utils
   util_type: margin
@@ -543,7 +543,7 @@
     <div class="s-mr-3">
       <code>s-mr-3</code>
     </div>
-  order: 77
+  order: 67
 - title: s-mb-3
   category: utils
   util_type: margin
@@ -551,7 +551,7 @@
     <div class="s-mb-3">
       <code>s-mb-3</code>
     </div>
-  order: 78
+  order: 68
 - title: s-ml-3
   category: utils
   util_type: margin
@@ -559,7 +559,7 @@
     <div class="s-ml-3">
       <code>s-ml-3</code>
     </div>
-  order: 79
+  order: 69
 - title: s-m-4
   category: utils
   util_type: margin
@@ -567,7 +567,7 @@
     <div class="s-m-4">
       <code>s-m-4</code>
     </div>
-  order: 80
+  order: 70
 - title: s-mx-4
   category: utils
   util_type: margin
@@ -575,7 +575,7 @@
     <div class="s-mx-4">
       <code>s-mx-4</code>
     </div>
-  order: 81
+  order: 71
 - title: s-my-4
   category: utils
   util_type: margin
@@ -583,7 +583,7 @@
     <div class="s-my-4">
       <code>s-my-4</code>
     </div>
-  order: 82
+  order: 72
 - title: s-mt-4
   category: utils
   util_type: margin
@@ -591,7 +591,7 @@
     <div class="s-mt-4">
       <code>s-mt-4</code>
     </div>
-  order: 83
+  order: 73
 - title: s-mr-4
   category: utils
   util_type: margin
@@ -599,7 +599,7 @@
     <div class="s-mr-4">
       <code>s-mr-4</code>
     </div>
-  order: 84
+  order: 74
 - title: s-mb-4
   category: utils
   util_type: margin
@@ -607,7 +607,7 @@
     <div class="s-mb-4">
       <code>s-mb-4</code>
     </div>
-  order: 85
+  order: 75
 - title: s-ml-4
   category: utils
   util_type: margin
@@ -615,7 +615,7 @@
     <div class="s-ml-4">
       <code>s-ml-4</code>
     </div>
-  order: 86
+  order: 76
 - title: s-m-5
   category: utils
   util_type: margin
@@ -623,7 +623,7 @@
     <div class="s-m-5">
       <code>s-m-5</code>
     </div>
-  order: 87
+  order: 77
 - title: s-mx-5
   category: utils
   util_type: margin
@@ -631,7 +631,7 @@
     <div class="s-mx-5">
       <code>s-mx-5</code>
     </div>
-  order: 88
+  order: 78
 - title: s-my-5
   category: utils
   util_type: margin
@@ -639,7 +639,7 @@
     <div class="s-my-5">
       <code>s-my-5</code>
     </div>
-  order: 89
+  order: 79
 - title: s-mt-5
   category: utils
   util_type: margin
@@ -647,7 +647,7 @@
     <div class="s-mt-5">
       <code>s-mt-5</code>
     </div>
-  order: 90
+  order: 80
 - title: s-mr-5
   category: utils
   util_type: margin
@@ -655,7 +655,7 @@
     <div class="s-mr-5">
       <code>s-mr-5</code>
     </div>
-  order: 91
+  order: 81
 - title: s-mb-5
   category: utils
   util_type: margin
@@ -663,7 +663,7 @@
     <div class="s-mb-5">
       <code>s-mb-5</code>
     </div>
-  order: 92
+  order: 82
 - title: s-ml-5
   category: utils
   util_type: margin
@@ -671,202 +671,202 @@
     <div class="s-ml-5">
       <code>s-ml-5</code>
     </div>
-  order: 93
+  order: 83
 - title: s-border
   category: utils
   util_type: border
   border_group: sides
   example: <span class="s-border"></span>
-  order: 94
+  order: 84
 - title: s-border-top
   category: utils
   util_type: border
   border_group: sides
   example: <span class="s-border-top"></span>
-  order: 95
+  order: 85
 - title: s-border-right
   category: utils
   util_type: border
   border_group: sides
   example: <span class="s-border-right"></span>
-  order: 96
+  order: 86
 - title: s-border-bottom
   category: utils
   util_type: border
   border_group: sides
   example: <span class="s-border-bottom"></span>
-  order: 97
+  order: 87
 - title: s-border-left
   category: utils
   util_type: border
   border_group: sides
   example: <span class="s-border-left"></span>
-  order: 98
+  order: 88
 - title: s-border-width-0
   category: utils
   util_type: border
   border_group: width
   example: <span class="s-border s-border-width-0"></span>
-  order: 99
+  order: 89
 - title: s-border-width-1
   category: utils
   util_type: border
   border_group: width
   example: <span class="s-border s-border-width-1"></span>
-  order: 100
+  order: 90
 - title: s-border-width-2
   category: utils
   util_type: border
   border_group: width
   example: <span class="s-border s-border-width-2"></span>
-  order: 101
+  order: 91
 - title: s-border-width-3
   category: utils
   util_type: border
   border_group: width
   example: <span class="s-border s-border-width-3"></span>
-  order: 102
+  order: 92
 - title: s-border-width-4
   category: utils
   util_type: border
   border_group: width
   example: <span class="s-border s-border-width-4"></span>
-  order: 103
+  order: 93
 - title: s-border-radius-0
   category: utils
   util_type: border
   border_group: radius
   example: <span class="s-border-radius-0"></span>
-  order: 104
+  order: 94
 - title: s-border-radius-1
   category: utils
   util_type: border
   border_group: radius
   example: <span class="s-border-radius-1"></span>
-  order: 105
+  order: 95
 - title: s-border-radius-2
   category: utils
   util_type: border
   border_group: radius
   example: <span class="s-border-radius-2"></span>
-  order: 106
+  order: 96
 - title: s-border-radius-circle
   category: utils
   util_type: border
   border_group: radius
   example: <span class="s-border-radius-circle"></span>
-  order: 107
+  order: 97
 - title: s-border-radius-pill
   category: utils
   util_type: border
   border_group: radius
   example: <span class="s-border-radius-pill"></span>
-  order: 108
+  order: 98
 - title: s-text-start
   category: utils
   util_type: text-align
   example: <p class="s-text-start">Example text</p>
-  order: 109
+  order: 99
 - title: s-text-center
   category: utils
   util_type: text-align
   example: <p class="s-text-center">Example text</p>
-  order: 110
+  order: 100
 - title: s-text-end
   category: utils
   util_type: text-align
   example: <p class="s-text-end">Example text</p>
-  order: 111
+  order: 101
 - title: s-text-decor-line-through
   category: utils
   util_type: text-decoration
   example: <span class="s-text-decor-line-through">Example text</span>
-  order: 112
+  order: 102
 - title: s-text-decor-none
   category: utils
   util_type: text-decoration
   example: <span class="s-text-decor-none">Example text</span>
-  order: 113
+  order: 103
 - title: s-text-decor-underline
   category: utils
   util_type: text-decoration
   example: <span class="s-text-decor-underline">Example text</span>
-  order: 114
+  order: 104
 - title: s-text-capitalize
   category: utils
   util_type: text-transform
   example: <span class="s-text-capitalize">exaMPle teXT</span>
-  order: 115
+  order: 105
 - title: s-text-lowercase
   category: utils
   util_type: text-transform
   example: <span class="s-text-lowercase">exaMPle teXT</span>
-  order: 116
+  order: 106
 - title: s-text-uppercase
   category: utils
   util_type: text-transform
   example: <span class="s-text-uppercase">exaMPle teXT</span>
-  order: 117
+  order: 107
 - title: s-font-ultra-light
   category: utils
   util_type: font-weight
   example: <span class="s-font-ultra-light">Example text</span>
-  order: 118
+  order: 108
 - title: s-font-light
   category: utils
   util_type: font-weight
   example: <span class="s-font-light">Example text</span>
-  order: 119
+  order: 109
 - title: s-font-normal
   category: utils
   util_type: font-weight
   example: <span class="s-font-normal">Example text</span>
-  order: 120
+  order: 110
 - title: s-font-bold
   category: utils
   util_type: font-weight
   example: <span class="s-font-bold">Example text</span>
-  order: 121
+  order: 111
 - title: s-font-heavy
   category: utils
   util_type: font-weight
   example: <span class="s-font-heavy">Example text</span>
-  order: 122
+  order: 112
 - title: s-font-xxs
   category: utils
   util_type: font-size
   example: <span class="s-font-xxs">Example</span>
-  order: 123
+  order: 113
 - title: s-font-xs
   category: utils
   util_type: font-size
   example: <span class="s-font-xs">Example</span>
-  order: 124
+  order: 114
 - title: s-font-sm
   category: utils
   util_type: font-size
   example: <span class="s-font-sm">Example</span>
-  order: 125
+  order: 115
 - title: s-font-md
   category: utils
   util_type: font-size
   example: <span class="s-font-md">Example</span>
-  order: 126
+  order: 116
 - title: s-font-lg
   category: utils
   util_type: font-size
   example: <span class="s-font-lg">Example</span>
-  order: 127
+  order: 117
 - title: s-font-xl
   category: utils
   util_type: font-size
   example: <span class="s-font-xl">Example</span>
-  order: 128
+  order: 118
 - title: s-font-xxl
   category: utils
   util_type: font-size
   example: <span class="s-font-xxl">Example</span>
-  order: 129
+  order: 119
 - title: s-shadow-sm
   category: utils
   util_type: shadow
@@ -874,7 +874,7 @@
     <div class="s-shadow-sm">
       <div class="s-p-2"></div>
     </div>
-  order: 130
+  order: 120
 - title: s-shadow-md
   category: utils
   util_type: shadow
@@ -882,7 +882,7 @@
     <div class="s-shadow-md">
       <div class="s-p-2"></div>
     </div>
-  order: 131
+  order: 121
 - title: s-shadow-lg
   category: utils
   util_type: shadow
@@ -890,370 +890,370 @@
     <div class="s-shadow-lg">
       <div class="s-p-2"></div>
     </div>
-  order: 132
+  order: 122
 - title: s-text-black
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-black">Text</div>
-  order: 133
+  order: 123
 - title: s-bg-black
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-black"></div>
-  order: 134
+  order: 124
 - title: s-border-black
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-black"></div>
-  order: 135
+  order: 125
 - title: s-text-white
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-white s-bg-black">Text</div>
-  order: 136
+  order: 126
 - title: s-bg-white
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-white"></div>
-  order: 137
+  order: 127
 - title: s-border-white
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-white"></div>
-  order: 138
+  order: 128
 - title: s-text-cyan-400
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-cyan-400 s-bg-black">Text</div>
-  order: 139
+  order: 129
 - title: s-bg-cyan-400
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-cyan-400"></div>
-  order: 140
+  order: 130
 - title: s-border-cyan-400
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-cyan-400"></div>
-  order: 141
+  order: 131
 - title: s-text-cyan-500
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-cyan-500 s-bg-black">Text</div>
-  order: 142
+  order: 132
 - title: s-bg-cyan-500
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-cyan-500"></div>
-  order: 143
+  order: 133
 - title: s-border-cyan-500
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-cyan-500"></div>
-  order: 144
+  order: 134
 - title: s-text-cyan-600
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-cyan-600 s-bg-black">Text</div>
-  order: 145
+  order: 135
 - title: s-bg-cyan-600
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-cyan-600"></div>
-  order: 146
+  order: 136
 - title: s-border-cyan-600
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-cyan-600"></div>
-  order: 147
+  order: 137
 - title: s-text-cyan-700
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-cyan-700">Text</div>
-  order: 148
+  order: 138
 - title: s-bg-cyan-700
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-cyan-700"></div>
-  order: 149
+  order: 139
 - title: s-border-cyan-700
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-cyan-700"></div>
-  order: 150
+  order: 140
 - title: s-text-gray-100
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-gray-100 s-bg-black">Text</div>
-  order: 151
+  order: 141
 - title: s-bg-gray-100
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-gray-100"></div>
-  order: 152
+  order: 142
 - title: s-border-gray-100
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-gray-100"></div>
-  order: 153
+  order: 143
 - title: s-text-gray-200
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-gray-200 s-bg-black">Text</div>
-  order: 154
+  order: 144
 - title: s-bg-gray-200
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-gray-200"></div>
-  order: 155
+  order: 145
 - title: s-border-gray-200
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-gray-200"></div>
-  order: 156
+  order: 146
 - title: s-text-gray-300
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-gray-300 s-bg-black">Text</div>
-  order: 157
+  order: 147
 - title: s-bg-gray-300
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-gray-300"></div>
-  order: 158
+  order: 148
 - title: s-border-gray-300
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-gray-300"></div>
-  order: 159
+  order: 149
 - title: s-text-gray-400
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-gray-400 s-bg-black">Text</div>
-  order: 160
+  order: 150
 - title: s-bg-gray-400
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-gray-400"></div>
-  order: 161
+  order: 151
 - title: s-border-gray-400
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-gray-400"></div>
-  order: 162
+  order: 152
 - title: s-text-gray-500
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-gray-500 s-bg-black">Text</div>
-  order: 163
+  order: 153
 - title: s-bg-gray-500
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-gray-500"></div>
-  order: 164
+  order: 154
 - title: s-border-gray-500
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-gray-500"></div>
-  order: 165
+  order: 155
 - title: s-text-gray-600
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-gray-600">Text</div>
-  order: 166
+  order: 156
 - title: s-bg-gray-600
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-gray-600"></div>
-  order: 167
+  order: 157
 - title: s-border-gray-600
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-gray-600"></div>
-  order: 168
+  order: 158
 - title: s-text-gray-700
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-gray-700">Text</div>
-  order: 169
+  order: 159
 - title: s-bg-gray-700
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-gray-700"></div>
-  order: 170
+  order: 160
 - title: s-border-gray-700
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-gray-700"></div>
-  order: 171
+  order: 161
 - title: s-text-gray-800
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-gray-800">Text</div>
-  order: 172
+  order: 162
 - title: s-bg-gray-800
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-gray-800"></div>
-  order: 173
+  order: 163
 - title: s-border-gray-800
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-gray-800"></div>
-  order: 174
+  order: 164
 - title: s-text-red-500
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-red-500 s-bg-black">Text</div>
-  order: 175
+  order: 165
 - title: s-bg-red-500
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-red-500"></div>
-  order: 176
+  order: 166
 - title: s-border-red-500
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-red-500"></div>
-  order: 177
+  order: 167
 - title: s-text-red-600
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-red-600">Text</div>
-  order: 178
+  order: 168
 - title: s-bg-red-600
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-red-600"></div>
-  order: 179
+  order: 169
 - title: s-border-red-600
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-red-600"></div>
-  order: 180
+  order: 170
 - title: s-text-red-700
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-red-700">Text</div>
-  order: 181
+  order: 171
 - title: s-bg-red-700
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-red-700"></div>
-  order: 182
+  order: 172
 - title: s-border-red-700
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-red-700"></div>
-  order: 183
+  order: 173
 - title: s-text-yellow-500
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-yellow-500 s-bg-black">Text</div>
-  order: 184
+  order: 174
 - title: s-bg-yellow-500
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-yellow-500"></div>
-  order: 185
+  order: 175
 - title: s-border-yellow-500
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-yellow-500"></div>
-  order: 186
+  order: 176
 - title: s-text-yellow-600
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-yellow-600 s-bg-black">Text</div>
-  order: 187
+  order: 177
 - title: s-bg-yellow-600
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-yellow-600"></div>
-  order: 188
+  order: 178
 - title: s-border-yellow-600
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-yellow-600"></div>
-  order: 189
+  order: 179
 - title: s-text-yellow-700
   category: utils
   util_type: color
   color_group: text
   example: <div class="s-text-yellow-700 s-bg-black">Text</div>
-  order: 190
+  order: 180
 - title: s-bg-yellow-700
   category: utils
   util_type: color
   color_group: background
   example: <div class="s-bg-yellow-700"></div>
-  order: 191
+  order: 181
 - title: s-border-yellow-700
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-yellow-700"></div>
-  order: 192
+  order: 182
 - title: s-border-transparent
   category: utils
   util_type: color
   color_group: border
   example: <div class="s-border-transparent"></div>
-  order: 193
+  order: 183
