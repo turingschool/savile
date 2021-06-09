@@ -4,7 +4,7 @@ layout: default
 permalink: /typography/
 ---
 
-<p>The available Typography classes only provide font-family, font-size and font-weight. See <a href="{{site.url}}/elements" class="s-link">Elements -> Paragraph</a> text for color variations on paragraph elements, and <a href="{{site.url}}/colors" class="s-link">Colors</a> for color usage recommendations with text.</p>
+<p>The available Typography classes only provide font-family, font-size and font-weight. See <a href="{% link elements.html %}" class="s-link">Elements -> Paragraph</a> text for color variations on paragraph elements, and <a href="{% link colors.html %}" class="s-link">Colors</a> for color usage recommendations with text.</p>
 <table class="spaced-table">
   <thead>
     <tr class="table-head-row">
@@ -12,7 +12,7 @@ permalink: /typography/
       <th>Example</th>
     </tr>
   </thead>
-  {% for type in site.typography %}
+  {% for type in site.data.typography %}
     <tr class="table-row">
       <td class="token-value-cell">{% highlight html %}{{ type.value }}{% endhighlight %}</td>
       <td class="token-title-cell">

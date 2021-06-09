@@ -1,0 +1,66 @@
+# -- WARNING! This file is generated programmatically. DO NOT EDIT DIRECTLY --
+---
+- title: Base Button
+  category: elements
+  element_type: button
+  status: draft
+  value: s-button
+  description: Our base button styles. Any other button class can be used in addition
+    to this, to get the desired variant.
+  example: <button class="s-button">Base Button</button>
+  order: 194
+- title: Primary Button
+  category: elements
+  element_type: button
+  status: draft
+  value: s-button-primary
+  description: Our primary call-to-action button for specific actions - apply, register
+    for Try Coding, subscribe to newsletter, etc.
+  example: <button class="s-button s-button-primary">Primary</button>
+  order: 195
+- title: Primary Inverse Button
+  category: elements
+  element_type: button
+  status: draft
+  value: s-button-primary-inverse
+  description: Our primary call-to-action button, with inverse colors. These are usually
+    used for buttons that lead user to more info.
+  example: <button class="s-button s-button-primary-inverse">Primary Inverse</button>
+  order: 196
+- title: Secondary Button
+  category: elements
+  element_type: button
+  status: draft
+  value: s-button-secondary
+  description: Our secondary call-to-action button for specific actions - apply, register
+    for Try Coding, subscribe to newsletter, etc.
+  example: <button class="s-button s-button-secondary">Secondary</button>
+  order: 197
+- title: Link
+  category: elements
+  element_type: link
+  status: draft
+  value: s-link
+  description: Styles for a link that is embedded in the default paragraph text.
+  example: <a class="s-link">contact our team</a>
+  order: 198
+- title: Paragraph
+  category: elements
+  element_type: text
+  status: draft
+  value: s-p
+  description: A paragraph element with built-in size, color, and font-family. To
+    be used with a white background.
+  example: <p class="s-p">The default paragraph text is 16px and is intended for text
+    on a white background.</p>
+  order: 199
+- title: Paragraph Variant
+  category: elements
+  element_type: text
+  status: draft
+  value: n/a
+  description: A paragraph element with built-in size, color, and font-family. To
+    be used with a white background.
+  example: <p class="s-p s-text-body-xs">This example shows how other utils can be
+    used to achieve variants of the base paragraph.</p>
+  order: 200

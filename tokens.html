@@ -12,7 +12,7 @@ subnav:
 
 <p class="s-p">The tokens listed below are part of Savile, but are mainly intended for internal use. If one wants to use the variables listed here in another project, they are available and require the CSS variable syntax (e.g. <code>color: var(--s-color-gray-100);</code>).</p>
 
-{% assign grouped_tokens = site.tokens | group_by: "token_type" %}
+{% assign grouped_tokens = site.data.tokens | group_by: "token_type" %}
 
 {% for token_group in grouped_tokens %}
   <h2 id="{{token_group.name}}">{{ token_group.name | capitalize }}</h2>

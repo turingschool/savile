@@ -13,7 +13,7 @@ permalink: /colors/
       <th>Color Sample</th>
     </tr>
   </thead>
-  {% for color in site.colors %}
+  {% for color in site.data.colors %}
   <tr class="table-row">
     <td class="token-title-cell">{% highlight html %}{{ color.title }}{% endhighlight %}</td>
     <td class="token-value-cell">{{ color.value }}</td>
