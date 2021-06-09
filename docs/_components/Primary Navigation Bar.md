@@ -2,9 +2,8 @@
 title: Primary Navigation Bar
 category: components
 component_type: nav
-description: This navigation component can be used with or without the menu. The class
-  `.s-nav-sticky` is optional and will add a sticky position.
-order: 193
+description: This navigation component can be used with or without the menu.
+order: 200
 ---
 <nav class="s-nav s-nav-sticky">
   <a class="s-nav-icon" href="/">
