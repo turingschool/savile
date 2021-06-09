@@ -4,99 +4,99 @@
   category: colors
   value: "#12f1fc"
   description: description
-  order: 1
+  order: 0
 - title: "--s-color-cyan-500"
   category: colors
   value: "#05c2d1"
   description: description
-  order: 2
+  order: 1
 - title: "--s-color-cyan-600"
   category: colors
   value: "#0492a5"
   description: description
-  order: 3
+  order: 2
 - title: "--s-color-cyan-700"
   category: colors
   value: "#036575"
   description: description
-  order: 4
+  order: 3
 - title: "--s-color-yellow-500"
   category: colors
   value: "#f9ae06"
   description: description
-  order: 5
+  order: 4
 - title: "--s-color-yellow-600"
   category: colors
   value: "#e0990a"
   description: description
-  order: 6
+  order: 5
 - title: "--s-color-yellow-700"
   category: colors
   value: "#c67b02"
   description: description
-  order: 7
+  order: 6
 - title: "--s-color-red-500"
   category: colors
   value: "#ef3852"
   description: description
-  order: 8
+  order: 7
 - title: "--s-color-red-600"
   category: colors
   value: "#cc193b"
   description: description
-  order: 9
+  order: 8
 - title: "--s-color-red-700"
   category: colors
   value: "#9b0428"
   description: description
-  order: 10
+  order: 9
 - title: "--s-color-white"
   category: colors
   value: "#ffffff"
   description: description
-  order: 11
+  order: 10
 - title: "--s-color-gray-100"
   category: colors
   value: "#f8f8f8"
   description: description
-  order: 12
+  order: 11
 - title: "--s-color-gray-200"
   category: colors
   value: "#eeeff0"
   description: description
-  order: 13
+  order: 12
 - title: "--s-color-gray-300"
   category: colors
   value: "#e0e1e2"
   description: description
-  order: 14
+  order: 13
 - title: "--s-color-gray-400"
   category: colors
   value: "#bcbec0"
   description: description
-  order: 15
+  order: 14
 - title: "--s-color-gray-500"
   category: colors
   value: "#939598"
   description: description
-  order: 16
+  order: 15
 - title: "--s-color-gray-600"
   category: colors
   value: "#6d6e71"
   description: description
-  order: 17
+  order: 16
 - title: "--s-color-gray-700"
   category: colors
   value: "#4d4d4f"
   description: description
-  order: 18
+  order: 17
 - title: "--s-color-gray-800"
   category: colors
   value: "#2b2b2b"
   description: description
-  order: 19
+  order: 18
 - title: "--s-color-black"
   category: colors
   value: "#000000"
   description: description
-  order: 20
+  order: 19

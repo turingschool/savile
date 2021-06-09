@@ -15,7 +15,7 @@
         <li><a href="#">Link Three</a></li>
       </ul>
     </nav>
-  order: 202
+  order: 0
 - title: Simple Footer
   category: components
   component_type: footer
@@ -28,7 +28,7 @@
        <p>Turing School of Software and Design, a Colorado Non-Profit Organization.</p>
      </div>
     </footer>
-  order: 203
+  order: 1
 - title: Footer with Links
   category: components
   component_type: footer
@@ -45,7 +45,7 @@
        <a class="s-footer-link">Try Coding</a>
      </div>
     </footer>
-  order: 204
+  order: 2
 - title: Footer with Links and Social Icons
   category: components
   component_type: footer
@@ -60,7 +60,7 @@
     </div> \n <div class=\"s-footer-right\">\n   <a class=\"s-footer-link\">Privacy
     Policy</a>\n   <a class=\"s-footer-link\">Contact</a>\n   <a class=\"s-footer-link\">Perspectives</a>\n
     </div>\n</footer>"
-  order: 205
+  order: 3
 - title: Basic Card
   category: components
   component_type: card
@@ -74,7 +74,7 @@
     suspendisse non in ac, purus. Aliquam arcu justo quam lorem at id proin morbi.
     A arcu accumsan, eu id fringilla non.</p>\n </div>\n <div class=\"s-card-footer\">Footer
     content</div>\n</div>"
-  order: 206
+  order: 4
 - title: Profile Card
   category: components
   component_type: card
@@ -91,4 +91,4 @@
     aliquam suspendisse non in ac, purus. Aliquam arcu justo quam lorem at id proin
     morbi. A arcu accumsan, eu id fringilla non.</p>\n </div>\n <div class=\"s-card-footer\">\n
     \  <button class=\"s-button s-button-secondary\">Example Button</button>\n </div>\n</div>"
-  order: 207
+  order: 5
