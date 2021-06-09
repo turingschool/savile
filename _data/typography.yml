@@ -1,0 +1,38 @@
+# -- WARNING! This file is generated programmatically. DO NOT EDIT DIRECTLY --
+---
+- title: Heading 1
+  category: typography
+  value: s-h1
+  order: 1
+- title: Heading 2
+  category: typography
+  value: s-h2
+  order: 2
+- title: Heading 3
+  category: typography
+  value: s-h3
+  order: 3
+- title: Heading 4
+  category: typography
+  value: s-h4
+  order: 4
+- title: Heading 5
+  category: typography
+  value: s-h5
+  order: 5
+- title: Heading 6
+  category: typography
+  value: s-h6
+  order: 6
+- title: Body Text
+  category: typography
+  value: s-text-body
+  order: 7
+- title: Small Body Text
+  category: typography
+  value: s-text-body-sm
+  order: 8
+- title: Extra Small Body Text
+  category: typography
+  value: s-text-body-xs
+  order: 9

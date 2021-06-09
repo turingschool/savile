@@ -11,30 +11,30 @@ subnav:
 <h2 id="nav">Header/Navigation</h2>
 <p>The header component has optional navigation links. The class <code>.s-nav-sticky</code> is optional and will add a sticky position.</p>
 
-{% assign nav_options = site.components | where: "component_type", "nav" %}
+{% assign nav_options = site.data.components | where: "component_type", "nav" %}
 {% for nav in nav_options %}
-  {{ nav }}
-{% highlight html %}{{ nav }}{% endhighlight %}
+  {{ nav.example }}
+{% highlight html %}{{ nav.example }}{% endhighlight %}
 {% endfor %}
 
 <h2 id="card">Cards</h2>
 <p>Both card variants are <code>block</code> elements, so will take the up the width of their parent container unless provided with rules to limit their width. The examples below show cards that are the width of this page because no additional styling has been placed on their parent containers.</p>
 
-{% assign cards = site.components | where: "component_type", "card" %}
+{% assign cards = site.data.components | where: "component_type", "card" %}
 {% for card in cards %}
   <h3>{{card.title}}</h3>
   <p>{{card.description}}</p>
-  {{ card }}
-{% highlight html %}{{ card }}{% endhighlight %}
+  {{ card.example }}
+{% highlight html %}{{ card.example }}{% endhighlight %}
 {% endfor %}
 
 <h2 id="footer">Footers</h2>
 <p>The <code>.s-footer</code> class can be applied to any container element to create a footer. It has accompanying classes for any children it contains. The examples below demonstrate how they can be used in various combinations; but the content presented is not defined.</p>
 
-{% assign footers = site.components | where: "component_type", "footer" %}
+{% assign footers = site.data.components | where: "component_type", "footer" %}
 {% for footer in footers %}
   <h3>{{footer.title}}</h3>
   <p>{{footer.description}}</p>
-  {{ footer }}
-  {% highlight html %}{{ footer }}{% endhighlight %}
+  {{ footer.example }}
+  {% highlight html %}{{ footer.example }}{% endhighlight %}
 {% endfor %}

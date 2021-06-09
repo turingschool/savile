@@ -12,11 +12,11 @@
       <code>.{{ util.title }}</code>
     </td>
     <td class="util-value-cell">
-      {% highlight html %}{{ util | replace_first: '<p><', '<' | replace_first: '></p>', '>' }}{% endhighlight %}
+      {% highlight html %}{{ util.example | replace_first: '<p><', '<' | replace_first: '></p>', '>' }}{% endhighlight %}
     </td>
     <td class="util-example-cell">
       <div class="example-container">
-        {{ util | remove: '<p>' | remove: '</p>' }}
+        {{ util.example | remove: '<p>' | remove: '</p>' }}
       </div>
     </td>
   </tr>
