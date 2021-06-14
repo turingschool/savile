@@ -43,9 +43,10 @@
     content: "";
   }
   
-  input:focus + label:before {
+  input[type="checkbox"]:focus + label:before {
     //adds focus for a11y
-    outline: green auto 5px;
+    outline: rgb(59, 153, 252) auto 5px;
+    // border: 2px solid var(--s-color-cyan-700);
   }
   
   label {
