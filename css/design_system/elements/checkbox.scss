@@ -1,0 +1,132 @@
+@mixin docstring($class, $label, $example_class) {
+  /**
+  * @title #{$label}
+  * @category elements
+  * @element_type checkbox
+  * @status draft
+  * @value .#{$class}
+  * @description Styles for a checkbox element.
+  *
+  * @example
+  * <span class="#{$example_class}">
+  *  <label for="id-name">#{$label}</label>
+  *  <input type="checkbox" id="id-name">
+  * </span>
+  */
+}
+
+// Inspiration: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3 
+.s-visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@include docstring("s-checkbox", "Unchecked", "s-checkbox")
+.s-checkbox {
+  input {
+    //hides real checkbox from non-screen readers
+    @extend .s-visually-hidden;
+  }
+  
+  input + label:after {
+    //default to unchecked
+    content: none;
+  }
+  
+  input:checked + label:after {
+    //shows check when checked
+    content: "";
+  }
+  
+  input[type="checkbox"]:focus + label:before {
+    //adds focus for a11y
+    outline: rgb(59, 153, 252) auto 5px;
+    // border: 2px solid var(--s-color-cyan-700);
+  }
+  
+  label {
+    position: relative;  
+    display: inline-block;
+    padding-left: 24px;
+    padding-top: 6px;
+    color: var(--s-color-gray-600);
+  }
+  
+  label:before, label:after {
+    //set up for fake box and it's checkmark
+    position: absolute;
+    content: "";
+    display: inline-block;
+  }
+  
+  label:before {
+    //creates fake box
+    height: 16px; 
+    width: 16px;
+    border: 1px solid var(--s-color-gray-700);
+    border-radius: .3rem;
+    left: 0px;
+    top: 3px;
+  }
+  
+}
+
+@include docstring("s-checkbox-checked", "Checked", "s-checkbox s-checkbox-checked")
+.s-checkbox.s-checkbox-checked {
+  label::before, label:after { 
+    background-color: var(--s-color-cyan-400);
+    border: 1px solid var(--s-color-cyan-400);
+  }
+
+  label:after {
+    //creates fake check mark
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; // use solid
+    content: '\f00c'; // check
+    position: absolute;
+    top: .725rem;
+    left: .2rem;
+    font-size: 0.625rem;
+    color: var(--s-color-gray-700);
+    line-height: 0;
+
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+}
+
+@include docstring("s-checkbox-disabled", "Disabled", "s-checkbox s-checkbox-disabled")
+.s-checkbox.s-checkbox-disabled {
+  label::before, label:after { 
+    background-color: var(--s-color-gray-400);
+  }
+}
+@include docstring("s-checkbox-disabled-checked", "Disabled, Checked", "s-checkbox s-checkbox-disabled-checked")
+.s-checkbox.s-checkbox-disabled-checked {
+  label::before, label:after { 
+    background-color: var(--s-color-gray-400);
+    border: 1px solid var(--s-color-gray-400);
+  }
+
+  label:after {
+    //creates checkmark in fake box
+    //TODO - this entire rule is repeated from the non-disabled checkbox
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; // use solid
+    content: '\f00c'; // check
+    position: absolute;
+    top: .725rem;
+    left: .2rem;
+    font-size: 0.625rem;
+    color: var(--s-color-gray-700);
+    line-height: 0;
+
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+}

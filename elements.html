@@ -5,7 +5,29 @@ permalink: /elements/
 subnav:
   buttons-links: Buttons & Links
   paragraphs: Paragraph Text
+  checkboxes: Checkboxes
 ---
+
+<h2 id="checkboxes" class="s-h2">Checkboxes</h2>
+<table class="spaced-table">
+  <thead>
+    <tr class="table-head-row">
+      <th>Class Name</th>
+      <th>HTML</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign checkboxes = site.elements | where: "element_type", "checkbox" %}
+    {% for checkbox in checkboxes %}
+    <tr class="table-row">
+      <td class="element-class-cell">{% highlight html %}{{ checkbox.value }}{% endhighlight %}</td>
+      <td class="element-code-cell">{% highlight html %}{{ checkbox | remove: '<p>' | remove: '</p>' }}{% endhighlight %}</td>
+      <td class="element-sample-cell">{{ checkbox }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 <h2 id="buttons-links" class="s-h2">Buttons & Links</h2>
 <p>Many of our sites have links that appear to be buttons. This is acceptable from a design standpoint, but it is important that the HTML correctly communicates the intent of the element to the browser. Start by understanding the important difference between a button and a link:</p>
