@@ -12,7 +12,7 @@ ASSETS_HOST_URL = 'https://assets.turing.edu/'
 ROOT_DIR = File.absolute_path('..', __dir__)
 ASSETS_DATA_FILE = File.join(ROOT_DIR, '_data', 'assets.yml')
 
-IMAGE_EXTS = Set.new(['.png', '.jpg', '.jpeg', '.gif', '.ico'])
+IMAGE_EXTS = Set.new(['.png', '.jpg', '.jpeg', '.gif', '.ico', '.svg'])
 
 src = Net::HTTP.get(AWS_ASSETS_XML)
 xml = REXML::Document.new(src)
@@ -57,9 +57,11 @@ xml.root.elements.each('Contents') do |el|
   bytes = el.get_elements('Size').first.text
   last_modified = el.get_elements('LastModified').first.text
 
+  next if filepath.end_with? '.zip'
+
   if filepath[-1] != '/' # don't store folders
-    assets .push(Asset.new(filepath, bytes, last_modified))
+    assets.push(Asset.new(filepath, bytes, last_modified))
   end
 end
 
-File.write(ASSETS_DATA_FILE, YAML.dump(assets .map(&:data)))
+File.write(ASSETS_DATA_FILE, YAML.dump(assets.map(&:data)))

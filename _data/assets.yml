@@ -803,14 +803,122 @@
   group: fonts
   url: https://assets.turing.edu/fonts/Helvetica_Neue_LT_Std-W95_Black_Italic.woff2
   size: 14.195kb
+- file: arrow-down.svg
+  group: icons
+  url: https://assets.turing.edu/icons/arrow-down.svg
+  size: 1.217kb
+- file: bee-blue.svg
+  group: icons
+  url: https://assets.turing.edu/icons/bee-blue.svg
+  size: 1.446kb
+- file: bee.svg
+  group: icons
+  url: https://assets.turing.edu/icons/bee.svg
+  size: 1.446kb
+- file: cta-arrow-blue.svg
+  group: icons
+  url: https://assets.turing.edu/icons/cta-arrow-blue.svg
+  size: 0.699kb
+- file: cta-arrow.svg
+  group: icons
+  url: https://assets.turing.edu/icons/cta-arrow.svg
+  size: 0.85kb
+- file: facebook.svg
+  group: icons
+  url: https://assets.turing.edu/icons/facebook.svg
+  size: 1.017kb
+- file: fee-blue.svg
+  group: icons
+  url: https://assets.turing.edu/icons/fee-blue.svg
+  size: 2.735kb
+- file: fee.svg
+  group: icons
+  url: https://assets.turing.edu/icons/fee.svg
+  size: 2.735kb
+- file: gi-bill-bee.svg
+  group: icons
+  url: https://assets.turing.edu/icons/gi-bill-bee.svg
+  size: 0.891kb
+- file: gi-bill-blue.svg
+  group: icons
+  url: https://assets.turing.edu/icons/gi-bill-blue.svg
+  size: 0.891kb
+- file: gi-bill-fee.svg
+  group: icons
+  url: https://assets.turing.edu/icons/gi-bill-fee.svg
+  size: 0.891kb
 - file: github.svg
   group: icons
   url: https://assets.turing.edu/icons/github.svg
   size: 2.061kb
+- file: grad-cap-single.svg
+  group: icons
+  url: https://assets.turing.edu/icons/grad-cap-single.svg
+  size: 0.637kb
+- file: hamburger.svg
+  group: icons
+  url: https://assets.turing.edu/icons/hamburger.svg
+  size: 0.84kb
+- file: heart-health.svg
+  group: icons
+  url: https://assets.turing.edu/icons/heart-health.svg
+  size: 1.286kb
+- file: in-house-funding-bee.svg
+  group: icons
+  url: https://assets.turing.edu/icons/in-house-funding-bee.svg
+  size: 1.252kb
+- file: in-house-funding-blue.svg
+  group: icons
+  url: https://assets.turing.edu/icons/in-house-funding-blue.svg
+  size: 1.252kb
+- file: in-house-funding-fee.svg
+  group: icons
+  url: https://assets.turing.edu/icons/in-house-funding-fee.svg
+  size: 1.252kb
+- file: instagram.svg
+  group: icons
+  url: https://assets.turing.edu/icons/instagram.svg
+  size: 2.256kb
+- file: marker.svg
+  group: icons
+  url: https://assets.turing.edu/icons/marker.svg
+  size: 2.688kb
+- file: ruby.svg
+  group: icons
+  url: https://assets.turing.edu/icons/ruby.svg
+  size: 0.895kb
 - file: search.png
   group: icons
   url: https://assets.turing.edu/icons/search.png
   size: 11.908kb
+- file: star-icon.svg
+  group: icons
+  url: https://assets.turing.edu/icons/star-icon.svg
+  size: 0.478kb
+- file: trending-up.svg
+  group: icons
+  url: https://assets.turing.edu/icons/trending-up.svg
+  size: 0.224kb
+- file: try-coding.svg
+  group: icons
+  url: https://assets.turing.edu/icons/try-coding.svg
+  size: 4.566kb
+- file: turing-logo-icon.svg
+  group: icons
+  url: https://assets.turing.edu/icons/turing-logo-icon.svg
+  size: 3.315kb
+- file: twitter.svg
+  group: icons
+  url: https://assets.turing.edu/icons/twitter.svg
+  size: 1.718kb
+- file: x.svg
+  group: icons
+  url: https://assets.turing.edu/icons/x.svg
+  size: 0.778kb
+- file: turing-logo.svg
+  group: images
+  url: https://assets.turing.edu/turing-logo.svg
+  size: 106.015kb
 - file: turing-school-mark-256.png
   group: images
   url: https://assets.turing.edu/turing-school-mark-256.png
